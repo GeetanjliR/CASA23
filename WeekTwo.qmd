@@ -1,0 +1,6 @@
+# Week Two
+
+This week learnt about the satellites and presentation tools as Xaringan and Quarto. Additionally, we learned how to create book in quarto.
+
+
+## Satellite

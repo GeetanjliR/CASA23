@@ -1,0 +1,33 @@
+# Week One
+
+In the first week, this portfolio has content about the basics of remote sensing cities and environment and the presentation learning in Xaringan tool.
+
+##Introduction and Background
+
+NASA launched .... popularly known as remote sensing which is interchangeably called as 'Earth Observation'. Sensors are mounted on satellites, drones etc. There are 27,000 pieces of junks/ waste satellites lying in space. Google earth search engine reduces the time of image. Policy is required.
+
+##Sensors
+
+The sensors monitor electromagnetic rays of spectrum. They are of two types
+
+###Active Sensors
+
+They are those that emit energy.
+
+###Passive Sensors
+
+They are those that does not emit energy but reflects back energy from sun.
+
+##Electromagnetic Spectrum
+
+A electromagnetic Spectrum is
+
+###Frequency
+
+###Hz
+
+```{r}
+1 + 1
+```
+
+

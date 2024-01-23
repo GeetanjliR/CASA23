@@ -1,0 +1,52 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Learning Dairy",
+    "section": "",
+    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "WeekOne.html",
+    "href": "WeekOne.html",
+    "title": "2  Week One",
+    "section": "",
+    "text": "In the first week, this portfolio has content about the basics of remote sensing cities and environment and the presentation learning in Xaringan tool.\n##Introduction and Background\nNASA launched …. popularly known as remote sensing which is interchangeably called as ‘Earth Observation’. Sensors are mounted on satellites, drones etc. There are 27,000 pieces of junks/ waste satellites lying in space. Google earth search engine reduces the time of image. Policy is required.\n##Sensors\nThe sensors monitor electromagnetic rays of spectrum. They are of two types\n###Active Sensors\nThey are those that emit energy.\n###Passive Sensors\nThey are those that does not emit energy but reflects back energy from sun.\n##Electromagnetic Spectrum\nA electromagnetic Spectrum is\n###Frequency\n###Hz\n\n1 + 1\n\n[1] 2",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Week One</span>"
+    ]
+  },
+  {
+    "objectID": "WeekTwo.html",
+    "href": "WeekTwo.html",
+    "title": "3  Week Two",
+    "section": "",
+    "text": "3.1 Satellite",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week Two</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "crumbs": [
+      "References"
+    ]
+  }
+]

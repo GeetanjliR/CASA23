@@ -1,0 +1,25 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Learning Dairy"
+  author: "Geetanjli Rani"
+  date: "21/1/2024"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - WeekOne.qmd
+    - WeekTwo.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+
