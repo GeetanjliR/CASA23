@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>weekthree</title>
+<title>Learning Dairy - 5&nbsp; Week Three: Remote Sensing Data and Corrections</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,91 +23,242 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="WeekThree_files/libs/clipboard/clipboard.min.js"></script>
-<script src="WeekThree_files/libs/quarto-html/quarto.js"></script>
-<script src="WeekThree_files/libs/quarto-html/popper.min.js"></script>
-<script src="WeekThree_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="WeekThree_files/libs/quarto-html/anchor.min.js"></script>
-<link href="WeekThree_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="WeekThree_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="WeekThree_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="WeekThree_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="WeekThree_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./references.html" rel="next">
+<link href="./WeekTwo.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
 
 
 </head>
 
-<body class="fullcontent">
+<body class="nav-sidebar floating">
 
-<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./WeekThree.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week Three: Remote Sensing Data and Corrections</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Learning Dairy</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./About.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">About the Learner, the Module and the Porfolio</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./WeekOne.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week One: Introduction and Background</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./WeekTwo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week Two</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./WeekThree.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week Three: Remote Sensing Data and Corrections</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#corrections" id="toc-corrections" class="nav-link active" data-scroll-target="#corrections"><span class="header-section-number">5.1</span> Corrections</a>
+  <ul class="collapse">
+  <li><a href="#geometric-correction" id="toc-geometric-correction" class="nav-link" data-scroll-target="#geometric-correction"><span class="header-section-number">5.1.1</span> Geometric Correction</a></li>
+  <li><a href="#atmospheric-correction" id="toc-atmospheric-correction" class="nav-link" data-scroll-target="#atmospheric-correction"><span class="header-section-number">5.1.2</span> Atmospheric Correction</a></li>
+  </ul></li>
+  <li><a href="#emprical-line-correction" id="toc-emprical-line-correction" class="nav-link" data-scroll-target="#emprical-line-correction"><span class="header-section-number">5.2</span> Emprical Line Correction</a></li>
+  <li><a href="#orthorectification-correction-topographic-correction" id="toc-orthorectification-correction-topographic-correction" class="nav-link" data-scroll-target="#orthorectification-correction-topographic-correction"><span class="header-section-number">5.3</span> Orthorectification correction / topographic correction</a></li>
+  <li><a href="#radiometric-calibration" id="toc-radiometric-calibration" class="nav-link" data-scroll-target="#radiometric-calibration"><span class="header-section-number">5.4</span> Radiometric Calibration</a></li>
+  <li><a href="#landsat-ard-surface-reflectance" id="toc-landsat-ard-surface-reflectance" class="nav-link" data-scroll-target="#landsat-ard-surface-reflectance"><span class="header-section-number">5.5</span> Landsat ARD &amp; surface reflectance</a></li>
+  <li><a href="#joining-data-sets" id="toc-joining-data-sets" class="nav-link" data-scroll-target="#joining-data-sets"><span class="header-section-number">5.6</span> Joining data sets</a></li>
+  <li><a href="#enhancements" id="toc-enhancements" class="nav-link" data-scroll-target="#enhancements"><span class="header-section-number">5.7</span> Enhancements</a></li>
+  <li><a href="#principle-component-analysis" id="toc-principle-component-analysis" class="nav-link" data-scroll-target="#principle-component-analysis"><span class="header-section-number">5.8</span> Principle Component Analysis</a>
+  <ul class="collapse">
+  <li><a href="#image-fusion" id="toc-image-fusion" class="nav-link" data-scroll-target="#image-fusion"><span class="header-section-number">5.8.1</span> Image fusion</a></li>
+  <li><a href="#pan-sharpen" id="toc-pan-sharpen" class="nav-link" data-scroll-target="#pan-sharpen"><span class="header-section-number">5.8.2</span> Pan sharpen</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week Three: Remote Sensing Data and Corrections</span></h1>
+</div>
 
 
 
-<section id="week-three-remote-sensing-data-and-corrections" class="level1">
-<h1>Week Three: Remote Sensing Data and Corrections</h1>
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
 <p>also make dictionary or glossary in the learning dairy of week 3.</p>
 <p>Landsat-9 advanced for better data resolution and better management of resources.</p>
-<section id="corrections" class="level2">
-<h2 class="anchored" data-anchor-id="corrections">Corrections</h2>
+<section id="corrections" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="corrections"><span class="header-section-number">5.1</span> Corrections</h2>
 <p>The satellite imagery holds error from a variety of sources. These error could be from the sensor, the atmosphere, the terrain etc. The scan line correction (SLC) generated for a Whisk broom or spotlight or across track scanners to align the images. These could be possible via the method of regression by adding all of the vertical differences between the blue line and all of the residuals, it should sum to 0. Thus, they must be corrected as may be appropriate. In order to do that, the use of the imagery must be contextualize as discussed below.</p>
-<section id="geometric-correction" class="level3">
-<h3 class="anchored" data-anchor-id="geometric-correction">Geometric Correction</h3>
+<section id="geometric-correction" class="level3" data-number="5.1.1">
+<h3 data-number="5.1.1" class="anchored" data-anchor-id="geometric-correction"><span class="header-section-number">5.1.1</span> Geometric Correction</h3>
 <p>Depending upon the given coordinate reference system, the remotely sensed data has collected image distortions can be introduced due to the view angle (off-nadir*), topography (e.g.&nbsp;hills not flat ground), wind (if from a plane), rotation of the earth (from satellite).</p>
 <p>Tp deal with geometric distortions, Ground Control Points (GPS) are identified to match known points in the image and a reference dataset such as a local map, another image, GPS data from handheld device etc. The coordinates are modeled to give geometric transformation coefficients through the method of linear regression with the distorted x or y as the dependent or independent*. This is the plotted to minimise the RMSE where Jensen sets a RMSE value of 0.5. A slight shift in the data is the required. So, re-sampling the final raster by method of nearest neighbor, linear, cubic, cubic spline is done. Thus, the input grid to output grid to re-sampling.</p>
 </section>
-<section id="atmospheric-correction" class="level3">
-<h3 class="anchored" data-anchor-id="atmospheric-correction">Atmospheric Correction</h3>
+<section id="atmospheric-correction" class="level3" data-number="5.1.2">
+<h3 data-number="5.1.2" class="anchored" data-anchor-id="atmospheric-correction"><span class="header-section-number">5.1.2</span> Atmospheric Correction</h3>
 <p>Ideally there are two most important sources of environmental attenuation, the atmospheric scattering and topographic attenuation. Types of particle scattering (insert image) for <strong>Relative (to something)</strong> is done in two ways, the DOS and PIF. The Dark object subtraction (DOS) or histogram adjustment, searches each band for the darkest value then subtracts that from each pixel. Where as psuedo-invariant features (PIFs), assumes brightness pixels linearly related to a base image and applies regression per band, Then adjust the image based on the regression result. It needs to be noticed that y is the value of the base. So, to get y we multiply our new date pixel (x) by the coefficient and add the intercept value. Similarly, it is applies to the rest of the pixels.</p>
 <p><strong>Absolute (definitive) Correction</strong> requires to change digital brightness values into scaled surface reflectance. Thereafter, compare these scaled surface reflectance values across the planet. It can be done through atmospheric radiative transfer models from various options. The atmopshierc radiative transfer code such as MODTRAN 4+ and the Second Simulation of the Satellite Signal in the Solar Spectrum (6S) gives the scattering and absorption information which can now be used through python - called Py6S.</p>
 </section>
 </section>
-<section id="emprical-line-correction" class="level2">
-<h2 class="anchored" data-anchor-id="emprical-line-correction">Emprical Line Correction</h2>
+<section id="emprical-line-correction" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="emprical-line-correction"><span class="header-section-number">5.2</span> Emprical Line Correction</h2>
 <p>The in-situ measurements taken using a field spectrometer that requires measurements at the same time as the satellite overpass. Next, applying the linear regression to the measurements against the satellite data raw digital number in the following equation:</p>
 </section>
-<section id="orthorectification-correction-topographic-correction" class="level2">
-<h2 class="anchored" data-anchor-id="orthorectification-correction-topographic-correction">Orthorectification correction / topographic correction</h2>
+<section id="orthorectification-correction-topographic-correction" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="orthorectification-correction-topographic-correction"><span class="header-section-number">5.3</span> Orthorectification correction / topographic correction</h2>
 <p>The view taken at an angle can create such image distortion where georectification is giving coordinates to an image and orthorectification is removing distortions. Thus, making the pixels viewed at nadir is a straight down view. It requires sensor geometry and an elevation model and corrected through the Software / formulas of Jensen as below:</p>
 <p>Various softwares such as QGIS, SAGA GIS, R package topocorr, R package RStoolbox etc. for topographic corrections where atmospheric corrections needs to be done before this.</p>
 </section>
-<section id="radiometric-calibration" class="level2">
-<h2 class="anchored" data-anchor-id="radiometric-calibration">Radiometric Calibration</h2>
+<section id="radiometric-calibration" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="radiometric-calibration"><span class="header-section-number">5.4</span> Radiometric Calibration</h2>
 <p>Pre-calibration (below formula) is required in a lab before a sensor is launched, it is then uses these measurements to adjust the data from the sensor. The image brightness and distribution as a Digital Number (or DN) gets captured by the sensors, converted to spectral radiance is the radiometric calibration (in below formula).</p>
 </section>
-<section id="landsat-ard-surface-reflectance" class="level2">
-<h2 class="anchored" data-anchor-id="landsat-ard-surface-reflectance">Landsat ARD &amp; surface reflectance</h2>
+<section id="landsat-ard-surface-reflectance" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="landsat-ard-surface-reflectance"><span class="header-section-number">5.5</span> Landsat ARD &amp; surface reflectance</h2>
 <p>Landsat ARD: already validated level 2 product that provides corrected images for data processing. The Landsat Ecosystem Disturbance Adaptive Processing System (LEDPAS) and the Landsat 8 Surface Reflectance algorithm (L8SR) could make this possible. Noted be about the Level 2 product means something has changed as may come across not a ARD, e.g.&nbsp;very high resolution, drone.</p>
 </section>
-<section id="joining-data-sets" class="level2">
-<h2 class="anchored" data-anchor-id="joining-data-sets">Joining data sets</h2>
+<section id="joining-data-sets" class="level2" data-number="5.6">
+<h2 data-number="5.6" class="anchored" data-anchor-id="joining-data-sets"><span class="header-section-number">5.6</span> Joining data sets</h2>
 <p>To creates a seamless mosaic or image(s) the feather of images together is carried in Remote Sensing. The seamline is dividing line with a base image and “other” or second image with 20-30 percent overlap a histogram is extracted. Next, a histogram matching algorithm is performed which gives similar brightness values of the two images and feathering is conducted.</p>
 </section>
-<section id="enhancements" class="level2">
-<h2 class="anchored" data-anchor-id="enhancements">Enhancements</h2>
+<section id="enhancements" class="level2" data-number="5.7">
+<h2 data-number="5.7" class="anchored" data-anchor-id="enhancements"><span class="header-section-number">5.7</span> Enhancements</h2>
 <p>Imagery can be “improved/enhanced” based on the energy reflected and the contrast between features But… How do these methods help in urban environments Does adding complexity to imagery (or creating new datasets) assist us in our aim?</p>
 <p>It is contrasting images Other enhancements: NDVI, NBR Local enhancements: Edge enhancements: embossing, filter for example</p>
 <p>Original - low pass - High pass</p>
 </section>
-<section id="principle-component-analysis" class="level2">
-<h2 class="anchored" data-anchor-id="principle-component-analysis">Principle Component Analysis</h2>
+<section id="principle-component-analysis" class="level2" data-number="5.8">
+<h2 data-number="5.8" class="anchored" data-anchor-id="principle-component-analysis"><span class="header-section-number">5.8</span> Principle Component Analysis</h2>
 <p>variance to remove of variables of dependence , ALso creating group of similar variables such as social variables, environment variables</p>
 <p>and then groups of similar variables</p>
 <p>Clip a rectangle in a small study area</p>
-<section id="image-fusion" class="level3">
-<h3 class="anchored" data-anchor-id="image-fusion">Image fusion</h3>
+<section id="image-fusion" class="level3" data-number="5.8.1">
+<h3 data-number="5.8.1" class="anchored" data-anchor-id="image-fusion"><span class="header-section-number">5.8.1</span> Image fusion</h3>
 </section>
-<section id="pan-sharpen" class="level3">
-<h3 class="anchored" data-anchor-id="pan-sharpen">Pan sharpen</h3>
+<section id="pan-sharpen" class="level3" data-number="5.8.2">
+<h3 data-number="5.8.2" class="anchored" data-anchor-id="pan-sharpen"><span class="header-section-number">5.8.2</span> Pan sharpen</h3>
 <p>Footnote: * - Nadir means directly down Empirical Line Correction Topographic Correction Spot m Solar Zenith Angle describing illumination angle of source i.e., sun Digital Number (DN): different radio metric resolution DN is spectral radiance equals radiance calibration TOA is Topographical of Atmosphere reflectance is property of the material whereas radiance is light reflect from source as sun TOA reflectance in the air BOA: property of material DN is the roll number on the camera Hemispherical reflectance: all light enter the satellite or sensor Apperant Reflectance: solar azimuth = compass angle of the sun (N =0°) 90° (E) at sunrise and 270° (W) at sunset. See Azimuth Angle animation solar zenith = angle of local zenith (above the point on ground) and sun from vertical (90° - elevation) Spectral radiance is the amount of light within a band from a sensor in the field of view (FOV) Radiance refers to any radiation leaving the Earth (i.e.&nbsp;upwelling, toward the sensor. It could be also called Top of Atmosphere (TOA) radiance. Irradiance, is used to describe downwelling radiation reaching the Earth from the sun. Reflectance is a property of a material. Digital number (DN): intensity of the electromagnetic radiation per pixel, pixel values that aren’t calibrated and have no unit, have light source, effects of sensor + atmosphere + material, values range from 0 - 255 (Lansat 5) = 8 bit or 0 - 65536 Landsat 8 (12 bit)</p>
-</section>
+
+
 </section>
 </section>
 
-</main>
-<!-- /main column -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -495,6 +646,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./WeekTwo.html" class="pagination-link  aria-label=" &lt;span="" two&lt;="" span&gt;"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week Two</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./references.html" class="pagination-link" aria-label="References">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 
 
