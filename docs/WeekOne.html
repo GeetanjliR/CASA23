@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Learning Dairy - 2&nbsp; Week One</title>
+<title>Learning Dairy - 2&nbsp; Week One: Introduction and Background</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,40 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -115,7 +81,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./WeekOne.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Week One</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./WeekOne.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Week One: Introduction and Background</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -155,7 +121,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./WeekOne.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Week One</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Week One: Introduction and Background</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -176,14 +142,42 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#remote-sensing-cities-and-environment" id="toc-remote-sensing-cities-and-environment" class="nav-link active" data-scroll-target="#remote-sensing-cities-and-environment"><span class="header-section-number">3</span> Remote Sensing Cities and Environment</a>
+  <ul class="collapse">
+  <li><a href="#satellite" id="toc-satellite" class="nav-link" data-scroll-target="#satellite"><span class="header-section-number">3.1</span> Satellite</a></li>
+  <li><a href="#sensors" id="toc-sensors" class="nav-link" data-scroll-target="#sensors"><span class="header-section-number">3.2</span> Sensors</a>
+  <ul class="collapse">
+  <li><a href="#passive-sensors" id="toc-passive-sensors" class="nav-link" data-scroll-target="#passive-sensors"><span class="header-section-number">3.2.1</span> Passive Sensors</a></li>
+  <li><a href="#active-sensors" id="toc-active-sensors" class="nav-link" data-scroll-target="#active-sensors"><span class="header-section-number">3.2.2</span> Active Sensors</a></li>
+  </ul></li>
+  <li><a href="#electromagnetic-spectrum" id="toc-electromagnetic-spectrum" class="nav-link" data-scroll-target="#electromagnetic-spectrum"><span class="header-section-number">3.3</span> Electromagnetic Spectrum</a></li>
+  <li><a href="#interacting-with-earths-surface" id="toc-interacting-with-earths-surface" class="nav-link" data-scroll-target="#interacting-with-earths-surface"><span class="header-section-number">3.4</span> Interacting with Earth’s surface</a>
+  <ul class="collapse">
+  <li><a href="#sar" id="toc-sar" class="nav-link" data-scroll-target="#sar"><span class="header-section-number">3.4.1</span> SAR</a></li>
+  </ul></li>
+  <li><a href="#data-format" id="toc-data-format" class="nav-link" data-scroll-target="#data-format"><span class="header-section-number">3.5</span> Data Format</a>
+  <ul class="collapse">
+  <li><a href="#other-considerations" id="toc-other-considerations" class="nav-link" data-scroll-target="#other-considerations"><span class="header-section-number">3.5.1</span> Other Considerations</a></li>
+  <li><a href="#electromagnetic-spectrum-1" id="toc-electromagnetic-spectrum-1" class="nav-link" data-scroll-target="#electromagnetic-spectrum-1"><span class="header-section-number">3.5.2</span> Electromagnetic Spectrum</a></li>
+  <li><a href="#atmosphere-correction" id="toc-atmosphere-correction" class="nav-link" data-scroll-target="#atmosphere-correction"><span class="header-section-number">3.5.3</span> Atmosphere Correction</a></li>
+  <li><a href="#snap" id="toc-snap" class="nav-link" data-scroll-target="#snap"><span class="header-section-number">3.5.4</span> SNAP</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">4</span> Application</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">5</span> Reflection</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Week One</span></h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Week One: Introduction and Background</span></h1>
 </div>
 
 
@@ -200,27 +194,117 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>In the first week, this portfolio has content about the basics of remote sensing cities and environment and the presentation learning in Xaringan tool.</p>
-<p>##Introduction and Background</p>
-<p>NASA launched …. popularly known as remote sensing which is interchangeably called as ‘Earth Observation’. Sensors are mounted on satellites, drones etc. There are 27,000 pieces of junks/ waste satellites lying in space. Google earth search engine reduces the time of image. Policy is required.</p>
-<p>##Sensors</p>
-<p>The sensors monitor electromagnetic rays of spectrum. They are of two types</p>
-<p>###Active Sensors</p>
-<p>They are those that emit energy.</p>
-<p>###Passive Sensors</p>
-<p>They are those that does not emit energy but reflects back energy from sun.</p>
-<p>##Electromagnetic Spectrum</p>
-<p>A electromagnetic Spectrum is</p>
-<p>###Frequency</p>
-<p>###Hz</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
+<p>The <strong>aims</strong> of this module will enable <strong>to operationalise remotely sensed Earth observation data for informing decisions on environmental hazards arising from a changing climate, specifically in relation to (a) urban areas and (b) future urban sustainability</strong> that may help to bring about policies in managing earth’s resources and address the problem of climate change.</p>
+<section id="remote-sensing-cities-and-environment" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Remote Sensing Cities and Environment</h1>
+<p>Recent trend on studies around urban area, green space, access to infrastructure, impact on health &amp; well-being has brought the rise of remote sensing cities and environment. NASA defines remote sensing as acquiring information from a distance, by sensors that are mounted on satellites, planes (aerial imagery), drones, phones, free standing on the ground or sea (with hand held devices) etc. (CASA0023).</p>
+<section id="satellite" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="satellite"><span class="header-section-number">3.1</span> Satellite</h2>
+<p>NASA launched Landsat satellites that changed the method of collecting earth’s landscape data popularly known as remote sensing which interchangeably called as ‘Earth Observation’. Scientist started to get more data and details as the NASA went ahead with launches of Landsat1 to Landsat8. So far to receive enormous detailed data about earth’s resources and climate, the best has been Landsat8, With more sensitive sensors scientist can retrieve improved accuracy in data that helps to manage the earth’s resources and climate optimally. For example, study to most subtle change is vegetation is possible now with Landsat8.</p>
+</section>
+<section id="sensors" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="sensors"><span class="header-section-number">3.2</span> Sensors</h2>
+<p>Sensors are mounted on satellites, drones etc. The sensors monitor electromagnetic rays of spectrum. They are of two types</p>
+<section id="passive-sensors" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="passive-sensors"><span class="header-section-number">3.2.1</span> Passive Sensors</h3>
+<p>Passive sensors are those that does not emit energy but uses the energy that is available i.e., from the sun to reflects back energy. The energy reflected back is in electromagnetic waves. For example human eye, camera, satellite sensor.</p>
+</section>
+<section id="active-sensors" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="active-sensors"><span class="header-section-number">3.2.2</span> Active Sensors</h3>
+<p>They are those that emit energy. Have an energy source for illumination Actively emits electormagentic waves and then waits to receive Such as: Radar, X-ray, LiDAR Sensors can be mounted on any platform.</p>
+</section>
+</section>
+<section id="electromagnetic-spectrum" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="electromagnetic-spectrum"><span class="header-section-number">3.3</span> Electromagnetic Spectrum</h2>
+<p>It is around us all the time, without which the world around us would not exist is the <strong>Electromagnetic Radiations</strong>. These waves spread across from a very short radiations of gamma rays, x-rays, ultra-violate rays, visible-light waves, infrared waves, micro waves, radio waves. It is collectively known as the electromagnetic Spectrum or EMS. Electromagnetic (EM) waves are energy waves that emits having both electrical and magnetic properties is a two dimensional (2D) property.</p>
+<p>EM waves have crests and troughs like ocean waves and the distance between two crests is known as wavelength, see figure below. While some wavelengths are very long and measured in meters, some are very short and measured in nano-meters. The number of wavelengths passed at a point in 1 second is known as <strong>frequency</strong> of the wave. One wave or cycle per second is known as a Hertz (Hz).</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/wavelength.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
+</figure>
 </div>
 </div>
+</div>
+<p><a href="https://www.khanacademy.org/science/in-in-class11th-physics/in-in-11th-physics-waves/in-in-wave-characteristics/a/wave-characteristics-review-ap-physics-1">Source:</a></p>
+</section>
+<section id="interacting-with-earths-surface" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="interacting-with-earths-surface"><span class="header-section-number">3.4</span> Interacting with Earth’s surface</h2>
+<p>Before these radiation are retrieved by the sensors, the electromagnetic radiation(EMR) (e.g.&nbsp;from the sun) experiences surface and atmospheric changes. The surface changes are when energy gets absorbed by the surface energy being transmitted through the surface. There are below term important to understand: - Waves of an electromagnetic field, travel through space and carry radiant energy = Electromagnetic radiation (EMR). Waves are part of the EMR spectrum. - Energy carried by EMR waves = radiant energy -Energy per unit of time = radiant flux - Energy from the sun = incoming short wave radiation or shortwave radiation - Energy (solar power) from the sun per unit area per unit time (from electromagnetic radiation) = solar irradiance (per unit time - flux) - Energy leaving a surface per unit area per unit time = Exitance (emittance) (per unit time - flux) - Flux means time here.</p>
+<p>Whereas the atmospheric energy can be scattered by particles in the atmosphere. There are three types of atmospheric scattering: - Rayleigh = particles are very small compared to the wavelength - Mie = particles are the same size compared to the wavelength - Non selective = particles are much larger than the wavelength.</p>
+<section id="sar" class="level3" data-number="3.4.1">
+<h3 data-number="3.4.1" class="anchored" data-anchor-id="sar"><span class="header-section-number">3.4.1</span> SAR</h3>
+<p>Active sensor such as Synthetic Aperture Radar (SAR) can see through clouds. Bidirectional Reflectance Distribution Function (BRDF) are surface interactions where view (e.g.&nbsp;sensor) and illumination (e.g.&nbsp;sun) angles can change. Energy being reflected from the surface that is smooth or diffuse. Thus, BRDF for flat surface, water surface, vegetation surface have got different texture of surface. SAR can also work on polaristion and fluoresence. Satellite (and aerial) sensors are affected by the atmospheric scattering which can be delt with atmospheric correction. These will be discussed in later weeks. The data cant be directly used as energy reflected from Earth to a sensor. Perhaps, it needs correction due to there many interactions that influence the data being created and we use.</p>
+</section>
+</section>
+<section id="data-format" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="data-format"><span class="header-section-number">3.5</span> Data Format</h2>
+<p>In the majority of cases remotely sensed data is raster. Data format is generally geo.tif. Raster data are stacked vertically in B!, B2, B3 etc.(insert img). LiDAR data points has x,y with the z-dimension to collect attitude and 3D analysis. Data format are of following 4 types:</p>
+<ol type="1">
+<li>Spatial Resolution</li>
+</ol>
+<p>Spatial resolution has the size of the raster grid per pixel (e.g.&nbsp;20cm or 30m). One can compare the spatial resolution of 10 by 10 cm vs 1 by 1 km.</p>
+<ol type="1">
+<li>Spectral Resolution</li>
+</ol>
+<p><strong>Spectral Signature</strong> is unique signature given to material on earth or its combination shown through a graph . Sensors are designed to monitor specific range of EM spectrum called band. Different sensors will have different number of bands. <strong>Spectral Resolution</strong> has the number of bands it records data in. Spectral resolution 1 means Bands: range of spectrum, where more rich the band, will have more elements to identify. Spectral resolution means to observe part of spectrum in the window.</p>
+<p>The 7-12 bands are known as multiple spectral bands where as 10-25 bands are hyper spectral bands which has continuous spectrum. It not always satellite can record the bands but ground too known as spectroradiometer which are pure white refernce panels that needs to be calibrated.</p>
+<ol type="1">
+<li><p>Radiometric Resolution It identifies differences in light or reflectance, in practice this is the range of possible values. The ability of a sensor to identify and show small differences in energy. The higher the resolution, the more sensitive it is i.e., resolution of 8 bit can have 256 possible values where a resolution of 4 bit has 16 possible values. The more sensitive, the more components to show where as lower the radiometric resolution the lower the quality of the image and possibility to differentiate features.</p></li>
+<li><p>Temporal Resolution</p></li>
+</ol>
+<p>This is the resolution means the time it revisits (e.g.&nbsp;daily, every 7 days, on demand). Its low resolution means it has a large pixel size (e.g.&nbsp;MODIS is 500m by 500m pixel).</p>
+<section id="other-considerations" class="level3" data-number="3.5.1">
+<h3 data-number="3.5.1" class="anchored" data-anchor-id="other-considerations"><span class="header-section-number">3.5.1</span> Other Considerations</h3>
+<p>geosynchronous orbit (GSO) if the satellite matches the Earth’s rotation or if geostationary orbit holds same position, usually only for communications but some sensors are geostationary.</p>
+<p>In order to carry data collection for a research question the answers should be looked is about will dictate what sensor is most appropriate size of features, date range, revisit requirement, spectral sensitivity, cost.</p>
+<p>Heads-up for practical: Loading Landsat and Sentinel data, SNAP and R, regions of interest and plot.</p>
+</section>
+<section id="electromagnetic-spectrum-1" class="level3" data-number="3.5.2">
+<h3 data-number="3.5.2" class="anchored" data-anchor-id="electromagnetic-spectrum-1"><span class="header-section-number">3.5.2</span> Electromagnetic Spectrum</h3>
+<p>Landsat vs Sentinel B1, B2, B3 B4 (insert img) and graphs (inster img)</p>
+</section>
+<section id="atmosphere-correction" class="level3" data-number="3.5.3">
+<h3 data-number="3.5.3" class="anchored" data-anchor-id="atmosphere-correction"><span class="header-section-number">3.5.3</span> Atmosphere Correction</h3>
+</section>
+<section id="snap" class="level3" data-number="3.5.4">
+<h3 data-number="3.5.4" class="anchored" data-anchor-id="snap"><span class="header-section-number">3.5.4</span> SNAP</h3>
+<p>only 3 bands Spectral feature space (insert img of scatter plot) then we do a tassel cap transformation to combine coefficient to simplify. Principle Component Analysis (PCA) is carried to simplify on dryness for urban, brightness for greeness, wetness for yellow. (insert img). Although there are various way to carry PCA that are readily available e.g., Normalized Difference in Vegetation Index (NDVI).</p>
+<p>NDVI = insert img there are also healthy green vegetation</p>
+<p>NDWI: Normalized Difference in Water Index NDSI: Normalized Difference in Soil Index NDBI: Normalized Difference in Built-up Index</p>
+<p>the study area could be spread over two tiles (insert img) and different dates. Thus, we combine and take step by step process.</p>
+<p>However, in Google Earth Engine (GEE) take all the titles of different dates and calculates the median to calculate …..</p>
+<p>SNAP when open images</p>
+<p>high albido:</p>
+<p>10m or landsat 30 m (different spect./ scale) upscaling or downscaling resampling Machine Learning (ML) is used to learn land cover change Spectral Signature vs Spectral Libraries</p>
+<p>Region of Interest:</p>
+<dl>
+<dt>PIF: suedo invariant features</dt>
+<dd>
+<p>w</p>
+</dd>
+<dd>
+<p>download</p>
+</dd>
+<dd>
+<p>understand bands end member analysis/ MESMA</p>
+</dd>
+</dl>
+<p>satellite Segments</p>
+</section>
+</section>
+</section>
+<section id="application" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Application</h1>
+<p>I could find an interesting article by</p>
+</section>
+<section id="reflection" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Reflection</h1>
+<p>Today is day one of our lecture and only know that this lecture is on remote sensing which is something to do with satellites and data. While it has begun, I am stressed as to if this module is gonna be a tough one because I am overwhelmed by my only little knowledge of the term associated with it i.e., “satellite”, “scientists” and most of all “NASA”. It kind of give me a fear of learning as it meant for strong brainiest and brainwaves. The first lecture is over and I feel little better about the above terms as the prof make is quite engaging to understand and breaks it down precisely for my short wavelength. I like the fun facts stated during the lecture for example there are about 27,000 pieces of junks/ waste satellites lying in out in space. What actually resonates mostly for me that in upcoming lectures and practicals one would learn to enable skills that reduces the time of data imaging via use of Google earth engine (GEE) that gives more free resources to process large volumes of data with the advent of cloud computing. With rising demand of earth observation data and analysis there seems potential emergence of policy decisions to make use of remotely sensed data. However, it is filled with jargon that often isn’t as complicated as it sounds. Thus, I look forward to reach the week of GEE but it might be too ambitious for me as of now. So, I am gonna focus week by week.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

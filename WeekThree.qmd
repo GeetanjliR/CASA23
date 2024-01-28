@@ -1,0 +1,43 @@
+# Week Three
+
+also make dictionary or glossory in the learning dairy of week 3.
+
+Landsat-9 advanced for better data resolution and better management of resources.
+
+## Corrections
+
+### Geometric Correction
+
+Sain Line Nadir point Topography wind Rotation List of images do linear regression input to output forward mapping X is at the same point (insert img) backward mapping: always go from gold to EO RMSE \< 0.5, more ground point ground control- lower the error
+
+Input grid - Output Grid - Resampling
+
+### Atmospheric Correction
+
+Types of particle scattering (insert image) Relative (to something) Dark : DOS Psuedo PIF
+
+adjecency effect
+
+### Absolute Correction:
+
+Empirical Line Correction Topographic Correction Spot m Solar Zenith Angle describing illumination angle of source i.e., sun Digital Number (DN): different radio metric resolution DN is spectral radiance equals radiance calibration TOA is Topographical of Atmosphere reflectance is property of the material whereas radiance is light reflect from source as sun TOA reflectance in the air BOA: property of material DN is the roll number on the camera Hemispherical reflectance: all light enter the satellite or sensor Apperant Reflectance:
+
+Landsat ARD: already validated level 2 product:
+
+## Enhancements
+
+It is contrasting images Other enhancements: NDVI, NBR Local enhancements: Edge enhancements: embossing, filter for example
+
+Original - low pass - High pass
+
+## Principle Component Analysis
+
+variance to remove of variables of dependence , ALso creating group of similar variables such as social variables, environment variables
+
+and then groups of similar variables
+
+Clip a rectangle in a small study area
+
+### Image fusion
+
+### Pan sharpen

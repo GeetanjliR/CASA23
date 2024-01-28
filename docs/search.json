@@ -22,11 +22,11 @@
   {
     "objectID": "WeekOne.html",
     "href": "WeekOne.html",
-    "title": "2  Week One",
+    "title": "2  Week One: Introduction and Background",
     "section": "",
-    "text": "In the first week, this portfolio has content about the basics of remote sensing cities and environment and the presentation learning in Xaringan tool.\n##Introduction and Background\nNASA launched …. popularly known as remote sensing which is interchangeably called as ‘Earth Observation’. Sensors are mounted on satellites, drones etc. There are 27,000 pieces of junks/ waste satellites lying in space. Google earth search engine reduces the time of image. Policy is required.\n##Sensors\nThe sensors monitor electromagnetic rays of spectrum. They are of two types\n###Active Sensors\nThey are those that emit energy.\n###Passive Sensors\nThey are those that does not emit energy but reflects back energy from sun.\n##Electromagnetic Spectrum\nA electromagnetic Spectrum is\n###Frequency\n###Hz\n\n1 + 1\n\n[1] 2",
+    "text": "3 Remote Sensing Cities and Environment\nRecent trend on studies around urban area, green space, access to infrastructure, impact on health & well-being has brought the rise of remote sensing cities and environment. NASA defines remote sensing as acquiring information from a distance, by sensors that are mounted on satellites, planes (aerial imagery), drones, phones, free standing on the ground or sea (with hand held devices) etc. (CASA0023).",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Week One</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Week One: Introduction and Background</span>"
     ]
   },
   {
@@ -34,7 +34,7 @@
     "href": "WeekTwo.html",
     "title": "3  Week Two",
     "section": "",
-    "text": "3.1 Satellite",
+    "text": "3.1 Reference\nHow use tools as assessment For learning dairy: 1. Xaringan 2. Quarto (for individual) -next week hw to take a Sensor of choice and make a ppt on Xaringan Quorto is platform independent to be done next week — triple dash slide here ??? triple ques mark: any ? comments/ presenter view –Double dash break slide/ Pull-left/ pull-right — new slide Image folder [] hyperlink () simple bracket Make csv/ excel/ google sheet and load in R Citing: Zotero must be updated and better works with bibltx CSS: theme",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week Two</span>"
     ]
@@ -47,6 +47,66 @@
     "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
       "References"
+    ]
+  },
+  {
+    "objectID": "WeekTwo.html#quarto",
+    "href": "WeekTwo.html#quarto",
+    "title": "3  Week Two",
+    "section": "3.2 Quarto",
+    "text": "3.2 Quarto\nBookdown was used earlier was compatible with R but not with other programming language. Then came along quarto with different chapters in different markdown. use # for new slide Youtube- share-imbed Index.rmd-don’t change HW: 5-9 slides on sensor put on git/ link in excel shared No code on quarto just text Use kable for making tables reference will be learnt in week 3 use eval = false when a code need not be read to un-render a chapter/ file use ’_’ underscore in the beginning eg _quarto.yml file in the output dir docs setup a quarto dairy for this week go back to last edit Go to Book, Render, Add, commit, push Do render html and not pdf",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Week Two</span>"
+    ]
+  },
+  {
+    "objectID": "WeekOne.html#satellite",
+    "href": "WeekOne.html#satellite",
+    "title": "2  Week One: Introduction and Background",
+    "section": "3.1 Satellite",
+    "text": "3.1 Satellite\nNASA launched Landsat satellites that changed the method of collecting earth’s landscape data popularly known as remote sensing which interchangeably called as ‘Earth Observation’. Scientist started to get more data and details as the NASA went ahead with launches of Landsat1 to Landsat8. So far to receive enormous detailed data about earth’s resources and climate, the best has been Landsat8, With more sensitive sensors scientist can retrieve improved accuracy in data that helps to manage the earth’s resources and climate optimally. For example, study to most subtle change is vegetation is possible now with Landsat8.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Week One: Introduction and Background</span>"
+    ]
+  },
+  {
+    "objectID": "WeekOne.html#sensors",
+    "href": "WeekOne.html#sensors",
+    "title": "2  Week One: Introduction and Background",
+    "section": "3.2 Sensors",
+    "text": "3.2 Sensors\nSensors are mounted on satellites, drones etc. The sensors monitor electromagnetic rays of spectrum. They are of two types\n\n3.2.1 Passive Sensors\nPassive sensors are those that does not emit energy but uses the energy that is available i.e., from the sun to reflects back energy. The energy reflected back is in electromagnetic waves. For example human eye, camera, satellite sensor.\n\n\n3.2.2 Active Sensors\nThey are those that emit energy. Have an energy source for illumination Actively emits electormagentic waves and then waits to receive Such as: Radar, X-ray, LiDAR Sensors can be mounted on any platform.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Week One: Introduction and Background</span>"
+    ]
+  },
+  {
+    "objectID": "WeekOne.html#electromagnetic-spectrum",
+    "href": "WeekOne.html#electromagnetic-spectrum",
+    "title": "2  Week One: Introduction and Background",
+    "section": "3.3 Electromagnetic Spectrum",
+    "text": "3.3 Electromagnetic Spectrum\nIt is around us all the time, without which the world around us would not exist is the Electromagnetic Radiations. These waves spread across from a very short radiations of gamma rays, x-rays, ultra-violate rays, visible-light waves, infrared waves, micro waves, radio waves. It is collectively known as the electromagnetic Spectrum or EMS. Electromagnetic (EM) waves are energy waves that emits having both electrical and magnetic properties is a two dimensional (2D) property.\nEM waves have crests and troughs like ocean waves and the distance between two crests is known as wavelength, see figure below. While some wavelengths are very long and measured in meters, some are very short and measured in nano-meters. The number of wavelengths passed at a point in 1 second is known as frequency of the wave. One wave or cycle per second is known as a Hertz (Hz).\n\n\n\n\n\n\n\n\n\nSource:",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Week One: Introduction and Background</span>"
+    ]
+  },
+  {
+    "objectID": "WeekOne.html#interacting-with-earths-surface",
+    "href": "WeekOne.html#interacting-with-earths-surface",
+    "title": "2  Week One: Introduction and Background",
+    "section": "3.4 Interacting with Earth’s surface",
+    "text": "3.4 Interacting with Earth’s surface\nBefore these radiation are retrieved by the sensors, the electromagnetic radiation(EMR) (e.g. from the sun) experiences surface and atmospheric changes. The surface changes are when energy gets absorbed by the surface energy being transmitted through the surface. There are below term important to understand: - Waves of an electromagnetic field, travel through space and carry radiant energy = Electromagnetic radiation (EMR). Waves are part of the EMR spectrum. - Energy carried by EMR waves = radiant energy -Energy per unit of time = radiant flux - Energy from the sun = incoming short wave radiation or shortwave radiation - Energy (solar power) from the sun per unit area per unit time (from electromagnetic radiation) = solar irradiance (per unit time - flux) - Energy leaving a surface per unit area per unit time = Exitance (emittance) (per unit time - flux) - Flux means time here.\nWhereas the atmospheric energy can be scattered by particles in the atmosphere. There are three types of atmospheric scattering: - Rayleigh = particles are very small compared to the wavelength - Mie = particles are the same size compared to the wavelength - Non selective = particles are much larger than the wavelength.\n\n3.4.1 SAR\nActive sensor such as Synthetic Aperture Radar (SAR) can see through clouds. Bidirectional Reflectance Distribution Function (BRDF) are surface interactions where view (e.g. sensor) and illumination (e.g. sun) angles can change. Energy being reflected from the surface that is smooth or diffuse. Thus, BRDF for flat surface, water surface, vegetation surface have got different texture of surface. SAR can also work on polaristion and fluoresence. Satellite (and aerial) sensors are affected by the atmospheric scattering which can be delt with atmospheric correction. These will be discussed in later weeks. The data cant be directly used as energy reflected from Earth to a sensor. Perhaps, it needs correction due to there many interactions that influence the data being created and we use.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Week One: Introduction and Background</span>"
+    ]
+  },
+  {
+    "objectID": "WeekOne.html#data-format",
+    "href": "WeekOne.html#data-format",
+    "title": "2  Week One: Introduction and Background",
+    "section": "3.5 Data Format",
+    "text": "3.5 Data Format\nIn the majority of cases remotely sensed data is raster. Data format is generally geo.tif. Raster data are stacked vertically in B!, B2, B3 etc.(insert img). LiDAR data points has x,y with the z-dimension to collect attitude and 3D analysis. Data format are of following 4 types:\n\nSpatial Resolution\n\nSpatial resolution has the size of the raster grid per pixel (e.g. 20cm or 30m). One can compare the spatial resolution of 10 by 10 cm vs 1 by 1 km.\n\nSpectral Resolution\n\nSpectral Signature is unique signature given to material on earth or its combination shown through a graph . Sensors are designed to monitor specific range of EM spectrum called band. Different sensors will have different number of bands. Spectral Resolution has the number of bands it records data in. Spectral resolution 1 means Bands: range of spectrum, where more rich the band, will have more elements to identify. Spectral resolution means to observe part of spectrum in the window.\nThe 7-12 bands are known as multiple spectral bands where as 10-25 bands are hyper spectral bands which has continuous spectrum. It not always satellite can record the bands but ground too known as spectroradiometer which are pure white refernce panels that needs to be calibrated.\n\nRadiometric Resolution It identifies differences in light or reflectance, in practice this is the range of possible values. The ability of a sensor to identify and show small differences in energy. The higher the resolution, the more sensitive it is i.e., resolution of 8 bit can have 256 possible values where a resolution of 4 bit has 16 possible values. The more sensitive, the more components to show where as lower the radiometric resolution the lower the quality of the image and possibility to differentiate features.\nTemporal Resolution\n\nThis is the resolution means the time it revisits (e.g. daily, every 7 days, on demand). Its low resolution means it has a large pixel size (e.g. MODIS is 500m by 500m pixel).\n\n3.5.1 Other Considerations\ngeosynchronous orbit (GSO) if the satellite matches the Earth’s rotation or if geostationary orbit holds same position, usually only for communications but some sensors are geostationary.\nIn order to carry data collection for a research question the answers should be looked is about will dictate what sensor is most appropriate size of features, date range, revisit requirement, spectral sensitivity, cost.\nHeads-up for practical: Loading Landsat and Sentinel data, SNAP and R, regions of interest and plot.\n\n\n3.5.2 Electromagnetic Spectrum\nLandsat vs Sentinel B1, B2, B3 B4 (insert img) and graphs (inster img)\n\n\n3.5.3 Atmosphere Correction\n\n\n3.5.4 SNAP\nonly 3 bands Spectral feature space (insert img of scatter plot) then we do a tassel cap transformation to combine coefficient to simplify. Principle Component Analysis (PCA) is carried to simplify on dryness for urban, brightness for greeness, wetness for yellow. (insert img). Although there are various way to carry PCA that are readily available e.g., Normalized Difference in Vegetation Index (NDVI).\nNDVI = insert img there are also healthy green vegetation\nNDWI: Normalized Difference in Water Index NDSI: Normalized Difference in Soil Index NDBI: Normalized Difference in Built-up Index\nthe study area could be spread over two tiles (insert img) and different dates. Thus, we combine and take step by step process.\nHowever, in Google Earth Engine (GEE) take all the titles of different dates and calculates the median to calculate …..\nSNAP when open images\nhigh albido:\n10m or landsat 30 m (different spect./ scale) upscaling or downscaling resampling Machine Learning (ML) is used to learn land cover change Spectral Signature vs Spectral Libraries\nRegion of Interest:\n\nPIF: suedo invariant features\n\nw\n\n\ndownload\n\n\nunderstand bands end member analysis/ MESMA\n\n\nsatellite Segments",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Week One: Introduction and Background</span>"
     ]
   }
 ]
