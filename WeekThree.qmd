@@ -1,30 +1,50 @@
-# Week Three
+# Week Three: Remote Sensing Data and Corrections
 
-also make dictionary or glossory in the learning dairy of week 3.
+also make dictionary or glossary in the learning dairy of week 3.
 
 Landsat-9 advanced for better data resolution and better management of resources.
 
 ## Corrections
 
+The satellite imagery holds error from a variety of sources. These error could be from the sensor, the atmosphere, the terrain etc. The scan line correction (SLC) generated for a Whisk broom or spotlight or across track scanners to align the images. These could be possible via the method of regression by adding all of the vertical differences between the blue line and all of the residuals, it should sum to 0. Thus, they must be corrected as may be appropriate. In order to do that, the use of the imagery must be contextualize as discussed below.
+
 ### Geometric Correction
 
-Sain Line Nadir point Topography wind Rotation List of images do linear regression input to output forward mapping X is at the same point (insert img) backward mapping: always go from gold to EO RMSE \< 0.5, more ground point ground control- lower the error
+Depending upon the given coordinate reference system, the remotely sensed data has collected image distortions can be introduced due to the view angle (off-nadir\*), topography (e.g. hills not flat ground), wind (if from a plane), rotation of the earth (from satellite).
 
-Input grid - Output Grid - Resampling
+Tp deal with geometric distortions, Ground Control Points (GPS) are identified to match known points in the image and a reference dataset such as a local map, another image, GPS data from handheld device etc. The coordinates are modeled to give geometric transformation coefficients through the method of linear regression with the distorted x or y as the dependent or independent\*. This is the plotted to minimise the RMSE where Jensen sets a RMSE value of 0.5. A slight shift in the data is the required. So, re-sampling the final raster by method of nearest neighbor, linear, cubic, cubic spline is done. Thus, the input grid to output grid to re-sampling.
 
 ### Atmospheric Correction
 
-Types of particle scattering (insert image) Relative (to something) Dark : DOS Psuedo PIF
+Ideally there are two most important sources of environmental attenuation, the atmospheric scattering and topographic attenuation. Types of particle scattering (insert image) for **Relative (to something)** is done in two ways, the DOS and PIF. The Dark object subtraction (DOS) or histogram adjustment, searches each band for the darkest value then subtracts that from each pixel. Where as psuedo-invariant features (PIFs), assumes brightness pixels linearly related to a base image and applies regression per band, Then adjust the image based on the regression result. It needs to be noticed that y is the value of the base. So, to get y we multiply our new date pixel (x) by the coefficient and add the intercept value. Similarly, it is applies to the rest of the pixels.
 
-adjecency effect
+**Absolute (definitive) Correction** requires to change digital brightness values into scaled surface reflectance. Thereafter, compare these scaled surface reflectance values across the planet. It can be done through atmospheric radiative transfer models from various options. The atmopshierc radiative transfer code such as MODTRAN 4+ and the Second Simulation of the Satellite Signal in the Solar Spectrum (6S) gives the scattering and absorption information which can now be used through python - called Py6S.
 
-### Absolute Correction:
+## Emprical Line Correction
 
-Empirical Line Correction Topographic Correction Spot m Solar Zenith Angle describing illumination angle of source i.e., sun Digital Number (DN): different radio metric resolution DN is spectral radiance equals radiance calibration TOA is Topographical of Atmosphere reflectance is property of the material whereas radiance is light reflect from source as sun TOA reflectance in the air BOA: property of material DN is the roll number on the camera Hemispherical reflectance: all light enter the satellite or sensor Apperant Reflectance:
+The in-situ measurements taken using a field spectrometer that requires measurements at the same time as the satellite overpass. Next, applying the linear regression to the measurements against the satellite data raw digital number in the following equation:
 
-Landsat ARD: already validated level 2 product:
+## Orthorectification correction / topographic correction
+
+The view taken at an angle can create such image distortion where georectification is giving coordinates to an image and orthorectification is removing distortions. Thus, making the pixels viewed at nadir is a straight down view. It requires sensor geometry and an elevation model and corrected through the Software / formulas of Jensen as below:
+
+Various softwares such as QGIS, SAGA GIS, R package topocorr, R package RStoolbox etc. for topographic corrections where atmospheric corrections needs to be done before this.
+
+## Radiometric Calibration
+
+Pre-calibration (below formula) is required in a lab before a sensor is launched, it is then uses these measurements to adjust the data from the sensor. The image brightness and distribution as a Digital Number (or DN) gets captured by the sensors, converted to spectral radiance is the radiometric calibration (in below formula).
+
+## Landsat ARD & surface reflectance
+
+Landsat ARD: already validated level 2 product that provides corrected images for data processing. The Landsat Ecosystem Disturbance Adaptive Processing System (LEDPAS) and the Landsat 8 Surface Reflectance algorithm (L8SR) could make this possible. Noted be about the Level 2 product means something has changed as may come across not a ARD, e.g. very high resolution, drone.
+
+## Joining data sets
+
+To creates a seamless mosaic or image(s) the feather of images together is carried in Remote Sensing. The seamline is dividing line with a base image and "other" or second image with 20-30 percent overlap a histogram is extracted. Next, a histogram matching algorithm is performed which gives similar brightness values of the two images and feathering is conducted.
 
 ## Enhancements
+
+Imagery can be "improved/enhanced" based on the energy reflected and the contrast between features But... How do these methods help in urban environments Does adding complexity to imagery (or creating new datasets) assist us in our aim?
 
 It is contrasting images Other enhancements: NDVI, NBR Local enhancements: Edge enhancements: embossing, filter for example
 
@@ -41,3 +61,5 @@ Clip a rectangle in a small study area
 ### Image fusion
 
 ### Pan sharpen
+
+Footnote: \* - Nadir means directly down Empirical Line Correction Topographic Correction Spot m Solar Zenith Angle describing illumination angle of source i.e., sun Digital Number (DN): different radio metric resolution DN is spectral radiance equals radiance calibration TOA is Topographical of Atmosphere reflectance is property of the material whereas radiance is light reflect from source as sun TOA reflectance in the air BOA: property of material DN is the roll number on the camera Hemispherical reflectance: all light enter the satellite or sensor Apperant Reflectance: solar azimuth = compass angle of the sun (N =0°) 90° (E) at sunrise and 270° (W) at sunset. See Azimuth Angle animation solar zenith = angle of local zenith (above the point on ground) and sun from vertical (90° - elevation) Spectral radiance is the amount of light within a band from a sensor in the field of view (FOV) Radiance refers to any radiation leaving the Earth (i.e. upwelling, toward the sensor. It could be also called Top of Atmosphere (TOA) radiance. Irradiance, is used to describe downwelling radiation reaching the Earth from the sun. Reflectance is a property of a material. Digital number (DN): intensity of the electromagnetic radiation per pixel, pixel values that aren't calibrated and have no unit, have light source, effects of sensor + atmosphere + material, values range from 0 - 255 (Lansat 5) = 8 bit or 0 - 65536 Landsat 8 (12 bit)
