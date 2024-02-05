@@ -1,6 +1,7 @@
 # Week Three: Remote Sensing Data: Corrections and Imaging
 
 ## Summary 
+Before going ahead to understand the image correction and processing, it is worth knowing few interesting things about the remote sensing or earth observation.
 
 ```{r echo=FALSE, out.width='50%', fig.align='center'}
 
