@@ -2,6 +2,19 @@
 
 ## Summary 
 
+```{r echo=FALSE, out.width='50%', fig.align='center'}
+
+knitr::include_graphics('img/Slide1.jpg')
+
+```
+
+
+```{r echo=FALSE, out.width='50%', fig.align='center'}
+
+knitr::include_graphics('img/Slide2.jpg')
+
+```
+
 ### Correction
 
 Corrections are required because the satellite imagery holds error from a variety of sources. These error could be from the sensor, the atmosphere, the terrain etc. The scan line correction (SLC) generated for a Whisk broom or spotlight or across track scanners to align the images. These could be possible via the method of regression by adding all of the vertical differences between the blue line and all of the residuals, it should sum to 0. Thus, they must be corrected as may be appropriate. In order to do that, the use of the imagery must be contextualize. Additionally, a linear regression is mostly used to model and then is re-sampled.
