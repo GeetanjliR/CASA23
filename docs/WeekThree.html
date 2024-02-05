@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Learning Dairy - 5&nbsp; Week Three: Remote Sensing Data and Corrections</title>
+<title>Learning Dairy - 5&nbsp; Week Three: Remote Sensing Data: Corrections and Imaging</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./WeekThree.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week Three: Remote Sensing Data and Corrections</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./WeekThree.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week Three: Remote Sensing Data: Corrections and Imaging</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -139,7 +139,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./WeekThree.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week Three: Remote Sensing Data and Corrections</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week Three: Remote Sensing Data: Corrections and Imaging</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -158,22 +158,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#corrections" id="toc-corrections" class="nav-link active" data-scroll-target="#corrections"><span class="header-section-number">5.1</span> Corrections</a>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">5.1</span> Summary</a>
   <ul class="collapse">
-  <li><a href="#geometric-correction" id="toc-geometric-correction" class="nav-link" data-scroll-target="#geometric-correction"><span class="header-section-number">5.1.1</span> Geometric Correction</a></li>
-  <li><a href="#atmospheric-correction" id="toc-atmospheric-correction" class="nav-link" data-scroll-target="#atmospheric-correction"><span class="header-section-number">5.1.2</span> Atmospheric Correction</a></li>
+  <li><a href="#correction" id="toc-correction" class="nav-link" data-scroll-target="#correction"><span class="header-section-number">5.1.1</span> Correction</a></li>
+  <li><a href="#joining-data-sets" id="toc-joining-data-sets" class="nav-link" data-scroll-target="#joining-data-sets"><span class="header-section-number">5.1.2</span> Joining data sets</a></li>
   </ul></li>
-  <li><a href="#emprical-line-correction" id="toc-emprical-line-correction" class="nav-link" data-scroll-target="#emprical-line-correction"><span class="header-section-number">5.2</span> Emprical Line Correction</a></li>
-  <li><a href="#orthorectification-correction-topographic-correction" id="toc-orthorectification-correction-topographic-correction" class="nav-link" data-scroll-target="#orthorectification-correction-topographic-correction"><span class="header-section-number">5.3</span> Orthorectification correction / topographic correction</a></li>
-  <li><a href="#radiometric-calibration" id="toc-radiometric-calibration" class="nav-link" data-scroll-target="#radiometric-calibration"><span class="header-section-number">5.4</span> Radiometric Calibration</a></li>
-  <li><a href="#landsat-ard-surface-reflectance" id="toc-landsat-ard-surface-reflectance" class="nav-link" data-scroll-target="#landsat-ard-surface-reflectance"><span class="header-section-number">5.5</span> Landsat ARD &amp; surface reflectance</a></li>
-  <li><a href="#joining-data-sets" id="toc-joining-data-sets" class="nav-link" data-scroll-target="#joining-data-sets"><span class="header-section-number">5.6</span> Joining data sets</a></li>
-  <li><a href="#enhancements" id="toc-enhancements" class="nav-link" data-scroll-target="#enhancements"><span class="header-section-number">5.7</span> Enhancements</a></li>
-  <li><a href="#principle-component-analysis" id="toc-principle-component-analysis" class="nav-link" data-scroll-target="#principle-component-analysis"><span class="header-section-number">5.8</span> Principle Component Analysis</a>
-  <ul class="collapse">
-  <li><a href="#image-fusion" id="toc-image-fusion" class="nav-link" data-scroll-target="#image-fusion"><span class="header-section-number">5.8.1</span> Image fusion</a></li>
-  <li><a href="#pan-sharpen" id="toc-pan-sharpen" class="nav-link" data-scroll-target="#pan-sharpen"><span class="header-section-number">5.8.2</span> Pan sharpen</a></li>
-  </ul></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">5.2</span> Application</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">5.3</span> Reflection</a></li>
   </ul>
 </nav>
     </div>
@@ -182,7 +173,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week Three: Remote Sensing Data and Corrections</span></h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week Three: Remote Sensing Data: Corrections and Imaging</span></h1>
 </div>
 
 
@@ -199,63 +190,29 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>also make dictionary or glossary in the learning dairy of week 3.</p>
-<p>Landsat-9 advanced for better data resolution and better management of resources.</p>
-<section id="corrections" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="corrections"><span class="header-section-number">5.1</span> Corrections</h2>
-<p>The satellite imagery holds error from a variety of sources. These error could be from the sensor, the atmosphere, the terrain etc. The scan line correction (SLC) generated for a Whisk broom or spotlight or across track scanners to align the images. These could be possible via the method of regression by adding all of the vertical differences between the blue line and all of the residuals, it should sum to 0. Thus, they must be corrected as may be appropriate. In order to do that, the use of the imagery must be contextualize as discussed below.</p>
-<section id="geometric-correction" class="level3" data-number="5.1.1">
-<h3 data-number="5.1.1" class="anchored" data-anchor-id="geometric-correction"><span class="header-section-number">5.1.1</span> Geometric Correction</h3>
-<p>Depending upon the given coordinate reference system, the remotely sensed data has collected image distortions can be introduced due to the view angle (off-nadir*), topography (e.g.&nbsp;hills not flat ground), wind (if from a plane), rotation of the earth (from satellite).</p>
-<p>Tp deal with geometric distortions, Ground Control Points (GPS) are identified to match known points in the image and a reference dataset such as a local map, another image, GPS data from handheld device etc. The coordinates are modeled to give geometric transformation coefficients through the method of linear regression with the distorted x or y as the dependent or independent*. This is the plotted to minimise the RMSE where Jensen sets a RMSE value of 0.5. A slight shift in the data is the required. So, re-sampling the final raster by method of nearest neighbor, linear, cubic, cubic spline is done. Thus, the input grid to output grid to re-sampling.</p>
+<section id="summary" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">5.1</span> Summary</h2>
+<section id="correction" class="level3" data-number="5.1.1">
+<h3 data-number="5.1.1" class="anchored" data-anchor-id="correction"><span class="header-section-number">5.1.1</span> Correction</h3>
+<p>Corrections are required because the satellite imagery holds error from a variety of sources. These error could be from the sensor, the atmosphere, the terrain etc. The scan line correction (SLC) generated for a Whisk broom or spotlight or across track scanners to align the images. These could be possible via the method of regression by adding all of the vertical differences between the blue line and all of the residuals, it should sum to 0. Thus, they must be corrected as may be appropriate. In order to do that, the use of the imagery must be contextualize. Additionally, a linear regression is mostly used to model and then is re-sampled.</p>
+<p>A <strong>Geometric Correction</strong> depends upon the given coordinate reference system, the remotely sensed data has collected image distortions can be introduced due to the view angle, topography, wind, rotation of the earth. It can be corrected as Ground Control Points (GPS) are identified to match known points in the image and a reference data set such as a local map, another image, GPS data from handheld device etc.</p>
+<p>The second, <strong>Atmospheric Correction (AC)</strong> is required due to the sources of environmental attenuation, i.e., the atmospheric scattering and topographic attenuation. AC done to types of particle scattering for <strong>Relative (to something)</strong> is done in two ways, the DOS and PIF. The Dark object subtraction (DOS) or histogram adjustment, searches each band for the darkest value then subtracts that from each pixel. Where as psuedo-invariant features (PIFs) . <strong>Absolute (definitive) Correction</strong> requires to change digital brightness values into scaled surface reflectance. <strong>Emprical Line Correction8</strong> is an in-situ measurements taken using a field spectrometer that requires measurements at the same time as the satellite overpass. Next, applying the linear regression to the measurements against the satellite data raw digital number in the following equation.</p>
+<p>The third is <strong>Orthorectification correction / topographic correction</strong> is needed due to imagery view angle taken at an angle can create such image distortion where georectification is giving coordinates to an image and orthorectification is removing distortions.</p>
+<p>Lastly, <strong>Radiometric Calibration</strong> is done where a pre-calibration is required in a lab before a sensor is launched, it is then uses these measurements to adjust the data from the sensor. The image brightness and distribution as a Digital Number (or DN) gets captured by the sensors, converted to spectral radiance is the radiometric calibration.</p>
 </section>
-<section id="atmospheric-correction" class="level3" data-number="5.1.2">
-<h3 data-number="5.1.2" class="anchored" data-anchor-id="atmospheric-correction"><span class="header-section-number">5.1.2</span> Atmospheric Correction</h3>
-<p>Ideally there are two most important sources of environmental attenuation, the atmospheric scattering and topographic attenuation. Types of particle scattering (insert image) for <strong>Relative (to something)</strong> is done in two ways, the DOS and PIF. The Dark object subtraction (DOS) or histogram adjustment, searches each band for the darkest value then subtracts that from each pixel. Where as psuedo-invariant features (PIFs), assumes brightness pixels linearly related to a base image and applies regression per band, Then adjust the image based on the regression result. It needs to be noticed that y is the value of the base. So, to get y we multiply our new date pixel (x) by the coefficient and add the intercept value. Similarly, it is applies to the rest of the pixels.</p>
-<p><strong>Absolute (definitive) Correction</strong> requires to change digital brightness values into scaled surface reflectance. Thereafter, compare these scaled surface reflectance values across the planet. It can be done through atmospheric radiative transfer models from various options. The atmopshierc radiative transfer code such as MODTRAN 4+ and the Second Simulation of the Satellite Signal in the Solar Spectrum (6S) gives the scattering and absorption information which can now be used through python - called Py6S.</p>
-</section>
-</section>
-<section id="emprical-line-correction" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="emprical-line-correction"><span class="header-section-number">5.2</span> Emprical Line Correction</h2>
-<p>The in-situ measurements taken using a field spectrometer that requires measurements at the same time as the satellite overpass. Next, applying the linear regression to the measurements against the satellite data raw digital number in the following equation:</p>
-</section>
-<section id="orthorectification-correction-topographic-correction" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="orthorectification-correction-topographic-correction"><span class="header-section-number">5.3</span> Orthorectification correction / topographic correction</h2>
-<p>The view taken at an angle can create such image distortion where georectification is giving coordinates to an image and orthorectification is removing distortions. Thus, making the pixels viewed at nadir is a straight down view. It requires sensor geometry and an elevation model and corrected through the Software / formulas of Jensen as below:</p>
-<p>Various softwares such as QGIS, SAGA GIS, R package topocorr, R package RStoolbox etc. for topographic corrections where atmospheric corrections needs to be done before this.</p>
-</section>
-<section id="radiometric-calibration" class="level2" data-number="5.4">
-<h2 data-number="5.4" class="anchored" data-anchor-id="radiometric-calibration"><span class="header-section-number">5.4</span> Radiometric Calibration</h2>
-<p>Pre-calibration (below formula) is required in a lab before a sensor is launched, it is then uses these measurements to adjust the data from the sensor. The image brightness and distribution as a Digital Number (or DN) gets captured by the sensors, converted to spectral radiance is the radiometric calibration (in below formula).</p>
-</section>
-<section id="landsat-ard-surface-reflectance" class="level2" data-number="5.5">
-<h2 data-number="5.5" class="anchored" data-anchor-id="landsat-ard-surface-reflectance"><span class="header-section-number">5.5</span> Landsat ARD &amp; surface reflectance</h2>
-<p>Landsat ARD: already validated level 2 product that provides corrected images for data processing. The Landsat Ecosystem Disturbance Adaptive Processing System (LEDPAS) and the Landsat 8 Surface Reflectance algorithm (L8SR) could make this possible. Noted be about the Level 2 product means something has changed as may come across not a ARD, e.g.&nbsp;very high resolution, drone.</p>
-</section>
-<section id="joining-data-sets" class="level2" data-number="5.6">
-<h2 data-number="5.6" class="anchored" data-anchor-id="joining-data-sets"><span class="header-section-number">5.6</span> Joining data sets</h2>
-<p>To creates a seamless mosaic or image(s) the feather of images together is carried in Remote Sensing. The seamline is dividing line with a base image and “other” or second image with 20-30 percent overlap a histogram is extracted. Next, a histogram matching algorithm is performed which gives similar brightness values of the two images and feathering is conducted.</p>
-</section>
-<section id="enhancements" class="level2" data-number="5.7">
-<h2 data-number="5.7" class="anchored" data-anchor-id="enhancements"><span class="header-section-number">5.7</span> Enhancements</h2>
-<p>Imagery can be “improved/enhanced” based on the energy reflected and the contrast between features But… How do these methods help in urban environments Does adding complexity to imagery (or creating new datasets) assist us in our aim?</p>
-<p>It is contrasting images Other enhancements: NDVI, NBR Local enhancements: Edge enhancements: embossing, filter for example</p>
-<p>Original - low pass - High pass</p>
-</section>
-<section id="principle-component-analysis" class="level2" data-number="5.8">
-<h2 data-number="5.8" class="anchored" data-anchor-id="principle-component-analysis"><span class="header-section-number">5.8</span> Principle Component Analysis</h2>
-<p>variance to remove of variables of dependence , ALso creating group of similar variables such as social variables, environment variables</p>
-<p>and then groups of similar variables</p>
-<p>Clip a rectangle in a small study area</p>
-<section id="image-fusion" class="level3" data-number="5.8.1">
-<h3 data-number="5.8.1" class="anchored" data-anchor-id="image-fusion"><span class="header-section-number">5.8.1</span> Image fusion</h3>
-</section>
-<section id="pan-sharpen" class="level3" data-number="5.8.2">
-<h3 data-number="5.8.2" class="anchored" data-anchor-id="pan-sharpen"><span class="header-section-number">5.8.2</span> Pan sharpen</h3>
+<section id="joining-data-sets" class="level3" data-number="5.1.2">
+<h3 data-number="5.1.2" class="anchored" data-anchor-id="joining-data-sets"><span class="header-section-number">5.1.2</span> Joining data sets</h3>
+<p>To creates a seamless mosaic or image(s) the feather of images together is carried in Remote Sensing. The seamline is dividing line with a base image and “other” or second image with 20-30 percent overlap a histogram is extracted. Next, a histogram matching algorithm is performed which gives similar brightness values of the two images and feathering is conducted. <strong>Enhancements</strong> of imagery can be “improved/enhanced” based on the energy reflected and the contrast between features. There are other enhancements: NDVI, NBR Local enhancements: Edge enhancements: embossing, filter for example. <strong>Principle Component Analysis</strong> is a variance to remove of variables of dependence , Also used to creating group of similar variables such as social variables, environment variables</p>
 <p>Footnote: * - Nadir means directly down Empirical Line Correction Topographic Correction Spot m Solar Zenith Angle describing illumination angle of source i.e., sun Digital Number (DN): different radio metric resolution DN is spectral radiance equals radiance calibration TOA is Topographical of Atmosphere reflectance is property of the material whereas radiance is light reflect from source as sun TOA reflectance in the air BOA: property of material DN is the roll number on the camera Hemispherical reflectance: all light enter the satellite or sensor Apperant Reflectance: solar azimuth = compass angle of the sun (N =0°) 90° (E) at sunrise and 270° (W) at sunset. See Azimuth Angle animation solar zenith = angle of local zenith (above the point on ground) and sun from vertical (90° - elevation) Spectral radiance is the amount of light within a band from a sensor in the field of view (FOV) Radiance refers to any radiation leaving the Earth (i.e.&nbsp;upwelling, toward the sensor. It could be also called Top of Atmosphere (TOA) radiance. Irradiance, is used to describe downwelling radiation reaching the Earth from the sun. Reflectance is a property of a material. Digital number (DN): intensity of the electromagnetic radiation per pixel, pixel values that aren’t calibrated and have no unit, have light source, effects of sensor + atmosphere + material, values range from 0 - 255 (Lansat 5) = 8 bit or 0 - 65536 Landsat 8 (12 bit)</p>
-
-
 </section>
+</section>
+<section id="application" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="application"><span class="header-section-number">5.2</span> Application</h2>
+</section>
+<section id="reflection" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">5.3</span> Reflection</h2>
+
+
 </section>
 
 </main> <!-- /main -->
