@@ -26,7 +26,7 @@ Lastly, **Radiometric Calibration** is done where a pre-calibration is required 
 
 ### Joining data sets
 
-To creates a seamless mosaic or image(s) the feather of images together is carried in Remote Sensing. The seamline is dividing line with a base image and "other" or second image with 20-30 percent overlap a histogram is extracted. Next, a histogram matching algorithm is performed which gives similar brightness values of the two images and feathering is conducted. **Enhancements** of imagery can be "improved/enhanced" based on the energy reflected and the contrast between features. There are other enhancements: NDVI, NBR Local enhancements: Edge enhancements: embossing, filter for example. **Principle Component Analysis** is a variance to remove of variables of dependence , Also used to creating group of similar variables such as social variables, environment variables
+To creates a seamless mosaic or image(s) the feather of images together is carried in Remote Sensing. The seamline is dividing line with a base image and "other" or second image with 20-30 percent overlap a histogram is extracted. Next, a histogram matching algorithm is performed which gives similar brightness values of the two images and feathering is conducted. **Enhancements** of imagery can be "improved/enhanced" based on the energy reflected and the contrast between features. There are other enhancements: NDVI, NBR Local enhancements: Edge enhancements: embossing, filter for example. **Principle Component Analysis** is a variance to remove of variables of dependence , Also used to creating group of similar variables such as social variables, environment variables.
 
 
 ```{r echo=FALSE, out.width='100%', fig.align='center'}
