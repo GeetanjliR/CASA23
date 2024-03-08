@@ -304,9 +304,49 @@
     "href": "WeekFour.html#reflection",
     "title": "6  WeekFour: Policy and Remote Sensing",
     "section": "6.3 Reflection",
-    "text": "6.3 Reflection\nI liked the part where we carry forward the learning of last term module of CASA0005-GIS and apply linear regression, spatial auto regression (SAR), lag etc. RS standalone cannot help but needs the GIS tools too. There exists dis-integrated effort in term of tool and techniques to resolve spatial problems which the articles refereed in the application part represents too. The details discussed on different sensors data stood out for me. Additionally, we added InSAR learning to last week’s SAR knowledge.",
+    "text": "6.3 Reflection\nI liked the part where we carry forward the learning of last term module of CASA0005-GIS and apply linear regression, spatial auto regression (SAR), lag etc. RS standalone cannot help but needs the GIS tools too. There exists dis-integrated effort in term of tool and techniques to resolve spatial problems which the articles refereed in the application part represents too. The details discussed on different sensors data stood out for me. Additionally, we added InSAR learning to last week’s SAR knowledge.\nReference: Parthasarathy, K.S.S. and Deka, P.C., 2021. Remote sensing and GIS application in assessment of coastal vulnerability and shoreline changes: a review. ISH Journal of Hydraulic Engineering, 27(sup1), pp.588-600. Sowmya, K., John, C. M., & Shrivasthava, N. K. (2015). Urban flood vulnerability zoning of Cochin City, southwest coast of India, using remote sensing and GIS. Natural Hazards, 75, 1271-1286.",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>WeekFour: Policy and Remote Sensing</span>"
+    ]
+  },
+  {
+    "objectID": "WeekFive.html",
+    "href": "WeekFive.html",
+    "title": "8  WeekFive: GEE",
+    "section": "",
+    "text": "8.1 Google Earth Engine",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>WeekFive: GEE</span>"
+    ]
+  },
+  {
+    "objectID": "WeekSix.html",
+    "href": "WeekSix.html",
+    "title": "9  WeekSix: Classification",
+    "section": "",
+    "text": "9.1 Classification",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>WeekSix: Classification</span>"
+    ]
+  },
+  {
+    "objectID": "WeekSeven.html",
+    "href": "WeekSeven.html",
+    "title": "10  WeekSeven: Classification-2",
+    "section": "",
+    "text": "10.1 Classification",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>WeekSeven: Classification-2</span>"
+    ]
+  },
+  {
+    "objectID": "WeekEight.html",
+    "href": "WeekEight.html",
+    "title": "11  WeekEight",
+    "section": "",
+    "text": "11.1 Temperature",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>WeekEight</span>"
     ]
   }
 ]
