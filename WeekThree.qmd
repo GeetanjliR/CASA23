@@ -1,6 +1,7 @@
 # Week Three: Remote Sensing Data: Corrections and Imaging
 
-## Summary 
+## Summary
+
 Before going ahead to understand the image correction and processing, it is worth knowing few interesting things about the remote sensing or earth observation.
 
 ```{r echo=FALSE, out.width='100%', fig.align='center'}
@@ -9,7 +10,7 @@ knitr::include_graphics('img/Slide1.jpg')
 
 ```
 
-`
+\`
 
 ### Correction
 
@@ -23,11 +24,9 @@ The third is **Orthorectification correction / topographic correction** is neede
 
 Lastly, **Radiometric Calibration** is done where a pre-calibration is required in a lab before a sensor is launched, it is then uses these measurements to adjust the data from the sensor. The image brightness and distribution as a Digital Number (or DN) gets captured by the sensors, converted to spectral radiance is the radiometric calibration.
 
-
 ### Joining data sets
 
 To creates a seamless mosaic or image(s) the feather of images together is carried in Remote Sensing. The seamline is dividing line with a base image and "other" or second image with 20-30 percent overlap a histogram is extracted. Next, a histogram matching algorithm is performed which gives similar brightness values of the two images and feathering is conducted. **Enhancements** of imagery can be "improved/enhanced" based on the energy reflected and the contrast between features. There are other enhancements: NDVI, NBR Local enhancements: Edge enhancements: embossing, filter for example. **Principle Component Analysis** is a variance to remove of variables of dependence , Also used to creating group of similar variables such as social variables, environment variables.
-
 
 ```{r echo=FALSE, out.width='100%', fig.align='center'}
 
@@ -35,14 +34,14 @@ knitr::include_graphics('img/Slide2.jpg')
 
 ```
 
-
 **Footnote:** \* - Nadir means directly down Empirical Line Correction Topographic Correction Spot m Solar Zenith Angle describing illumination angle of source i.e., sun Digital Number (DN): different radio metric resolution DN is spectral radiance equals radiance calibration TOA is Topographical of Atmosphere reflectance is property of the material whereas radiance is light reflect from source as sun TOA reflectance in the air BOA: property of material DN is the roll number on the camera Hemispherical reflectance: all light enter the satellite or sensor Apperant Reflectance: solar azimuth = compass angle of the sun (N =0°) 90° (E) at sunrise and 270° (W) at sunset. See Azimuth Angle animation solar zenith = angle of local zenith (above the point on ground) and sun from vertical (90° - elevation) Spectral radiance is the amount of light within a band from a sensor in the field of view (FOV) Radiance refers to any radiation leaving the Earth (i.e. upwelling, toward the sensor. It could be also called Top of Atmosphere (TOA) radiance. Irradiance, is used to describe downwelling radiation reaching the Earth from the sun. Reflectance is a property of a material. Digital number (DN): intensity of the electromagnetic radiation per pixel, pixel values that aren't calibrated and have no unit, have light source, effects of sensor + atmosphere + material, values range from 0 - 255 (Lansat 5) = 8 bit or 0 - 65536 Landsat 8 (12 bit)
 
 ## Application
+
 T. Therry discusses about the three-dimensional (3D) **geometric processing and ortho-rectification** of remote sensing (RS) data as a key issue to the first step in multi-source multi-format data fusion in geographic information systems. The auther adds that the fusion of image data (visible and microwave, panchromatic and multi bands, polarimetric bands, passive and active, etc.), their metadata (GPS, star trackers, inertial system, lens and focal plane, etc.), the associated 3D cartographic data (ground control points, contour lines, digital terrain model (DEM), planimetric features, etc.) is thus a requisite to perform first 3D precise geometric correction and then the ortho-rectification process with DEM. It brings out the state-of-the-art of geometric correction with the source of geometric distortions, the different mathematical models, the methods, algorithms and processing steps to track finally the error propagation during the fusion of the different RS and cartographic data from the image acquisition to the ortho-rectification processes.
- 
-In another article of N, Pahlevan et. al. applies to the application **Spectroradiometer**. The Operational Land Imager (OLI) onboard Landsat-8 that provides high-quality aquatic science products, the most critical of which is the remote sensing reflectance (Rrs), defined as the ratio of water-leaving radiance to the total downwelling irradiance just above water. The quality of the Rrs products has has been extensively assessed by the authors with a comprehensive evaluation of Level-1B, i.e., top of atmosphere reflectance, and Rrs products available from OLI imagery under near-ideal atmospheric conditions in moderately turbid waters.
-They further explains that the Aqua platform (MODISA) indicate slight across-track non-uniformities (< 1%) associated with OLI scenes in the blue bands. Where both product domains (TOA and Rrs), on average, the OLI products were found larger in radiometric responses in the blue channels. Following the implementation of updated vicarious calibration gains and accounting for across-track non-uniformities, matchup analyses **using independent in-situ validation data confirmed improvements in Rrs products**. These findings further support high-fidelity OLI-derived aquatic science products in terms of both demonstrating a robust atmospheric correction method and providing consistent products across OLI's imaging swath.
+
+In another article of N, Pahlevan et. al. applies to the application **Spectroradiometer**. The Operational Land Imager (OLI) onboard Landsat-8 that provides high-quality aquatic science products, the most critical of which is the remote sensing reflectance (Rrs), defined as the ratio of water-leaving radiance to the total downwelling irradiance just above water. The quality of the Rrs products has has been extensively assessed by the authors with a comprehensive evaluation of Level-1B, i.e., top of atmosphere reflectance, and Rrs products available from OLI imagery under near-ideal atmospheric conditions in moderately turbid waters. They further explains that the Aqua platform (MODISA) indicate slight across-track non-uniformities (\< 1%) associated with OLI scenes in the blue bands. Where both product domains (TOA and Rrs), on average, the OLI products were found larger in radiometric responses in the blue channels. Following the implementation of updated vicarious calibration gains and accounting for across-track non-uniformities, matchup analyses **using independent in-situ validation data confirmed improvements in Rrs products**. These findings further support high-fidelity OLI-derived aquatic science products in terms of both demonstrating a robust atmospheric correction method and providing consistent products across OLI's imaging swath.
 
 ## Reflection
-In my earlier experience, I have used the Google earth images for spatial analysis and angle correction or image distortion and scaling were faced. However, I was able to carry out its correction through a tedious way. Looping over this process in addition to downloading parts of map for better resolution to suit local level spatial analysis took enormous effort especially to stitch a basemap. Fortunately, now I found the lecture enriched my knowledge to understand and work in a RS/EO in an efficient and effective way. I know the different types of image correction and enhancements. Cloudy days would be a problem for me as now I know how to use SAR. **That makes me think it is also applicable to fog, smog, darkness and smoke**. I can resonate with tiling. I enjoyed learning the Dark Object Subtraction (DOS) of atmospheric correction. Understanding marginal differences between key concepts such as Radiance (or DN) vs Reflectance etc. held my interest. Moreover, to apply various normalization indexes for example NDVI which in my earlier experience I have come across in many RS researches makes sense to me.   
+
+In my earlier experience, I have used the Google earth images for spatial analysis and angle correction or image distortion and scaling were faced. However, I was able to carry out its correction through a tedious way. Looping over this process in addition to downloading parts of map for better resolution to suit local level spatial analysis took enormous effort especially to stitch a basemap. Fortunately, now I found the lecture enriched my knowledge to understand and work in a RS/EO in an efficient and effective way. I know the different types of image correction and enhancements. Cloudy days would be a problem for me as now I know how to use SAR. **That makes me think it is also applicable to fog, smog, darkness and smoke**. I can resonate with tiling. I enjoyed learning the Dark Object Subtraction (DOS) of atmospheric correction. Understanding marginal differences between key concepts such as Radiance (or DN) vs Reflectance etc. held my interest. Moreover, to apply various normalization indexes for example NDVI which in my earlier experience I have come across in many RS researches makes sense to me.

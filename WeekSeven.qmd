@@ -1,4 +1,67 @@
-# WeekSeven: Classification-2
+# WeekSeven: Classification-2 The Big Question
 
-## Classification
+## Summary
+Data Processing is carried When processing EO data, it's essential to preprocess the data to correct for atmospheric effects, geometric distortions, and radiometric variations. This ensures that the data is suitable for analysis. Processing EO data involves various considerations, including data pre-processing, choosing between pixel and object-based analysis, addressing mixed pixels and objects, and assessing model accuracy using independent reference data and appropriate evaluation metrics. Additionally, accounting for spatial autocorrelation and using advanced techniques like OBIA and spatial cross-validation can enhance the accuracy of classification models.
+
+### Object Based Image Analysis (OBIA)
+Object-Based Image Analysis (OBIA) is an approach to image analysis that considers raster cells as part of objects on the ground rather than treating each cell independently. A raster cell does not directly represent an object on the ground but objects are represented by shapes based on the similarity (homogeneity) or difference (heterogeneity) of the cells, which are grouped into superpixels. The most common method for generating superpixels is the SLIC (Simple Linear Iterative Clustering) Algorithm. This algorithm works by placing regular points on the image and computing spatial distance and color difference to group pixels into homogeneous regions. Tools like Supercells package facilitate the generation of superpixels and allow for customization of parameters such as the number of superpixels (K) and compactness, which balances spatial and color considerations. Before classification, features are often transformed, typically into the LAB color space, to enhance discrimination between objects based on color and spatial characteristics. After feature extraction, average values per object are computed, and classification methods similar to those used in pixel-based analysis can be applied to classify objects.OBIA allows for the computation of various metrics beyond average values, such as length-to-width ratio, to further characterize objects using additional matrics. There are several OBIA classifiers available, each employing slightly different processes. It's essential to choose a classifier that best suits the specific analysis needs and data characteristics. More advanced packages like SegOptim offer algorithms from other software for enhanced object-based analysis capabilities.  
+
+
+### Sub-Pixel Analysis
+Subpixel analysis, also known as Spectral Mixture Analysis (SMA) or Linear Spectral Unmixing, is a method used to determine the proportions or abundances of different land cover types within a single pixel. This analysis calculates the proportion or abundance of different land cover types within a pixel based on the assumption that the reflectance measured at each pixel is a linear combination of endmembers weighted by their associated fractions. Endmembers are spectrally pure representations of different land cover types. Typically, a few endmembers are selected to represent the variability in spectral signatures across the image. The abundance of each endmember within a pixel is determined by multiplying the reflectance of each endmember by its fraction contribution to the best-fit mixed spectrum. It has few issues and consideration as pixel purity, mumber of endmembers and multiple endmember spectral analysis (MESMA). In pixel purity the subpixel analysis assumes that each pixel contains a mixture of endmembers, but in reality, pixels may contain spectrally pure or mixed endmembers, impacting the accuracy of the analysis. In case of number of endmembers, the selection of endmembers is crucial and depends on the complexity of the landscape. In urban areas, the V-I-S model (Vegetation-Impervious surface-Soil) is commonly used to simplify the process. In Multiple Endmember Spectral Analysis (MESMA), allows for the use of multiple endmembers to better capture the spectral variability within a pixel. However, this approach increases computational complexity, and spectral libraries may be used to aid in endmember selection.Thus, careful consideration of pixel purity and endmember selection is necessary to ensure accurate results.
+
+
+### Accuracy
+Accuracy assessment in remote sensing involves assigning accuracy values to classification results, similar to the process in machine learning. Key metrics include Producer Accuracy (PA), User's Accuracy (UA), and Overall Accuracy (OA). Producer Accuracy (PA) also known as recall or true positive rate, PA measures the vertical accuracy of classification results. It assesses how well the classification results meet the expectations of the data creator. User's Accuracy (UA), also referred to as precision or positive predictive value, UA evaluates the horizontal accuracy of classification results. It measures the proportion of pixels that are correctly classified as a known class out of all pixels classified as that class. Overall Accuracy (OA) represents the combined fraction of correctly classified pixels across all land cover types. In assessing accuracy, several terms are used to categorize correct and incorrect classifications:
+
+True Positive (TP): The model predicts the positive class correctly.
+True Negative (TN): The model predicts the negative class correctly.
+False Positive (FP): The model predicts positive, but it is negative.
+False Negative (FN): The model predicts negative, but it is positive.
+Producer's and User's Accuracy are defined as follows:
+
+Producer's Accuracy: TP / (TP + FN)
+User's Accuracy: TP / (TP + FP)
+
+Errors of omission and commission are also considered. Errors of omission occur when a land cover type is omitted from the correct class. It is calculated as 100 - Producer's Accuracy. In contrast, errors of commission involve classified sites for incorrect classifications. It is computed as 100 - User's Accuracy.
+Additionally, the Kappa coefficient is used to assess the agreement between classification results and ground truth data.
+
+Beyond traditional remote sensing accuracy assessment, considerations include the balance between recall (Producer Accuracy) and precision (User Accuracy). The Receiver Operating Characteristic (ROC) Curve and the Area Under the ROC Curve (AUC) are employed to evaluate model performance, especially in binary classification tasks. The ROC Curve plots the true positive rate against the false positive rate, while the AUC represents the probability that the model will rank a randomly chosen positive example higher than a randomly chosen negative example. A higher AUC indicates better model performance, with a perfect classifier achieving an AUC of 1.
+
+
+#### Train and Test Split
+A good approach in machine learning is to split the dataset into training and testing sets. This involves reserving a certain percentage of the original data for training the model and keeping the remaining portion for testing the model's performance. The training set is used to train the model's parameters, while the testing set evaluates the model's performance on unseen data.
+
+#### Leave-One-Out Cross-Validation (LOOCV)
+LOOCV is an extreme form of cross-validation suitable for smaller datasets. In LOOCV, each data point is used as the testing set once, while the rest of the data is used for training. This process is repeated for each data point, resulting in multiple rounds of training and testing.
+
+#### Spatial Cross-Validation
+Spatial cross-validation is a variation of traditional cross-validation that considers spatial relationships in the dataset. It involves partitioning the data into folds while ensuring spatial disjointness, typically using techniques like k-means clustering based on the number of points and a distance metric. This ensures that the training and testing data are not spatially correlated, preventing the model from overfitting to local spatial patterns.
+
+
+
+## Literature Review
+Research conducted by Saba, S.B. et al. explains how timely and exact delineation of landslide is imperative to decision makers for for effective and quick response to such disasters. Their team describe the virtues and drawbacks of pixel, sub-pixel, and Object-Based Image Analysis (OBIA)-based approach for local to regional area, having the problem of accuracy to extract the regional level auxilluary datasets. Whereas the investigation by Qu, L.A. et al. shows concern about the extracting accuracy issue of Land Use Land Cover just by using spectral feature of imagery due to heterogeneity in landform for larger area which they attempt to provide better results using open-source datasets in GEE elucidating along with methods of pixel and object based classification. The study area for the first paper is in Muzaffarabad, Pakistan (Lesser Himalayas) that compares the classification methods based on MLC (Maximum Likelihood Classifier), the Co-Registration of Optically Sensed Images and Correlation (COSI-Corr), and the OBIA using SPOT and ASTER imagery. On the other hand the second research does LULC classification using medium resolution imagery from Landsat-8 OLI data  for the Yangtze River Delta in China.
+
+
+Saba, S.B. et al. carried comparative classification techniques i.e., MLC (Maximum Likelihood Classifier), the Co-Registration of Optically Sensed Images and Correlation (COSI-Corr), and the OBIA using SPOT and ASTER imagery. Qu, L.A. et al. compared the improvement of the accuracy of seven pixels-based and seven object-based random forest classification models. Where Saba, S.B. et al. commented about the overall accuracy improvement of the classification for landslide features using satellite data, Qu, L.A. et al. discovered that the overall accuracy of the classification of Land Use Land Cover using GEE auxiliary datasets can be improved irrespective of types of auxiliary features. Saba, S.B. et al.found that overall accuracy of the OBIA classification depicted the top result with 91.4%, followed by sub-pixel COSI-Corr having 90.9 % and with 80.8 % for pixel-based classification accuracy. Similarly, Qu, L.A. et al. confirmed that the object-based classification achieves higher overall accuracy compared to that obtained by the pixel-based classification. 
+
+
+
+Former group of authors also found that the OBIA result is more spatially consistent than the pixel-based outcomes with speckled pixel effects, and depending on visual interpretation. The later said that the topographic features play the most important role in improving the overall accuracy of classification in the pixel- and object-based models comprising all features. Further, a higher accuracy is achieved when the object-based method is used with only spectral data, small objects on the ground cannot be monitored. However, combined with many types of auxiliary features, the object-based method can identify small objects while also achieving greater accuracy.
+
+
+## Reflection
+OBIA is a powerful approach for image analysis that considers raster cells as part of objects on the ground and employs techniques such as superpixel generation, feature transformation, and classification to extract meaningful information from remote sensing data. 
+
+
+In concluding remarks, it is important to distinguish between object based analysis and pixel based analysis.Pixel-based analysis treats each pixel as a separate entity, while object-based analysis groups pixels into meaningful objects based on spectral and spatial characteristics. 
+
+
+
+Reference:
+Saba, S.B., Ali, M., Turab, S.A., Waseem, M. and Faisal, S., 2023. Comparison of pixel, sub-pixel and object-based image analysis techniques for co-seismic landslides detection in seismically active area in Lesser Himalaya, Pakistan. Natural Hazards, 115(3), pp.2383-2398.
+
+Qu, L.A., Chen, Z., Li, M., Zhi, J. and Wang, H., 2021. Accuracy improvements to pixel-based and object-based lulc classification with auxiliary datasets from Google Earth engine. Remote Sensing, 13(3), p.453.
+
 

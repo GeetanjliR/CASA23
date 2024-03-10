@@ -157,7 +157,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./WeekFive.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">WeekFive: GEE</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">WeekFive: Google Earth Engine (GEE)</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -169,7 +169,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./WeekSeven.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">WeekSeven: Classification-2</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">WeekSeven: Classification-2 The Big Question</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -194,7 +194,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#classification" id="toc-classification" class="nav-link active" data-scroll-target="#classification"><span class="header-section-number">9.1</span> Classification</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">9.1</span> Summary</a>
+  <ul class="collapse">
+  <li><a href="#classification-and-regression-tree-cart" id="toc-classification-and-regression-tree-cart" class="nav-link" data-scroll-target="#classification-and-regression-tree-cart"><span class="header-section-number">9.1.1</span> Classification and Regression Tree (CART)</a></li>
+  <li><a href="#random-forest" id="toc-random-forest" class="nav-link" data-scroll-target="#random-forest"><span class="header-section-number">9.1.2</span> Random Forest</a></li>
+  <li><a href="#working-with-imagery" id="toc-working-with-imagery" class="nav-link" data-scroll-target="#working-with-imagery"><span class="header-section-number">9.1.3</span> Working with Imagery</a></li>
+  </ul></li>
+  <li><a href="#related-literature-findings" id="toc-related-literature-findings" class="nav-link" data-scroll-target="#related-literature-findings"><span class="header-section-number">9.2</span> Related Literature Findings</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">9.3</span> Reflection</a></li>
   </ul>
 </nav>
     </div>
@@ -220,8 +227,32 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="classification" class="level2" data-number="9.1">
-<h2 data-number="9.1" class="anchored" data-anchor-id="classification"><span class="header-section-number">9.1</span> Classification</h2>
+<section id="summary" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">9.1</span> Summary</h2>
+<p>Re-collecting from last week, GEE provides quick, vast data volume handling, systematic and computer-controlled environment for processing, classification, accuracy improvement etc.for pixel imagery data. In the RS cloud computation, the classification of pixel imagery data happens in two ways, supervised and unsupervised. Where supervised classification needs much control and input details on pixel data classification based on outputs of pattern recognition or machine learning, classifier learns patterns in the data, uses that to place labels onto new data, pattern vector used to classify the image by the analysts. The unsupervised classification is not much interfered such as identification of land cover classes aren’t know a prior, requests computer to cluster based on information (e.g.&nbsp;bands), label the clusters, etc. The classification by the machine learning in terms of pattern recognition relating thematic information extraction is also known as intuitive learning. The digital image processing in remote sensing also uses information extraction using AI, such as expert systems, support vector machines, random forest classifier. Finally, the error matrix derives thematic map accuracy assessment using GEE in RS. As an urban spatial science professionals it is important to understand, behind the scene requirements of geospatial cloud computation to be aware and critical of its processes and application in future endeavors.</p>
+<section id="classification-and-regression-tree-cart" class="level3" data-number="9.1.1">
+<h3 data-number="9.1.1" class="anchored" data-anchor-id="classification-and-regression-tree-cart"><span class="header-section-number">9.1.1</span> Classification and Regression Tree (CART)</h3>
+<p>Knowing that ‘Regression’ is also a ML method if finding a line of best fit between the dependent and independent variables, Classification and regression trees (CART) become handy to classify (classification tree) and predict (regression tree) pixel imagery data. Classification tree is useful in pattern recognition on discrete category of data sets such as temperature, rainfall, wind, saturation where as regression tree for continuous dependent variables eg. GCSE. However, the linear regression does not fit, so sub-setting the data (with means of decision tree having root, branch and leaves) into smaller chunks seems doable known as regression tree. These decision tree may go deeper, so a Gini impurity finding the lowest impurity wins. Additionally, in the interest of numerical value, dividing the sections based on thresholds (nodes) and calculate the sum of the squared residuals (SSR) to check the SSR for different thresholds. Setting a minimum number of observations to prevent over fitting, splitting with the lowest SSR root of the tree (starting with) is suggested. The process is repeated across all variable (as root), gives a numeric value unlike category in classification trees.To avoid over fitting, best model holds low bias and low variability (e.g.&nbsp;test and train) may be done through limiting the growth of tree (minimum number of pixels in a leaf, 20 is often) or pruning by identifying the weakest link. The challenge of decision trees with new data makes to use random forest method more appropriate.</p>
+</section>
+<section id="random-forest" class="level3" data-number="9.1.2">
+<h3 data-number="9.1.2" class="anchored" data-anchor-id="random-forest"><span class="header-section-number">9.1.2</span> Random Forest</h3>
+<p>Random forest means having more than one decision tree as many are better than one. Here, the concept of bootstrap samples get implemented, where re-sampling gets done by replacing data to make a decision as ‘bagging’. Thus, about 70% of the ‘training’ data is used in the bootstrap and remaining 30% is left known as out of bag (OOB) samples are the ‘testing’ data, carried for each tree which is repeated for all OOB samples. It is evident that no pruning is required as voting wins. Lastly, a remaining proportion of OOB incorrectly classified is called out of bag error (OOBE). However, there exists the problem of validation data which is different from OOB and never gets included within the decision trees.</p>
+</section>
+<section id="working-with-imagery" class="level3" data-number="9.1.3">
+<h3 data-number="9.1.3" class="anchored" data-anchor-id="working-with-imagery"><span class="header-section-number">9.1.3</span> Working with Imagery</h3>
+<p>Insights about the know-how of supervised and unsupervised classification on pixel data in RS, it becomes imperative to learn its working on imagery. As such machine learning has advanced much, there are generic machine learning algorithms and there are those specific to remote sensing. Under supervised classification, usually pixels are treated in isolation but more as contextual (neighboring pixels), objects (polygons), texture. While, in unsupervised classification operates on clustering also known as k-means, DBSCAN algorithms. Next, the iterative self-organizing data analysis technique (ISODATA) algorithm used for multispectral pattern recognition does cluster busting. Besides, the algorithms learnt i.e., decision trees and random forests; maximum likelihood and support vector machines are two common methods significant to supervised classification. The maximum likehood is a traditional classifier where a prior probability information e.g.&nbsp;60% urban is specified to the data (landcover) most probably to have the values in the pixel, which also fuse data. On the other hand, the support vector machine (SVM) algorithm, set a SVM hyperplane betweem the maximum margin classifier of support vectors. Additionally, 3D and use of a plane supports the process for more than 2 datasets.</p>
+</section>
+</section>
+<section id="related-literature-findings" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="related-literature-findings"><span class="header-section-number">9.2</span> Related Literature Findings</h2>
+<p>The research by Chen, W. et al.&nbsp;carried a comparative assessment of logistic model tree, random forest, and classification and regression tree models for spatial prediction of landslide susceptibility. They found that random forest model showed promising application with success rate of 0.837 and a prediction rate of 0.781 than CART incase of landslide susceptibility mapping in Long County, Georgia. However, a study by team of Mohajane, M. also found the RF (RF-FR) achieved the highest performance (AUC = 0.989) that out performed other methods but interestingly established SVM (AUC = 0.959) to be next supportive after RF, better than CART (AUC = 0.847) in forecasting of the forest fire. The former study applies linear-support vector machine algorithm (L-SVM) to evaluate the predictive capability of the 12 landslide conditioning factors. Whereas, the later researches about the developes Frequency Ratio-Support Vector Machine (FR-SVM) model as one of the hybrid machine learning algorithms to compare with other four i.e., Frequency Ratio-Multilayer Perceptron (FR-MLP), Frequency Ratio-Logistic Regression (FR-LR), Frequency Ratio-Classification and Regression Tree (FR-CART) and Frequency Ratio-Random Forest (FR-RF), for mapping forest fire susceptibility in the north of Morocco. The first study considered twelve landslide-related parameters, including slope angle, slope aspect, plan curvature, profile curvature, altitude, NDVI, land use, distance to faults, distance to roads, distance to rivers, lithology, and rainfall. On the other hand, the second study used 10 independent causal factors including elevation, slope, aspect, distance to roads, distance to residential areas, land use, normalized difference vegetation index (NDVI), rainfall, temperature, and wind speed.</p>
+</section>
+<section id="reflection" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">9.3</span> Reflection</h2>
+<p>Although the lecture was long but it was worth the effort to learn the cool stuffs that happens behind the scene for GEE application in RS. I liked the opening part to relate how the supervised classification of CART and random forest method that drives ahead the machine learning pixel imagery processing through a intuitive learning method of human way. Thus, the jargon such as terms Machine Learning, Cloud Computing, Deep Learning etc. that used to creep me out, has now become a fun learning, exploring and application. Additional, it was so relieving when the professor told us, there are only few bits of codes that can do everything we covered in 84 slides of lecture today that will take all our pain away. Moreover, trying to keep-up in this long lecture made much sense when we related to the concepts of CASA0005 about the linear regression, best line-fit, residual assumption, clustering, k-means, DBSCAN. I was little skeptical about not being in practice with GIS concepts or R-studio but everything just fell into place.</p>
+<p>While pixel imagery data processing get done by classification of supervised and unsupervised algorithms, I am intrigued that the identification and processing of hard or soft surface raises question if we use pixel or object method, which is coming soon… Yeyyi!</p>
+<p>Reference: Chen, W., Xie, X., Wang, J., Pradhan, B., Hong, H., Bui, D.T., Duan, Z. and Ma, J., 2017. A comparative study of logistic model tree, random forest, and classification and regression tree models for spatial prediction of landslide susceptibility. Catena, 151, pp.147-160.</p>
+<p>Mohajane, M., Costache, R., Karimi, F., Pham, Q.B., Essahlaoui, A., Nguyen, H., Laneve, G. and Oudija, F., 2021. Application of remote sensing and machine learning algorithms for forest fire mapping in a Mediterranean area. Ecological Indicators, 129, p.107869.</p>
 
 
 </section>
@@ -616,13 +647,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./WeekFive.html" class="pagination-link  aria-label=" &lt;span="" gee&lt;="" span&gt;"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">WeekFive: GEE</span></span>
+      <a href="./WeekFive.html" class="pagination-link  aria-label=" &lt;span="" google="" earth="" engine="" (gee)&lt;="" span&gt;"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">WeekFive: Google Earth Engine (GEE)</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./WeekSeven.html" class="pagination-link" aria-label="<span class='chapter-number'>10</span>&nbsp; <span class='chapter-title'>WeekSeven: Classification-2</span>">
-        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">WeekSeven: Classification-2</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./WeekSeven.html" class="pagination-link" aria-label="<span class='chapter-number'>10</span>&nbsp; <span class='chapter-title'>WeekSeven: Classification-2 The Big Question</span>">
+        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">WeekSeven: Classification-2 The Big Question</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
