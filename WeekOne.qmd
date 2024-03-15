@@ -54,21 +54,20 @@ In the majority of cases remotely sensed data is raster. Data format is generall
 
 Spatial resolution has the size of the raster grid per pixel (e.g. 20cm or 30m). One can compare the spatial resolution of 10 by 10 cm vs 1 by 1 km.
 
-
 1.  Spectral Resolution
 
-**Spectral Signature** is unique signature given to material on earth or its combination shown through a graph . Sensors are designed to monitor specific range of EM spectrum called band. Different sensors will have different number of bands. **Spectral Resolution** has the number of bands it records data in. Spectral resolution 1 means Bands: range of spectrum, where more rich the band, will have more elements to identify. Spectral resolution means to observe part of spectrum in the window. 
+**Spectral Signature** is unique signature given to material on earth or its combination shown through a graph . Sensors are designed to monitor specific range of EM spectrum called band. Different sensors will have different number of bands. **Spectral Resolution** has the number of bands it records data in. Spectral resolution 1 means Bands: range of spectrum, where more rich the band, will have more elements to identify. Spectral resolution means to observe part of spectrum in the window.
 
 The 7-12 bands are known as multiple spectral bands where as 10-25 bands are hyper spectral bands which has continuous spectrum. It not always satellite can record the bands but ground too known as spectroradiometer which are pure white refernce panels that needs to be calibrated.
 
-1.  Radiometric Resolution
-It identifies differences in light or reflectance, in practice this is the range of possible values. The ability of a sensor to identify and show small differences in energy. The higher the resolution, the more sensitive it is i.e., resolution of 8 bit can have 256 possible values where a resolution of 4 bit has 16 possible values. The more sensitive, the more components to show where as lower the radiometric resolution the lower the quality of the image and possibility to differentiate features.
+1.  Radiometric Resolution It identifies differences in light or reflectance, in practice this is the range of possible values. The ability of a sensor to identify and show small differences in energy. The higher the resolution, the more sensitive it is i.e., resolution of 8 bit can have 256 possible values where a resolution of 4 bit has 16 possible values. The more sensitive, the more components to show where as lower the radiometric resolution the lower the quality of the image and possibility to differentiate features.
 
-1.  Temporal Resolution
+2.  Temporal Resolution
 
 This is the resolution means the time it revisits (e.g. daily, every 7 days, on demand). Its low resolution means it has a large pixel size (e.g. MODIS is 500m by 500m pixel).
 
 ### Other Considerations
+
 geosynchronous orbit (GSO) if the satellite matches the Earth's rotation or if geostationary orbit holds same position, usually only for communications but some sensors are geostationary.
 
 In order to carry data collection for a research question the answers should be looked is about will dictate what sensor is most appropriate size of features, date range, revisit requirement, spectral sensitivity, cost.

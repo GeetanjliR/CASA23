@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Learning Dairy - 11&nbsp; WeekEight</title>
+<title>Learning Dairy - 11&nbsp; WeekEight: Temperature</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./WeekEight.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">WeekEight</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./WeekEight.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">WeekEight: Temperature</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -157,7 +157,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./WeekFive.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">WeekFive: GEE</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">WeekFive: Google Earth Engine (GEE)</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -169,13 +169,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./WeekSeven.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">WeekSeven: Classification-2</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">WeekSeven: Classification-2 The Big Question</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./WeekEight.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">WeekEight</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">WeekEight: Temperature</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -194,7 +194,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#temperature" id="toc-temperature" class="nav-link active" data-scroll-target="#temperature"><span class="header-section-number">11.1</span> Temperature</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">11.1</span> Summary</a>
+  <ul class="collapse">
+  <li><a href="#sar-fundamentals" id="toc-sar-fundamentals" class="nav-link" data-scroll-target="#sar-fundamentals"><span class="header-section-number">11.1.1</span> SAR fundamentals</a></li>
+  <li><a href="#practical-change-detection-with-sar" id="toc-practical-change-detection-with-sar" class="nav-link" data-scroll-target="#practical-change-detection-with-sar"><span class="header-section-number">11.1.2</span> Practical change detection with SAR</a></li>
+  </ul></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">11.2</span> Application</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">11.3</span> Reflection</a></li>
   </ul>
 </nav>
     </div>
@@ -203,7 +209,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">WeekEight</span></h1>
+<h1 class="title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">WeekEight: Temperature</span></h1>
 </div>
 
 
@@ -220,8 +226,29 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="temperature" class="level2" data-number="11.1">
-<h2 data-number="11.1" class="anchored" data-anchor-id="temperature"><span class="header-section-number">11.1</span> Temperature</h2>
+<section id="summary" class="level2" data-number="11.1">
+<h2 data-number="11.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">11.1</span> Summary</h2>
+<section id="sar-fundamentals" class="level3" data-number="11.1.1">
+<h3 data-number="11.1.1" class="anchored" data-anchor-id="sar-fundamentals"><span class="header-section-number">11.1.1</span> SAR fundamentals</h3>
+<p>Synthetic Aperture Radar called as SAR are active sensors that have surface texture data, can see through weather and clouds. Its different wavelengths have different applications. Synthetic Aperture Radar (SAR) is a remote sensing technology that emits electromagnetic signals and records the backscattered signal to generate images. The radar emits signals while moving forward, which creates a longer antenna aperture in the azimuth direction, resulting in higher resolution. SAR sweeps the footprint or swath, imaging pixels multiple times as it moves. This movement is compensated for by combining the received signals to synthesize a longer antenna aperture.</p>
+<p>SAR polarization refers to the orientation of the electromagnetic wave transmitted by the radar. Single polarization SAR emits and receives signals in either horizontal (H) or vertical (V) polarization, while dual polarization SAR transmits and receives both polarizations (HH and VV). Different surfaces respond differently to polarizations, with rough surfaces being more sensitive to VV polarization, volume scattering surfaces to cross-polarizations (VH or HV), and double bounce surfaces to HH polarization.</p>
+<p>SAR signals contain both amplitude (backscatter) and phase data. Backscatter is influenced by surface roughness, volume scattering, and double bounce effects. Phase data is used in interferometric SAR (InSAR) to detect ground movement, with changes in phase indicating surface displacement. InSAR techniques combine multiple SAR images to reveal surface topography or motion.</p>
+<p>Differential InSAR (DInSAR) is used to remove the effects of natural elevation on phase shift, allowing for accurate detection of surface movement. SAR data processing involves converting complex pixel data (I and Q pairs) into visible images using methods like ground range detection, which calculates the intensity (backscatter) of each pixel. These values can be stored in power, amplitude, or decibels (dB).</p>
+<p>Bearing in mind that in GEE only amplitude (backscatter) data is available but to use phase data we need to use SNAP (not considered here), one need to understand that What are we trying to detect, roughness or volume of a material such as polarization, type of material and part of earth (e.g.&nbsp;water).</p>
+</section>
+<section id="practical-change-detection-with-sar" class="level3" data-number="11.1.2">
+<h3 data-number="11.1.2" class="anchored" data-anchor-id="practical-change-detection-with-sar"><span class="header-section-number">11.1.2</span> Practical change detection with SAR</h3>
+<p>Identifying change in SAR data involves various techniques tailored to the statistical characteristics of SAR imagery. Unlike optical data, simple differencing of SAR images to detect change is not suitable due to SAR’s unique statistical properties and sensitivity to calibration errors. Instead, methodologies like ratio images, improved ratio images, log ratio images, and improved ratio log ratio images are used.</p>
+<p>In practice, identifying change can be accomplished through methods such as statistical tests and image collections analysis. Statistical tests assess pixel-wise changes based on standard deviation over time, with higher standard deviation indicating change. Receiver Operating Characteristic (ROC) curves are employed to evaluate change detection accuracy by adjusting classification thresholds, maximizing true positives (correctly identified change) while minimizing false positives (incorrectly identified change).</p>
+<p>Image fusion techniques combine SAR data with optical imagery at different levels: decision level fusion, object level fusion, and image fusion. Decision level fusion involves appending SAR and optical bands as separate layers and then classifying the combined data. Object level fusion requires segmenting imagery into objects before fusion and classification. Image fusion combines pixel values from both SAR and optical data to generate new pixel values for change detection. These methods offer robust approaches to identify change in SAR imagery accurately.</p>
+</section>
+</section>
+<section id="application" class="level2" data-number="11.2">
+<h2 data-number="11.2" class="anchored" data-anchor-id="application"><span class="header-section-number">11.2</span> Application</h2>
+</section>
+<section id="reflection" class="level2" data-number="11.3">
+<h2 data-number="11.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">11.3</span> Reflection</h2>
+<p>Synthetic Aperture Radar (SAR) operates as an active sensor, emitting electromagnetic signals and recording the amplitude (backscatter) and phase data. Key considerations in SAR data interpretation include polarization, which affects how surfaces respond to the radar signal, and permittivity, indicating the reflective properties of materials. The wavelength (or band) of SAR signals influences the type of information captured. In Google Earth Engine (GEE), SAR data typically comprises amplitude (backscatter) information, lacking phase data. SAR data in GEE is presented in three units: power scale (RAW SAR) for statistical analysis, amplitude for visualization purposes, and decibel (dB) scale for detecting differences, which is the default scale in GEE.</p>
 
 
 </section>
@@ -616,8 +643,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./WeekSeven.html" class="pagination-link  aria-label=" &lt;span="" classification-2&lt;="" span&gt;"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">WeekSeven: Classification-2</span></span>
+      <a href="./WeekSeven.html" class="pagination-link  aria-label=" &lt;span="" classification-2="" the="" big="" question&lt;="" span&gt;"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">WeekSeven: Classification-2 The Big Question</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

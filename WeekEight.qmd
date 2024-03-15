@@ -1,3 +1,33 @@
-# WeekEight
+# WeekEight: Temperature
 
-## Temperature
+## Summary
+### SAR fundamentals
+Synthetic Aperture Radar called as SAR are active sensors that have surface texture data, can see through weather and clouds. Its different wavelengths have different applications. Synthetic Aperture Radar (SAR) is a remote sensing technology that emits electromagnetic signals and records the backscattered signal to generate images. The radar emits signals while moving forward, which creates a longer antenna aperture in the azimuth direction, resulting in higher resolution. SAR sweeps the footprint or swath, imaging pixels multiple times as it moves. This movement is compensated for by combining the received signals to synthesize a longer antenna aperture.
+
+SAR polarization refers to the orientation of the electromagnetic wave transmitted by the radar. Single polarization SAR emits and receives signals in either horizontal (H) or vertical (V) polarization, while dual polarization SAR transmits and receives both polarizations (HH and VV). Different surfaces respond differently to polarizations, with rough surfaces being more sensitive to VV polarization, volume scattering surfaces to cross-polarizations (VH or HV), and double bounce surfaces to HH polarization.
+
+SAR signals contain both amplitude (backscatter) and phase data. Backscatter is influenced by surface roughness, volume scattering, and double bounce effects. Phase data is used in interferometric SAR (InSAR) to detect ground movement, with changes in phase indicating surface displacement. InSAR techniques combine multiple SAR images to reveal surface topography or motion.
+
+Differential InSAR (DInSAR) is used to remove the effects of natural elevation on phase shift, allowing for accurate detection of surface movement. SAR data processing involves converting complex pixel data (I and Q pairs) into visible images using methods like ground range detection, which calculates the intensity (backscatter) of each pixel. These values can be stored in power, amplitude, or decibels (dB).
+
+Bearing in mind that in GEE only amplitude (backscatter) data is available but to use phase data we need to use SNAP (not considered here), one need to understand that What are we trying to detect, roughness or volume of a material such as polarization, type of material and part of earth (e.g. water). 
+
+
+
+### Practical change detection with SAR
+Identifying change in SAR data involves various techniques tailored to the statistical characteristics of SAR imagery. Unlike optical data, simple differencing of SAR images to detect change is not suitable due to SAR's unique statistical properties and sensitivity to calibration errors. Instead, methodologies like ratio images, improved ratio images, log ratio images, and improved ratio log ratio images are used.
+
+In practice, identifying change can be accomplished through methods such as statistical tests and image collections analysis. Statistical tests assess pixel-wise changes based on standard deviation over time, with higher standard deviation indicating change. Receiver Operating Characteristic (ROC) curves are employed to evaluate change detection accuracy by adjusting classification thresholds, maximizing true positives (correctly identified change) while minimizing false positives (incorrectly identified change).
+
+Image fusion techniques combine SAR data with optical imagery at different levels: decision level fusion, object level fusion, and image fusion. Decision level fusion involves appending SAR and optical bands as separate layers and then classifying the combined data. Object level fusion requires segmenting imagery into objects before fusion and classification. Image fusion combines pixel values from both SAR and optical data to generate new pixel values for change detection. These methods offer robust approaches to identify change in SAR imagery accurately.
+
+
+
+
+## Application
+
+
+
+
+## Reflection
+Synthetic Aperture Radar (SAR) operates as an active sensor, emitting electromagnetic signals and recording the amplitude (backscatter) and phase data. Key considerations in SAR data interpretation include polarization, which affects how surfaces respond to the radar signal, and permittivity, indicating the reflective properties of materials. The wavelength (or band) of SAR signals influences the type of information captured. In Google Earth Engine (GEE), SAR data typically comprises amplitude (backscatter) information, lacking phase data. SAR data in GEE is presented in three units: power scale (RAW SAR) for statistical analysis, amplitude for visualization purposes, and decibel (dB) scale for detecting differences, which is the default scale in GEE.

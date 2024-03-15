@@ -4,39 +4,8 @@ In the first week, this portfolio has content about the basics of remote sensing
 
 ## Reference
 
-How use tools as assessment
-For learning dairy:
-1.	Xaringan
-2.	Quarto (for individual)
--next week hw to take a Sensor of choice and make a ppt on Xaringan
-Quorto is platform independent to be done next week
---- triple dash slide here
-??? triple ques mark: any ? comments/ presenter view
---Double dash break slide/ 
-Pull-left/ pull-right
---- new slide
-Image folder
-[] hyperlink
-() simple bracket
-Make csv/ excel/ google sheet and load in R
-Citing: Zotero must be updated and better works with bibltx
-CSS: theme
+How use tools as assessment For learning dairy: 1. Xaringan 2. Quarto (for individual) -next week hw to take a Sensor of choice and make a ppt on Xaringan Quorto is platform independent to be done next week --- triple dash slide here ??? triple ques mark: any ? comments/ presenter view --Double dash break slide/ Pull-left/ pull-right --- new slide Image folder \[\] hyperlink () simple bracket Make csv/ excel/ google sheet and load in R Citing: Zotero must be updated and better works with bibltx CSS: theme
 
 ## Quarto
-Bookdown was used earlier was compatible with R but not with other programming language. Then came along quarto with different chapters in different markdown.
-use # for new slide
-Youtube- share-imbed
-Index.rmd-don’t change
-HW: 5-9 slides on sensor put on git/ link in excel shared
-No code on quarto just text
-Use kable for making tables
-reference will be learnt in week 3
-use eval = false when a code need not be read
-to un-render a chapter/ file use '_' underscore in the beginning
-eg _quarto.yml file in the output dir docs
-setup a quarto dairy for this week 
-go back to last edit
-Go to Book, Render, Add, commit, push
-Do render html and not pdf
 
-
+Bookdown was used earlier was compatible with R but not with other programming language. Then came along quarto with different chapters in different markdown. use \# for new slide Youtube- share-imbed Index.rmd-don't change HW: 5-9 slides on sensor put on git/ link in excel shared No code on quarto just text Use kable for making tables reference will be learnt in week 3 use eval = false when a code need not be read to un-render a chapter/ file use '\_' underscore in the beginning eg \_quarto.yml file in the output dir docs setup a quarto dairy for this week go back to last edit Go to Book, Render, Add, commit, push Do render html and not pdf
