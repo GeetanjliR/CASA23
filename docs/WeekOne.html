@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -150,32 +170,26 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./WeekFFour.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">WeekFour: Policy and Remote Sensing</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./WeekFive.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">WeekFive: Google Earth Engine (GEE)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">WeekFive: Google Earth Engine (GEE)</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./WeekSix.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">WeekSix: Classification</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">WeekSix: Classification</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./WeekSeven.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">WeekSeven: Classification-2 The Big Question</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">WeekSeven: Classification-2 The Big Question</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./WeekEight.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">WeekEight: Temperature</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">WeekEight: Temperature</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -194,29 +208,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#remote-sensing-cities-and-environment" id="toc-remote-sensing-cities-and-environment" class="nav-link active" data-scroll-target="#remote-sensing-cities-and-environment"><span class="header-section-number">4</span> Remote Sensing Cities and Environment</a>
-  <ul class="collapse">
-  <li><a href="#satellite" id="toc-satellite" class="nav-link" data-scroll-target="#satellite"><span class="header-section-number">4.1</span> Satellite</a></li>
-  <li><a href="#sensors" id="toc-sensors" class="nav-link" data-scroll-target="#sensors"><span class="header-section-number">4.2</span> Sensors</a>
-  <ul class="collapse">
-  <li><a href="#passive-sensors" id="toc-passive-sensors" class="nav-link" data-scroll-target="#passive-sensors"><span class="header-section-number">4.2.1</span> Passive Sensors</a></li>
-  <li><a href="#active-sensors" id="toc-active-sensors" class="nav-link" data-scroll-target="#active-sensors"><span class="header-section-number">4.2.2</span> Active Sensors</a></li>
-  </ul></li>
-  <li><a href="#electromagnetic-spectrum" id="toc-electromagnetic-spectrum" class="nav-link" data-scroll-target="#electromagnetic-spectrum"><span class="header-section-number">4.3</span> Electromagnetic Spectrum</a></li>
-  <li><a href="#interacting-with-earths-surface" id="toc-interacting-with-earths-surface" class="nav-link" data-scroll-target="#interacting-with-earths-surface"><span class="header-section-number">4.4</span> Interacting with Earth’s surface</a>
-  <ul class="collapse">
-  <li><a href="#sar" id="toc-sar" class="nav-link" data-scroll-target="#sar"><span class="header-section-number">4.4.1</span> SAR</a></li>
-  </ul></li>
-  <li><a href="#data-format" id="toc-data-format" class="nav-link" data-scroll-target="#data-format"><span class="header-section-number">4.5</span> Data Format</a>
-  <ul class="collapse">
-  <li><a href="#other-considerations" id="toc-other-considerations" class="nav-link" data-scroll-target="#other-considerations"><span class="header-section-number">4.5.1</span> Other Considerations</a></li>
-  <li><a href="#electromagnetic-spectrum-1" id="toc-electromagnetic-spectrum-1" class="nav-link" data-scroll-target="#electromagnetic-spectrum-1"><span class="header-section-number">4.5.2</span> Electromagnetic Spectrum</a></li>
-  <li><a href="#atmosphere-correction" id="toc-atmosphere-correction" class="nav-link" data-scroll-target="#atmosphere-correction"><span class="header-section-number">4.5.3</span> Atmosphere Correction</a></li>
-  <li><a href="#snap" id="toc-snap" class="nav-link" data-scroll-target="#snap"><span class="header-section-number">4.5.4</span> SNAP</a></li>
-  </ul></li>
-  </ul></li>
-  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">5</span> Application</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">6</span> Reflection</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">3.1</span> Summary</a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">3.2</span> Application</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">3.3</span> Reflection</a></li>
   </ul>
 </nav>
     </div>
@@ -243,115 +237,59 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>The <strong>aims</strong> of this module will enable <strong>to operationalise remotely sensed Earth observation data for informing decisions on environmental hazards arising from a changing climate, specifically in relation to (a) urban areas and (b) future urban sustainability</strong> that may help to bring about policies in managing earth’s resources and address the problem of climate change.</p>
-<section id="remote-sensing-cities-and-environment" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Remote Sensing Cities and Environment</h1>
-<p>Recent trend on studies around urban area, green space, access to infrastructure, impact on health &amp; well-being has brought the rise of remote sensing cities and environment. NASA defines remote sensing as acquiring information from a distance, by sensors that are mounted on satellites, planes (aerial imagery), drones, phones, free standing on the ground or sea (with hand held devices) etc. (CASA0023).</p>
-<section id="satellite" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="satellite"><span class="header-section-number">4.1</span> Satellite</h2>
-<p>NASA launched Landsat satellites that changed the method of collecting earth’s landscape data popularly known as remote sensing which interchangeably called as ‘Earth Observation’. Scientist started to get more data and details as the NASA went ahead with launches of Landsat1 to Landsat8. So far to receive enormous detailed data about earth’s resources and climate, the best has been Landsat8, With more sensitive sensors scientist can retrieve improved accuracy in data that helps to manage the earth’s resources and climate optimally. For example, study to most subtle change is vegetation is possible now with Landsat8.</p>
-</section>
-<section id="sensors" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="sensors"><span class="header-section-number">4.2</span> Sensors</h2>
-<p>Sensors are mounted on satellites, drones etc. The sensors monitor electromagnetic rays of spectrum. They are of two types</p>
-<section id="passive-sensors" class="level3" data-number="4.2.1">
-<h3 data-number="4.2.1" class="anchored" data-anchor-id="passive-sensors"><span class="header-section-number">4.2.1</span> Passive Sensors</h3>
-<p>Passive sensors are those that does not emit energy but uses the energy that is available i.e., from the sun to reflects back energy. The energy reflected back is in electromagnetic waves. For example human eye, camera, satellite sensor.</p>
-</section>
-<section id="active-sensors" class="level3" data-number="4.2.2">
-<h3 data-number="4.2.2" class="anchored" data-anchor-id="active-sensors"><span class="header-section-number">4.2.2</span> Active Sensors</h3>
-<p>They are those that emit energy. Have an energy source for illumination Actively emits electormagentic waves and then waits to receive Such as: Radar, X-ray, LiDAR Sensors can be mounted on any platform.</p>
-</section>
-</section>
-<section id="electromagnetic-spectrum" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="electromagnetic-spectrum"><span class="header-section-number">4.3</span> Electromagnetic Spectrum</h2>
-<p>It is around us all the time, without which the world around us would not exist is the <strong>Electromagnetic Radiations</strong>. These waves spread across from a very short radiations of gamma rays, x-rays, ultra-violate rays, visible-light waves, infrared waves, micro waves, radio waves. It is collectively known as the electromagnetic Spectrum or EMS. Electromagnetic (EM) waves are energy waves that emits having both electrical and magnetic properties is a two dimensional (2D) property.</p>
-<p>EM waves have crests and troughs like ocean waves and the distance between two crests is known as wavelength, see figure below. While some wavelengths are very long and measured in meters, some are very short and measured in nano-meters. The number of wavelengths passed at a point in 1 second is known as <strong>frequency</strong> of the wave. One wave or cycle per second is known as a Hertz (Hz).</p>
+<section id="summary" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">3.1</span> Summary</h2>
+<p>Recent trend on studies around urban area, green space, access to infrastructure, impact on health &amp; well-being has brought the rise of remote sensing cities and environment. NASA defines remote sensing as acquiring information from a distance, by sensors that are mounted on satellites, planes (aerial imagery), drones, phones, free standing on the ground or sea (with hand held devices) etc. (CASA0023). Today, I learnt of basic term used in optics such as earth observation<sup>1</sup>, satellite<sup>2</sup>, Sensors<sup>3</sup>, electromagnetic spectrum<sup>4</sup>. Then, we got introduced, how does satellite interact with Earth’s surface and few terms were important. Before this radiation are retrieved by the sensors, the electromagnetic radiation (EMR) (e.g.&nbsp;from the sun) experiences surface and atmospheric changes. The surface changes are when energy gets absorbed by the surface energy being transmitted through the surface. There are below term important to understand such as electromagnetic radiation (EMR) <sup>5</sup>, radiant energy<sup>6</sup>, radiant flux<sup>7</sup>, incoming short-wave radiation or shortwave radiation<sup>8</sup>, solar irradiance flux<sup>10</sup>, exitance (emittance) <sup>11</sup> (per unit time - flux).</p>
+<p>Figure-1: Basics of Remote Sensing</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="img/wavelength.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
+<p><img src="img/RS.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
 </figure>
 </div>
 </div>
 </div>
-<p><a href="https://www.khanacademy.org/science/in-in-class11th-physics/in-in-11th-physics-waves/in-in-wave-characteristics/a/wave-characteristics-review-ap-physics-1">Source:</a></p>
+<p><span class="citation" data-cites="remotes2023">(<a href="references.html#ref-remotes2023" role="doc-biblioref"><span>“Remote Sensing - Components, Types, Working and Applications”</span> 2023</a>)</span></p>
+<p>Whereas the atmospheric energy can be scattered by particles in the atmosphere. There are three types of atmospheric scattering are Rayleigh<sup>12</sup>, Mie<sup>13</sup> and Non-selective <sup>14</sup>. There are important concepts around SAR<sup>15</sup> and data format<sup>16</sup> that we will learn in detail in coming weeks. Data formats are of 4 types i.e., Spatial Resolution <sup>17</sup>, Spectral Resolution <sup>18</sup>, Radiometric Resolution <sup>19</sup> and Temporal Resolution <sup>20</sup>.</p>
+<p>Sensors are designed to monitor bands. Different sensors will have different number of bands <sup>21</sup>. <strong>Spectral Resolution</strong> has the number of bands it records data in, example say spectral resolution 1 <sup>22</sup>. Thus, there exists multiple spectral bands <sup>23</sup> and hyper spectral bands<sup>24</sup>. It not always satellite can record the bands from space but from ground too known as spectroradiometer<sup>25</sup>.</p>
+<p>Figure-1: Components of Remote Sensing</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/Components.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><span class="citation" data-cites="abdelhamid">(<a href="references.html#ref-abdelhamid" role="doc-biblioref">Abdelhamid, n.d.</a>)</span></p>
 </section>
-<section id="interacting-with-earths-surface" class="level2" data-number="4.4">
-<h2 data-number="4.4" class="anchored" data-anchor-id="interacting-with-earths-surface"><span class="header-section-number">4.4</span> Interacting with Earth’s surface</h2>
-<p>Before these radiation are retrieved by the sensors, the electromagnetic radiation(EMR) (e.g.&nbsp;from the sun) experiences surface and atmospheric changes. The surface changes are when energy gets absorbed by the surface energy being transmitted through the surface. There are below term important to understand: - Waves of an electromagnetic field, travel through space and carry radiant energy = Electromagnetic radiation (EMR). Waves are part of the EMR spectrum. - Energy carried by EMR waves = radiant energy -Energy per unit of time = radiant flux - Energy from the sun = incoming short wave radiation or shortwave radiation - Energy (solar power) from the sun per unit area per unit time (from electromagnetic radiation) = solar irradiance (per unit time - flux) - Energy leaving a surface per unit area per unit time = Exitance (emittance) (per unit time - flux) - Flux means time here.</p>
-<p>Whereas the atmospheric energy can be scattered by particles in the atmosphere. There are three types of atmospheric scattering: - Rayleigh = particles are very small compared to the wavelength - Mie = particles are the same size compared to the wavelength - Non selective = particles are much larger than the wavelength.</p>
-<section id="sar" class="level3" data-number="4.4.1">
-<h3 data-number="4.4.1" class="anchored" data-anchor-id="sar"><span class="header-section-number">4.4.1</span> SAR</h3>
-<p>Active sensor such as Synthetic Aperture Radar (SAR) can see through clouds. Bidirectional Reflectance Distribution Function (BRDF) are surface interactions where view (e.g.&nbsp;sensor) and illumination (e.g.&nbsp;sun) angles can change. Energy being reflected from the surface that is smooth or diffuse. Thus, BRDF for flat surface, water surface, vegetation surface have got different texture of surface. SAR can also work on polaristion and fluoresence. Satellite (and aerial) sensors are affected by the atmospheric scattering which can be delt with atmospheric correction. These will be discussed in later weeks. The data cant be directly used as energy reflected from Earth to a sensor. Perhaps, it needs correction due to there many interactions that influence the data being created and we use.</p>
+<section id="application" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="application"><span class="header-section-number">3.2</span> Application</h2>
+<p>In remote sensing basics by <span class="citation" data-cites="santosh2014">(<a href="references.html#ref-santosh2014" role="doc-biblioref">Santosh and Sundaresan 2014</a>)</span> have described procedures and principles of collect data through remotely sensed methods. They have discussed the components of remote sensing for instance electromagnetic radiation, energy transmission, radiance flux, and the scattering of electromagnetic radiation. Further, they have described active and passive satellites for remote sensing. While explaining the electromagnetic radiation as atmosphere window or regions of atmosphere is significant to develop remote sensing technology. They continuation to emphasis that in order to study any natural process, wavelength region is importation for image identification and classification remote sensing. Moreover, they explain radiometric processing, image classification, and image interpretation techniques to effectively process and understand remote sensing digital data so as to enrich geo-spatial technology.</p>
+<p>In another study on basics of remote sensing for hydrocarbon identification <span class="citation" data-cites="laake2022">(<a href="references.html#ref-laake2022" role="doc-biblioref">Laake 2022</a>)</span>, a brief history of the development, implementation and utilization of remote sensing has been done. They conclude on basics of electromagnetic waves crossing atmosphere and in water and soil along with their impact on the spectra useable for remote sensing. Depending on the need, it may focus on earth surface, landuse or lithological application. In addition, shallow water and hot arid deserts may be done by sub surface mapping in special cases.</p>
 </section>
-</section>
-<section id="data-format" class="level2" data-number="4.5">
-<h2 data-number="4.5" class="anchored" data-anchor-id="data-format"><span class="header-section-number">4.5</span> Data Format</h2>
-<p>In the majority of cases remotely sensed data is raster. Data format is generally geo.tif. Raster data are stacked vertically in B!, B2, B3 etc.(insert img). LiDAR data points has x,y with the z-dimension to collect attitude and 3D analysis. Data format are of following 4 types:</p>
-<ol type="1">
-<li>Spatial Resolution</li>
-</ol>
-<p>Spatial resolution has the size of the raster grid per pixel (e.g.&nbsp;20cm or 30m). One can compare the spatial resolution of 10 by 10 cm vs 1 by 1 km.</p>
-<ol type="1">
-<li>Spectral Resolution</li>
-</ol>
-<p><strong>Spectral Signature</strong> is unique signature given to material on earth or its combination shown through a graph . Sensors are designed to monitor specific range of EM spectrum called band. Different sensors will have different number of bands. <strong>Spectral Resolution</strong> has the number of bands it records data in. Spectral resolution 1 means Bands: range of spectrum, where more rich the band, will have more elements to identify. Spectral resolution means to observe part of spectrum in the window.</p>
-<p>The 7-12 bands are known as multiple spectral bands where as 10-25 bands are hyper spectral bands which has continuous spectrum. It not always satellite can record the bands but ground too known as spectroradiometer which are pure white refernce panels that needs to be calibrated.</p>
-<ol type="1">
-<li><p>Radiometric Resolution It identifies differences in light or reflectance, in practice this is the range of possible values. The ability of a sensor to identify and show small differences in energy. The higher the resolution, the more sensitive it is i.e., resolution of 8 bit can have 256 possible values where a resolution of 4 bit has 16 possible values. The more sensitive, the more components to show where as lower the radiometric resolution the lower the quality of the image and possibility to differentiate features.</p></li>
-<li><p>Temporal Resolution</p></li>
-</ol>
-<p>This is the resolution means the time it revisits (e.g.&nbsp;daily, every 7 days, on demand). Its low resolution means it has a large pixel size (e.g.&nbsp;MODIS is 500m by 500m pixel).</p>
-<section id="other-considerations" class="level3" data-number="4.5.1">
-<h3 data-number="4.5.1" class="anchored" data-anchor-id="other-considerations"><span class="header-section-number">4.5.1</span> Other Considerations</h3>
-<p>geosynchronous orbit (GSO) if the satellite matches the Earth’s rotation or if geostationary orbit holds same position, usually only for communications but some sensors are geostationary.</p>
-<p>In order to carry data collection for a research question the answers should be looked is about will dictate what sensor is most appropriate size of features, date range, revisit requirement, spectral sensitivity, cost.</p>
-<p>Heads-up for practical: Loading Landsat and Sentinel data, SNAP and R, regions of interest and plot.</p>
-</section>
-<section id="electromagnetic-spectrum-1" class="level3" data-number="4.5.2">
-<h3 data-number="4.5.2" class="anchored" data-anchor-id="electromagnetic-spectrum-1"><span class="header-section-number">4.5.2</span> Electromagnetic Spectrum</h3>
-<p>Landsat vs Sentinel B1, B2, B3 B4 (insert img) and graphs (inster img)</p>
-</section>
-<section id="atmosphere-correction" class="level3" data-number="4.5.3">
-<h3 data-number="4.5.3" class="anchored" data-anchor-id="atmosphere-correction"><span class="header-section-number">4.5.3</span> Atmosphere Correction</h3>
-</section>
-<section id="snap" class="level3" data-number="4.5.4">
-<h3 data-number="4.5.4" class="anchored" data-anchor-id="snap"><span class="header-section-number">4.5.4</span> SNAP</h3>
-<p>only 3 bands Spectral feature space (insert img of scatter plot) then we do a tassel cap transformation to combine coefficient to simplify. Principle Component Analysis (PCA) is carried to simplify on dryness for urban, brightness for greeness, wetness for yellow. (insert img). Although there are various way to carry PCA that are readily available e.g., Normalized Difference in Vegetation Index (NDVI).</p>
-<p>NDVI = insert img there are also healthy green vegetation</p>
-<p>NDWI: Normalized Difference in Water Index NDSI: Normalized Difference in Soil Index NDBI: Normalized Difference in Built-up Index</p>
-<p>the study area could be spread over two tiles (insert img) and different dates. Thus, we combine and take step by step process.</p>
-<p>However, in Google Earth Engine (GEE) take all the titles of different dates and calculates the median to calculate …..</p>
-<p>SNAP when open images</p>
-<p>high albido:</p>
-<p>10m or landsat 30 m (different spect./ scale) upscaling or downscaling resampling Machine Learning (ML) is used to learn land cover change Spectral Signature vs Spectral Libraries</p>
-<p>Region of Interest:</p>
-<dl>
-<dt>PIF: suedo invariant features</dt>
-<dd>
-<p>w</p>
-</dd>
-<dd>
-<p>download</p>
-</dd>
-<dd>
-<p>understand bands end member analysis/ MESMA</p>
-</dd>
-</dl>
-<p>satellite Segments</p>
-</section>
-</section>
-</section>
-<section id="application" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> Application</h1>
-<p>I could find an interesting article by</p>
-</section>
-<section id="reflection" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> Reflection</h1>
+<section id="reflection" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">3.3</span> Reflection</h2>
 <p>Today is day one of our lecture and only know that this lecture is on remote sensing which is something to do with satellites and data. While it has begun, I am stressed as to if this module is gonna be a tough one because I am overwhelmed by my only little knowledge of the term associated with it i.e., “satellite”, “scientists” and most of all “NASA”. It kind of give me a fear of learning as it meant for strong brainiest and brainwaves. The first lecture is over and I feel little better about the above terms as the prof make is quite engaging to understand and breaks it down precisely for my short wavelength. I like the fun facts stated during the lecture for example there are about 27,000 pieces of junks/ waste satellites lying in out in space. What actually resonates mostly for me that in upcoming lectures and practicals one would learn to enable skills that reduces the time of data imaging via use of Google earth engine (GEE) that gives more free resources to process large volumes of data with the advent of cloud computing. With rising demand of earth observation data and analysis there seems potential emergence of policy decisions to make use of remotely sensed data. However, it is filled with jargon that often isn’t as complicated as it sounds. Thus, I look forward to reach the week of GEE but it might be too ambitious for me as of now. So, I am gonna focus week by week.</p>
+<p>.footnote[ <span style="font-size: 10pt;"> [1] NASA launched Landsat satellites that changed the method of collecting earth’s landscape data popularly known as remote sensing which interchangeably called as ‘Earth Observation’. [2] Scientist started to get more data and details as the NASA went ahead with launches of satellites from Landsat1 to Landsat8. So far to receive enormous detailed data about earth’s resources and climate, the best has been Landsat8, with more sensitive sensor scientist can retrieve improved accuracy in data that helps to manage the earth’s resources and climate optimally. For example, study to most subtle change is vegetation is possible now with Landsat8. [3] Sensors are mounted on satellites, drones etc. The sensors monitor electromagnetic rays of spectrum. They are of two types. First, passive sensors are those that does not emit energy but uses the energy that is available i.e., sun. Second, active sensors are the once that emit energy. [4] It is around us all the time, without which the world around us would not exist is the <strong>Electromagnetic Radiations</strong>. These waves spread across from a very short radiations of gamma rays, x-rays, ultra-violate rays, visible-light waves, infrared waves, micro waves, radio waves. It is collectively known as the electromagnetic Spectrum or EMS. [5] Waves of an electromagnetic field, travel through space and carry radiant energy. Waves are part of the EMR spectrum. [6] Energy carried by EMR waves. [7] Energy per unit of time. [8] Energy from the sun. [9] Energy (solar power) from the sun per unit area per unit time (from electromagnetic radiation) [10] Means time here [11] Energy leaving a surface per unit area per unit time [12] Particles are very small compared to the wavelength [13] Particles are the same size compared to the wavelength [14] Particles are much larger than the wavelength [15] Active sensor such as Synthetic Aperture Radar (SAR) can see through clouds. [16] In the majority of cases remotely sensed data is raster. Data format is generally geo.tif. Raster data are stacked vertically in B1, B2, B3 etc.(insert img). LiDAR data points has x, y with the z-dimension to collect attitude and 3D analysis. [17] Spatial resolution has the size of the raster grid per pixel (e.g.&nbsp;20cm or 30m). One can compare the spatial resolution of 10 by 10 cm vs 1 by 1 km. [18] It means to observe part of spectrum in the window. <strong>Spectral Signature</strong> is unique signature given to material on earth or its combination shown through a graph. [19] It identifies differences in light or reflectance, in practice this is the range of possible values. The ability of a sensor to identify and show small differences in energy. The higher the resolution, the more sensitive. [20] This is the resolution means the time it revisits (e.g.&nbsp;daily, every 7 days, on demand). Its low resolution means it has a large pixel size (e.g.&nbsp;MODIS is 500m by 500m pixel). [21] specific range of EM spectrum [22] means Bands: range of spectrum, where richer the band, will have more elements to identify. [23] The 7-12 bands [24] 10-25 bands that has continuous spectrum [25] These are pure white reference panels that needs to be calibrated]</span></p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-abdelhamid" class="csl-entry" role="listitem">
+Abdelhamid, Ghassan. n.d. <span>“BASIC REMOTE SENSING TRAINING OF NON-GRADUATE IMAGERY USERS <span>“</span>AN EXPERIENCE FROM UNITED ARAB EMIRATES, AIR FORCE GROUND <span>…</span>.”</span>
+</div>
+<div id="ref-laake2022" class="csl-entry" role="listitem">
+Laake, Andreas. 2022. <span>“Basics of Remote Sensing.”</span> In, edited by Andreas Laake, 3–20. Cham: Springer International Publishing. <a href="https://doi.org/10.1007/978-3-030-73319-3_1">https://doi.org/10.1007/978-3-030-73319-3_1</a>.
+</div>
+<div id="ref-remotes2023" class="csl-entry" role="listitem">
+<span>“Remote Sensing - Components, Types, Working and Applications.”</span> 2023. <a href="https://www.geeksforgeeks.org/remote-sensing/">https://www.geeksforgeeks.org/remote-sensing/</a>.
+</div>
+<div id="ref-santosh2014" class="csl-entry" role="listitem">
+Santosh, K. M., and J. Sundaresan. 2014. <span>“Remote Sensing Basics.”</span> In, edited by Janardhanan Sundaresan, K M Santosh, Andrea Déri, Rob Roggema, and Ramesh Singh, 279–90. Cham: Springer International Publishing. <a href="https://doi.org/10.1007/978-3-319-01689-4_17">https://doi.org/10.1007/978-3-319-01689-4_17</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
