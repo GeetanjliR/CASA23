@@ -44,7 +44,7 @@
     "href": "references.html",
     "title": "References",
     "section": "",
-    "text": "Abdelhamid, Ghassan. n.d. “BASIC REMOTE SENSING TRAINING OF\nNON-GRADUATE IMAGERY USERS “AN EXPERIENCE FROM UNITED ARAB\nEMIRATES, AIR FORCE GROUND ….”\n\n\nGrolemund, Yihui Xie, J. J. Allaire, Garrett. n.d. Chapter 7\nXaringan Presentations | r Markdown: The Definitive Guide. https://bookdown.org/yihui/rmarkdown/xaringan.html.\n\n\nLaake, Andreas. 2022. “Basics of Remote Sensing.” In,\nedited by Andreas Laake, 3–20. Cham: Springer International Publishing.\nhttps://doi.org/10.1007/978-3-030-73319-3_1.\n\n\n“National Capital Region Planning Board.” n.d. https://ncrpb.nic.in/policies_strategies.html.\n\n\nParthasarathy, K. S. S., and Paresh Chandra Deka. 2021. “Remote\nSensing and GIS Application in Assessment of Coastal Vulnerability and\nShoreline Changes: A Review.” ISH Journal of Hydraulic\nEngineering 27 (sup1): 588–600. https://doi.org/10.1080/09715010.2019.1603086.\n\n\n“Remote Sensing - Components, Types, Working and\nApplications.” 2023. https://www.geeksforgeeks.org/remote-sensing/.\n\n\nSantosh, K. M., and J. Sundaresan. 2014. “Remote Sensing\nBasics.” In, edited by Janardhanan Sundaresan, K M Santosh,\nAndrea Déri, Rob Roggema, and Ramesh Singh, 279–90. Cham: Springer\nInternational Publishing. https://doi.org/10.1007/978-3-319-01689-4_17.\n\n\nSowmya, K., C. M. John, and N. K. Shrivasthava. 2015. “Urban Flood\nVulnerability Zoning of Cochin City, Southwest Coast of India, Using\nRemote Sensing and GIS.” Natural Hazards 75 (2):\n1271–86. https://doi.org/10.1007/s11069-014-1372-4.",
+    "text": "Abdelhamid, Ghassan. n.d. “BASIC REMOTE SENSING TRAINING OF\nNON-GRADUATE IMAGERY USERS “AN EXPERIENCE FROM UNITED ARAB\nEMIRATES, AIR FORCE GROUND ….”\n\n\n“Benefits | Landsat Science.” 2021. https://landsat.gsfc.nasa.gov/benefits/.\n\n\nGrolemund, Yihui Xie, J. J. Allaire, Garrett. n.d. Chapter 7\nXaringan Presentations | r Markdown: The Definitive Guide. https://bookdown.org/yihui/rmarkdown/xaringan.html.\n\n\nLaake, Andreas. 2022. “Basics of Remote Sensing.” In,\nedited by Andreas Laake, 3–20. Cham: Springer International Publishing.\nhttps://doi.org/10.1007/978-3-030-73319-3_1.\n\n\n“National Capital Region Planning Board.” n.d. https://ncrpb.nic.in/policies_strategies.html.\n\n\nParthasarathy, K. S. S., and Paresh Chandra Deka. 2021. “Remote\nSensing and GIS Application in Assessment of Coastal Vulnerability and\nShoreline Changes: A Review.” ISH Journal of Hydraulic\nEngineering 27 (sup1): 588–600. https://doi.org/10.1080/09715010.2019.1603086.\n\n\n“Remote Sensing - Components, Types, Working and\nApplications.” 2023. https://www.geeksforgeeks.org/remote-sensing/.\n\n\nSantosh, K. M., and J. Sundaresan. 2014. “Remote Sensing\nBasics.” In, edited by Janardhanan Sundaresan, K M Santosh,\nAndrea Déri, Rob Roggema, and Ramesh Singh, 279–90. Cham: Springer\nInternational Publishing. https://doi.org/10.1007/978-3-319-01689-4_17.\n\n\nSowmya, K., C. M. John, and N. K. Shrivasthava. 2015. “Urban Flood\nVulnerability Zoning of Cochin City, Southwest Coast of India, Using\nRemote Sensing and GIS.” Natural Hazards 75 (2):\n1271–86. https://doi.org/10.1007/s11069-014-1372-4.",
     "crumbs": [
       "References"
     ]
@@ -154,7 +154,7 @@
     "href": "WeekThree.html",
     "title": "5  Week Three: Remote Sensing Data: Corrections and Imaging",
     "section": "",
-    "text": "5.1 Summary\nBefore going ahead to understand the image correction and processing, it is worth knowing few interesting things about the remote sensing or earth observation.",
+    "text": "5.1 Summary\nBefore going ahead to understand the image correction and processing, it is worth knowing few interesting things about the remote sensing or earth observation.\nHowever, there were new information came to light for me as can be seen below.\n(“Benefits | Landsat Science” 2021)",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week Three: Remote Sensing Data: Corrections and Imaging</span>"
     ]
@@ -264,7 +264,7 @@
     "href": "WeekThree.html#reflection",
     "title": "5  Week Three: Remote Sensing Data: Corrections and Imaging",
     "section": "5.3 Reflection",
-    "text": "5.3 Reflection\nIn my earlier experience, I have used the Google earth images for spatial analysis and angle correction or image distortion and scaling were faced. However, I was able to carry out its correction through a tedious way. Looping over this process in addition to downloading parts of map for better resolution to suit local level spatial analysis took enormous effort especially to stitch a basemap. Fortunately, now I found the lecture enriched my knowledge to understand and work in a RS/EO in an efficient and effective way. I know the different types of image correction and enhancements. Cloudy days would be a problem for me as now I know how to use SAR. That makes me think it is also applicable to fog, smog, darkness and smoke. I can resonate with tiling. I enjoyed learning the Dark Object Subtraction (DOS) of atmospheric correction. Understanding marginal differences between key concepts such as Radiance (or DN) vs Reflectance etc. held my interest. Moreover, to apply various normalization indexes for example NDVI which in my earlier experience I have come across in many RS researches makes sense to me.",
+    "text": "5.3 Reflection\nIn my earlier experience, I have used the Google earth images for spatial analysis and angle correction or image distortion and scaling were faced. However, I was able to carry out its correction through a tedious way. Looping over this process in addition to downloading parts of map for better resolution to suit local level spatial analysis took enormous effort especially to stitch a basemap. Fortunately, now I found the lecture enriched my knowledge to understand and work in a RS/EO in an efficient and effective way. I know the different types of image correction and enhancements. Cloudy days would be a problem for me as now I know how to use SAR. That makes me think it is also applicable to fog, smog, darkness and smoke. I can resonate with tiling. I enjoyed learning the Dark Object Subtraction (DOS) of atmospheric correction. Understanding marginal differences between key concepts such as Radiance (or DN) vs Reflectance etc. held my interest. Moreover, to apply various normalization indexes for example NDVI which in my earlier experience I have come across in many RS researches makes sense to me.\n\n\n\n\n“Benefits | Landsat Science.” 2021. https://landsat.gsfc.nasa.gov/benefits/.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Week Three: Remote Sensing Data: Corrections and Imaging</span>"
     ]
@@ -545,6 +545,16 @@
     "title": "4  Week Two",
     "section": "4.2 Refelection",
     "text": "4.2 Refelection\nIt was interesting to learn how use tools for learning dairy: 1. Xaringan (group presentation) and 2. Quarto (for individual).\n\n\n\n\nGrolemund, Yihui Xie, J. J. Allaire, Garrett. n.d. Chapter 7 Xaringan Presentations | r Markdown: The Definitive Guide. https://bookdown.org/yihui/rmarkdown/xaringan.html.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week Two</span>"
+    ]
+  },
+  {
+    "objectID": "WeekTwo.html#reflection",
+    "href": "WeekTwo.html#reflection",
+    "title": "4  Week Two",
+    "section": "4.2 Reflection",
+    "text": "4.2 Reflection\nIt was interesting to learn how use tools for learning dairy: 1. Xaringan (group presentation) and 2. Quarto (for individual).\n\n\n\n\nGrolemund, Yihui Xie, J. J. Allaire, Garrett. n.d. Chapter 7 Xaringan Presentations | r Markdown: The Definitive Guide. https://bookdown.org/yihui/rmarkdown/xaringan.html.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week Two</span>"
     ]

@@ -6,9 +6,19 @@ Before going ahead to understand the image correction and processing, it is wort
 
 ```{r echo=FALSE, out.width='100%', fig.align='center'}
 
-knitr::include_graphics('img/Slide1.jpg')
+knitr::include_graphics('img/Dis.jpg')
 
 ```
+
+However, there were new information came to light for me as can be seen below.
+
+```{r echo=FALSE, out.width='100%', fig.align='center'}
+
+knitr::include_graphics('img/Fun.jpg')
+
+```
+
+[@benefits2021]
 
 ### Correction
 

@@ -12,6 +12,6 @@ xaringanExtra::embed_xaringan(
 
 [@grolemund]
 
-## Refelection
+## Reflection
 
 It was interesting to learn how use tools for learning dairy: 1. Xaringan (group presentation) and 2. Quarto (for individual).
