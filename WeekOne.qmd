@@ -4,7 +4,7 @@ The **aims** of this module will enable **to operationalise remotely sensed Eart
 
 ## Summary
 
-Recent trend on studies around urban area, green space, access to infrastructure, impact on health & well-being has brought the rise of remote sensing cities and environment. NASA defines remote sensing as acquiring information from a distance, by sensors that are mounted on satellites, planes (aerial imagery), drones, phones, free standing on the ground or sea (with hand held devices) etc. (CASA0023). Today, I learnt of basic term used in optics such as earth observation<sup>1</sup>, satellite<sup>2</sup>, Sensors<sup>3</sup>, electromagnetic spectrum<sup>4</sup>. Then, we got introduced, how does satellite interact with Earth's surface and few terms were important. Before this radiation are retrieved by the sensors, the electromagnetic radiation (EMR) (e.g. from the sun) experiences surface and atmospheric changes. The surface changes are when energy gets absorbed by the surface energy being transmitted through the surface. There are below term important to understand such as electromagnetic radiation (EMR) <sup>5</sup>, radiant energy<sup>6</sup>, radiant flux<sup>7</sup>, incoming short-wave radiation or shortwave radiation<sup>8</sup>, solar irradiance flux<sup>10</sup>, exitance (emittance) <sup>11</sup> (per unit time - flux).
+Recent trend on studies around urban area, green space, access to infrastructure, impact on health & well-being has brought the rise of remote sensing cities and environment. NASA defines remote sensing as acquiring information from a distance, by sensors that are mounted on satellites, planes (aerial imagery), drones, phones, free standing on the ground or sea (with hand held devices) etc. (CASA0023). Today, I learnt of basic term used in optics such as earth observation<sup>1</sup>, satellite<sup>2</sup>, Sensors<sup>3</sup>, electromagnetic spectrum<sup>4</sup> (figure-1). Then, we got introduced, how does satellite interact with Earth's surface and few terms were important. Before this radiation are retrieved by the sensors, the electromagnetic radiation (EMR) (e.g. from the sun) experiences surface and atmospheric changes. The surface changes are when energy gets absorbed by the surface energy being transmitted through the surface. There are below term important to understand such as electromagnetic radiation (EMR) <sup>5</sup>, radiant energy<sup>6</sup>, radiant flux<sup>7</sup>, incoming short-wave radiation or shortwave radiation<sup>8</sup>, solar irradiance flux<sup>10</sup>, exitance (emittance) <sup>11</sup> (per unit time - flux).
 
 Figure-1: Basics of Remote Sensing
 
@@ -16,7 +16,7 @@ knitr::include_graphics('img/RS.jpg')
 
 [@remotes2023]
 
-Whereas the atmospheric energy can be scattered by particles in the atmosphere. There are three types of atmospheric scattering are Rayleigh<sup>12</sup>, Mie<sup>13</sup> and Non-selective <sup>14</sup>. There are important concepts around SAR<sup>15</sup> and data format<sup>16</sup> that we will learn in detail in coming weeks. Data formats are of 4 types i.e., Spatial Resolution <sup>17</sup>, Spectral Resolution <sup>18</sup>, Radiometric Resolution <sup>19</sup> and Temporal Resolution <sup>20</sup>.
+Whereas the atmospheric energy can be scattered by particles in the atmosphere. There are three types of atmospheric scattering are Rayleigh<sup>12</sup>, Mie<sup>13</sup> and Non-selective <sup>14</sup>. There are important concepts around SAR<sup>15</sup> and data format<sup>16</sup> that we will learn in detail in coming weeks. Data formats are of 4 types i.e., Spatial Resolution <sup>17</sup>, Spectral Resolution <sup>18</sup>, Radiometric Resolution <sup>19</sup> and Temporal Resolution <sup>20</sup>. Thus, basic components of remote sensing can be seen in figure-2.
 
 Figure-2: Components of Remote Sensing
 
@@ -28,7 +28,7 @@ knitr::include_graphics('img/Components.png')
 
 [@abdelhamid]
 
-Sensors are designed to monitor bands. Different sensors will have different number of bands <sup>21</sup>. **Spectral Resolution** has the number of bands it records data in, example say spectral resolution 1 <sup>22</sup>. Thus, there exists multiple spectral bands <sup>23</sup> and hyper spectral bands<sup>24</sup>. It not always satellite can record the bands from space but from ground too known as spectroradiometer<sup>25</sup>.
+Sensors are designed to monitor bands. Different sensors will have different number of bands <sup>21</sup>. **Spectral Resolution** has the number of bands it records data in, example say spectral resolution 1 <sup>22</sup>. Thus, there exists multiple spectral bands <sup>23</sup> and hyper spectral bands<sup>24</sup>. It not always satellite can record the bands from space but from ground too known as spectroradiometer<sup>25</sup>. Additionally, below (figure-3) are few remote sensing imaging tried during this week. 
 
 Figure-3: Trying Basics of Remote Sensing for Uttarakhand, India
 
