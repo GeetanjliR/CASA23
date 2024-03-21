@@ -8,9 +8,29 @@ Re-collecting from last week, GEE provides quick, vast data volume handling, sys
 
 Knowing that 'Regression' is also a ML method if finding a line of best fit between the dependent and independent variables, Classification and regression trees (CART) become handy to classify (classification tree) and predict (regression tree) pixel imagery data. Classification tree is useful in pattern recognition on discrete category of data sets such as temperature, rainfall, wind, saturation where as regression tree for continuous dependent variables eg. GCSE. However, the linear regression does not fit, so sub-setting the data (with means of decision tree having root, branch and leaves) into smaller chunks seems doable known as regression tree. These decision tree may go deeper, so a Gini impurity finding the lowest impurity wins. Additionally, in the interest of numerical value, dividing the sections based on thresholds (nodes) and calculate the sum of the squared residuals (SSR) to check the SSR for different thresholds. Setting a minimum number of observations to prevent over fitting, splitting with the lowest SSR root of the tree (starting with) is suggested. The process is repeated across all variable (as root), gives a numeric value unlike category in classification trees.To avoid over fitting, best model holds low bias and low variability (e.g. test and train) may be done through limiting the growth of tree (minimum number of pixels in a leaf, 20 is often) or pruning by identifying the weakest link. The challenge of decision trees with new data makes to use random forest method more appropriate.
 
+Figure-2: Classification and Regression Tree (CART)
+
+```{r echo=FALSE, out.width='80%', fig.align='center'}
+
+knitr::include_graphics('img/CART.jpg')
+
+```
+
+https://nature.com/articles/nmeth.4370
+
 ### Random Forest
 
 Random forest means having more than one decision tree as many are better than one. Here, the concept of bootstrap samples get implemented, where re-sampling gets done by replacing data to make a decision as 'bagging'. Thus, about 70% of the 'training' data is used in the bootstrap and remaining 30% is left known as out of bag (OOB) samples are the 'testing' data, carried for each tree which is repeated for all OOB samples. It is evident that no pruning is required as voting wins. Lastly, a remaining proportion of OOB incorrectly classified is called out of bag error (OOBE). However, there exists the problem of validation data which is different from OOB and never gets included within the decision trees.
+
+Figure-1 Random Forest Analysis
+
+```{r echo=FALSE, out.width='80%', fig.align='center'}
+
+knitr::include_graphics('img/RF.jpg')
+
+```
+
+<https://corporatefinanceinstitute.com/resources/data-science/random-forest/>
 
 ### Working with Imagery
 
