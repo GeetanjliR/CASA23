@@ -2,6 +2,10 @@
 
 In the first week, this portfolio has content about the basics of remote sensing cities and environment and the presentation learning in Xaringan tool. This week learnt about the satellites and presentation tools as Xaringan and Quarto. Additionally, we learned how to create book in quarto.
 
+
+
+
+
 ## Reference
 
 How use tools as assessment For learning dairy: 1. Xaringan 2. Quarto (for individual) -next week hw to take a Sensor of choice and make a ppt on Xaringan Quorto is platform independent to be done next week --- triple dash slide here ??? triple ques mark: any ? comments/ presenter view --Double dash break slide/ Pull-left/ pull-right --- new slide Image folder \[\] hyperlink () simple bracket Make csv/ excel/ google sheet and load in R Citing: Zotero must be updated and better works with bibltx CSS: theme
