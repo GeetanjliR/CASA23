@@ -26,6 +26,8 @@ knitr::include_graphics('img/Components.png')
 
 ```
 
+[@abdelhamid]
+
 Sensors are designed to monitor bands. Different sensors will have different number of bands <sup>21</sup>. **Spectral Resolution** has the number of bands it records data in, example say spectral resolution 1 <sup>22</sup>. Thus, there exists multiple spectral bands <sup>23</sup> and hyper spectral bands<sup>24</sup>. It not always satellite can record the bands from space but from ground too known as spectroradiometer<sup>25</sup>.
 
 Figure-3: Trying Basics of Remote Sensing for Uttarakhand, India
@@ -35,8 +37,6 @@ Figure-3: Trying Basics of Remote Sensing for Uttarakhand, India
 knitr::include_graphics('img/Week1.jpg')
 
 ```
-
-[@abdelhamid]
 
 ## Application
 
