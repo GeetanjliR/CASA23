@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -30,7 +50,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./WeekFFour.html" rel="next">
+<link href="./WeekFive.html" rel="next">
 <link href="./WeekThree.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -150,32 +170,26 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./WeekFFour.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">WeekFour: Policy and Remote Sensing</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./WeekFive.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">WeekFive: Google Earth Engine (GEE)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">WeekFive: Google Earth Engine (GEE)</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./WeekSix.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">WeekSix: Classification</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">WeekSix: Classification</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./WeekSeven.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">WeekSeven: Classification-2 The Big Question</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">WeekSeven: Classification-2 The Big Question</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./WeekEight.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">WeekEight: Temperature</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">WeekEight: Temperature</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -246,19 +260,30 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
+<p><span class="citation" data-cites="national">(<a href="references.html#ref-national" role="doc-biblioref"><span>“National Capital Region Planning Board,”</span> n.d.</a>)</span></p>
 </section>
 </section>
 <section id="application" class="level2" data-number="6.2">
 <h2 data-number="6.2" class="anchored" data-anchor-id="application"><span class="header-section-number">6.2</span> Application</h2>
-<p>The authors K.S.S. Parthasarathy and Paresh Chandra Deka in their article, review on remote sensing and GIS application in assessment of coastal vulnerability and shoreline changes. They review and assess the shoreline changes and the coastal vulnerability index (CVI) providing the insight knowledge for the literature to determine the critical parameter that influences the coast to a greater extent for a particular study. However, the review article they miss on the application of RS aid to regional bodies to mitigate coastal vulnerability and shoreline change. Interestingly, K. Sowmya et al.&nbsp;studies urban flood vulnerability zoning of Cochin City, southwest coast of India, using remote sensing along with GIS tool. Assessing the vulnerability through the application of multi-criteria evaluation approach in a GIS environment using remotely sensed images along with SRTM DEM, census details, city maps and field study, they They prepare a flood vulnerability zoning into categories of low, moderate, high and very high vulnerable areas. In turn they calculate the proportion of area under very high and high category and nature of vulnerability. However, their effort leaves the reader to wonder how to implement the RS and GIS driven study at the spatial level.</p>
+<p>The authors <span class="citation" data-cites="doi:10.1080/09715010.2019.1603086">(<a href="references.html#ref-doi:10.1080/09715010.2019.1603086" role="doc-biblioref">Parthasarathy and Deka 2021</a>)</span> K.S.S. Parthasarathy and Paresh Chandra Deka in their article, review on remote sensing and GIS application in assessment of coastal vulnerability and shoreline changes. They review and assess the shoreline changes and the coastal vulnerability index (CVI) providing the insight knowledge for the literature to determine the critical parameter that influences the coast to a greater extent for a particular study. However, the review article they miss on the application of RS aid to regional bodies to mitigate coastal vulnerability and shoreline change. Interestingly, <span class="citation" data-cites="sowmya2015">(<a href="references.html#ref-sowmya2015" role="doc-biblioref">Sowmya, John, and Shrivasthava 2015</a>)</span> K. Sowmya et al.&nbsp;studies urban flood vulnerability zoning of Cochin City, southwest coast of India, using remote sensing along with GIS tool. Assessing the vulnerability through the application of multi-criteria evaluation approach in a GIS environment using remotely sensed images along with SRTM DEM, census details, city maps and field study, they They prepare a flood vulnerability zoning into categories of low, moderate, high and very high vulnerable areas. In turn they calculate the proportion of area under very high and high category and nature of vulnerability. However, their effort leaves the reader to wonder how to implement the RS and GIS driven study at the spatial level.</p>
 </section>
 <section id="reflection" class="level2" data-number="6.3">
 <h2 data-number="6.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">6.3</span> Reflection</h2>
 <p>I liked the part where we carry forward the learning of last term module of CASA0005-GIS and apply linear regression, spatial auto regression (SAR), lag etc. RS standalone cannot help but needs the GIS tools too. There exists dis-integrated effort in term of tool and techniques to resolve spatial problems which the articles refereed in the application part represents too. The details discussed on different sensors data stood out for me. Additionally, we added InSAR learning to last week’s SAR knowledge.</p>
 <p>Moreover usage of EO data are lost in these efforts. Therefore, the informed EO data policy and decision-making can help achieve their goals and improve urban areas more effectively in a data informed manner. Thus, for such learning the professor designed group exercise to present with a case study to pitch the concern government, the idea of one/ more suitable remote sensing application, data and detail to resolve a pressing matter in their metropolitan area level.</p>
-<p>Reference: Parthasarathy, K.S.S. and Deka, P.C., 2021. Remote sensing and GIS application in assessment of coastal vulnerability and shoreline changes: a review. ISH Journal of Hydraulic Engineering, 27(sup1), pp.588-600. Sowmya, K., John, C. M., &amp; Shrivasthava, N. K. (2015). Urban flood vulnerability zoning of Cochin City, southwest coast of India, using remote sensing and GIS. Natural Hazards, 75, 1271-1286.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-national" class="csl-entry" role="listitem">
+<span>“National Capital Region Planning Board.”</span> n.d. <a href="https://ncrpb.nic.in/policies_strategies.html">https://ncrpb.nic.in/policies_strategies.html</a>.
+</div>
+<div id="ref-doi:10.1080/09715010.2019.1603086" class="csl-entry" role="listitem">
+Parthasarathy, K. S. S., and Paresh Chandra Deka. 2021. <span>“Remote Sensing and GIS Application in Assessment of Coastal Vulnerability and Shoreline Changes: A Review.”</span> <em>ISH Journal of Hydraulic Engineering</em> 27 (sup1): 588–600. <a href="https://doi.org/10.1080/09715010.2019.1603086">https://doi.org/10.1080/09715010.2019.1603086</a>.
+</div>
+<div id="ref-sowmya2015" class="csl-entry" role="listitem">
+Sowmya, K., C. M. John, and N. K. Shrivasthava. 2015. <span>“Urban Flood Vulnerability Zoning of Cochin City, Southwest Coast of India, Using Remote Sensing and GIS.”</span> <em>Natural Hazards</em> 75 (2): 1271–86. <a href="https://doi.org/10.1007/s11069-014-1372-4">https://doi.org/10.1007/s11069-014-1372-4</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -656,8 +681,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./WeekFFour.html" class="pagination-link" aria-label="<span class='chapter-number'>7</span>&nbsp; <span class='chapter-title'>WeekFour: Policy and Remote Sensing</span>">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">WeekFour: Policy and Remote Sensing</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./WeekFive.html" class="pagination-link" aria-label="<span class='chapter-number'>7</span>&nbsp; <span class='chapter-title'>WeekFive: Google Earth Engine (GEE)</span>">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">WeekFive: Google Earth Engine (GEE)</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
