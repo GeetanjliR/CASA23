@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Learning Dairy - 10&nbsp; WeekSeven: Classification-2 The Big Question</title>
+<title>Learning Dairy - 9&nbsp; WeekSeven: Classification-2 The Big Question</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -81,7 +101,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./WeekSeven.html"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">WeekSeven: Classification-2 The Big Question</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./WeekSeven.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">WeekSeven: Classification-2 The Big Question</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -150,32 +170,26 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./WeekFFour.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">WeekFour: Policy and Remote Sensing</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./WeekFive.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">WeekFive: Google Earth Engine (GEE)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">WeekFive: Google Earth Engine (GEE)</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./WeekSix.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">WeekSix: Classification</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">WeekSix: Classification</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./WeekSeven.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">WeekSeven: Classification-2 The Big Question</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">WeekSeven: Classification-2 The Big Question</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./WeekEight.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">WeekEight: Temperature</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">WeekEight: Temperature</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -194,14 +208,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">10.1</span> Summary</a>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">9.1</span> Summary</a>
   <ul class="collapse">
-  <li><a href="#object-based-image-analysis-obia" id="toc-object-based-image-analysis-obia" class="nav-link" data-scroll-target="#object-based-image-analysis-obia"><span class="header-section-number">10.1.1</span> Object Based Image Analysis (OBIA)</a></li>
-  <li><a href="#sub-pixel-analysis" id="toc-sub-pixel-analysis" class="nav-link" data-scroll-target="#sub-pixel-analysis"><span class="header-section-number">10.1.2</span> Sub-Pixel Analysis</a></li>
-  <li><a href="#accuracy" id="toc-accuracy" class="nav-link" data-scroll-target="#accuracy"><span class="header-section-number">10.1.3</span> Accuracy</a></li>
+  <li><a href="#object-based-image-analysis-obia" id="toc-object-based-image-analysis-obia" class="nav-link" data-scroll-target="#object-based-image-analysis-obia"><span class="header-section-number">9.1.1</span> Object Based Image Analysis (OBIA)</a></li>
+  <li><a href="#sub-pixel-analysis" id="toc-sub-pixel-analysis" class="nav-link" data-scroll-target="#sub-pixel-analysis"><span class="header-section-number">9.1.2</span> Sub-Pixel Analysis</a></li>
+  <li><a href="#accuracy" id="toc-accuracy" class="nav-link" data-scroll-target="#accuracy"><span class="header-section-number">9.1.3</span> Accuracy</a></li>
   </ul></li>
-  <li><a href="#literature-review" id="toc-literature-review" class="nav-link" data-scroll-target="#literature-review"><span class="header-section-number">10.2</span> Literature Review</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">10.3</span> Reflection</a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">9.2</span> Application</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">9.3</span> Reflection</a></li>
   </ul>
 </nav>
     </div>
@@ -210,7 +224,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">WeekSeven: Classification-2 The Big Question</span></h1>
+<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">WeekSeven: Classification-2 The Big Question</span></h1>
 </div>
 
 
@@ -227,12 +241,12 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="summary" class="level2" data-number="10.1">
-<h2 data-number="10.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">10.1</span> Summary</h2>
-<p>Data Processing is carried When processing EO data, it’s essential to preprocess the data to correct for atmospheric effects, geometric distortions, and radiometric variations. This ensures that the data is suitable for analysis. Processing EO data involves various considerations, including data pre-processing, choosing between pixel and object-based analysis, addressing mixed pixels and objects, and assessing model accuracy using independent reference data and appropriate evaluation metrics. Additionally, accounting for spatial autocorrelation and using advanced techniques like OBIA and spatial cross-validation can enhance the accuracy of classification models.</p>
-<section id="object-based-image-analysis-obia" class="level3" data-number="10.1.1">
-<h3 data-number="10.1.1" class="anchored" data-anchor-id="object-based-image-analysis-obia"><span class="header-section-number">10.1.1</span> Object Based Image Analysis (OBIA)</h3>
-<p>Object-Based Image Analysis (OBIA) is an approach to image analysis that considers raster cells as part of objects on the ground rather than treating each cell independently. A raster cell does not directly represent an object on the ground but objects are represented by shapes based on the similarity (homogeneity) or difference (heterogeneity) of the cells, which are grouped into superpixels. The most common method for generating superpixels is the SLIC (Simple Linear Iterative Clustering) Algorithm. This algorithm works by placing regular points on the image and computing spatial distance and color difference to group pixels into homogeneous regions. Tools like Supercells package facilitate the generation of superpixels and allow for customization of parameters such as the number of superpixels (K) and compactness, which balances spatial and color considerations. Before classification, features are often transformed, typically into the LAB color space, to enhance discrimination between objects based on color and spatial characteristics. After feature extraction, average values per object are computed, and classification methods similar to those used in pixel-based analysis can be applied to classify objects.OBIA allows for the computation of various metrics beyond average values, such as length-to-width ratio, to further characterize objects using additional matrics. There are several OBIA classifiers available, each employing slightly different processes. It’s essential to choose a classifier that best suits the specific analysis needs and data characteristics. More advanced packages like SegOptim offer algorithms from other software for enhanced object-based analysis capabilities.</p>
+<section id="summary" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">9.1</span> Summary</h2>
+<p>Data processing is essential in handling EO data. When processing EO data, it’s crucial to preprocess the data to correct for atmospheric effects, geometric distortions, and radiometric variations. This ensures that the data is suitable for analysis. Processing EO data involves various considerations, including data pre-processing, choosing between pixel and object-based analysis, addressing mixed pixels and objects, and assessing model accuracy using independent reference data and appropriate evaluation metrics. Additionally, accounting for spatial autocorrelation and using advanced techniques like OBIA and spatial cross-validation can enhance the accuracy of classification models.</p>
+<section id="object-based-image-analysis-obia" class="level3" data-number="9.1.1">
+<h3 data-number="9.1.1" class="anchored" data-anchor-id="object-based-image-analysis-obia"><span class="header-section-number">9.1.1</span> Object Based Image Analysis (OBIA)</h3>
+<p>Object-Based Image Analysis (OBIA) is an approach to image analysis that considers raster cells as part of objects on the ground rather than treating each cell independently. A raster cell does not directly represent an object on the ground but objects are represented by shapes based on the similarity (homogeneity) or difference (heterogeneity) of the cells, which are grouped into superpixels. The most common method for generating superpixels is the SLIC (Simple Linear Iterative Clustering) Algorithm. This algorithm works by placing regular points on the image and computing spatial distance and color difference to group pixels into homogeneous regions. Tools like Supercell’s package facilitate the generation of superpixels and allow for customization of parameters such as the number of superpixels (K) and compactness, which balances spatial and color considerations. Before classification, features are often transformed, typically into the LAB color space, to enhance discrimination between objects based on color and spatial characteristics. After feature extraction, average values per object are computed, and classification methods similar to those used in pixel-based analysis can be applied to classify objects.OBIA allows for the computation of various metrics beyond average values, such as length-to-width ratio, to further characterize objects using additional metrics. There are several OBIA classifiers available, each employing slightly different processes. It’s essential to choose a classifier that best suits the specific analysis needs and data characteristics. More advanced packages like SegOptim offer algorithms from other software for enhanced object-based analysis capabilities.</p>
 <p>Figure-1: Object Based Image Analysis (OBIA)</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
@@ -245,9 +259,9 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p>https://landinfo.com/image-classification-object-based-image-analysis-obia/</p>
 </section>
-<section id="sub-pixel-analysis" class="level3" data-number="10.1.2">
-<h3 data-number="10.1.2" class="anchored" data-anchor-id="sub-pixel-analysis"><span class="header-section-number">10.1.2</span> Sub-Pixel Analysis</h3>
-<p>Subpixel analysis, also known as Spectral Mixture Analysis (SMA) or Linear Spectral Unmixing, is a method used to determine the proportions or abundances of different land cover types within a single pixel. This analysis calculates the proportion or abundance of different land cover types within a pixel based on the assumption that the reflectance measured at each pixel is a linear combination of endmembers weighted by their associated fractions. Endmembers are spectrally pure representations of different land cover types. Typically, a few endmembers are selected to represent the variability in spectral signatures across the image. The abundance of each endmember within a pixel is determined by multiplying the reflectance of each endmember by its fraction contribution to the best-fit mixed spectrum. It has few issues and consideration as pixel purity, mumber of endmembers and multiple endmember spectral analysis (MESMA). In pixel purity the subpixel analysis assumes that each pixel contains a mixture of endmembers, but in reality, pixels may contain spectrally pure or mixed endmembers, impacting the accuracy of the analysis. In case of number of endmembers, the selection of endmembers is crucial and depends on the complexity of the landscape. In urban areas, the V-I-S model (Vegetation-Impervious surface-Soil) is commonly used to simplify the process. In Multiple Endmember Spectral Analysis (MESMA), allows for the use of multiple endmembers to better capture the spectral variability within a pixel. However, this approach increases computational complexity, and spectral libraries may be used to aid in endmember selection.Thus, careful consideration of pixel purity and endmember selection is necessary to ensure accurate results.</p>
+<section id="sub-pixel-analysis" class="level3" data-number="9.1.2">
+<h3 data-number="9.1.2" class="anchored" data-anchor-id="sub-pixel-analysis"><span class="header-section-number">9.1.2</span> Sub-Pixel Analysis</h3>
+<p>Subpixel analysis, also known as Spectral Mixture Analysis (SMA) or Linear Spectral Unmixing, is a method used to determine the proportions or abundances of different land cover types within a single pixel. This analysis calculates the proportion or abundance of different land cover types within a pixel based on the assumption that the reflectance measured at each pixel is a linear combination of endmembers weighted by their associated fractions. Endmembers are spectrally pure representations of different land cover types. Typically, a few endmembers are selected to represent the variability in spectral signatures across the image. The abundance of each endmember within a pixel is determined by multiplying the reflectance of each endmember by its fraction contribution to the best-fit mixed spectrum. It has few issues and consideration as pixel purity, number of endmembers and multiple endmember spectral analysis (MESMA). In pixel purity the subpixel analysis assumes that each pixel contains a mixture of endmembers, but in reality, pixels may contain spectrally pure or mixed endmembers, impacting the accuracy of the analysis. In the case of the number of endmembers, the selection of endmembers is crucial and depends on the complexity of the landscape. In urban areas, the V-I-S model (Vegetation-Impervious surface-Soil) is commonly used to simplify the process. Multiple Endmember Spectral Analysis (MESMA), allows for the use of multiple endmembers to better capture the spectral variability within a pixel. However, this approach increases computational complexity, and spectral libraries may be used to aid in endmember selection.Thus, careful consideration of pixel purity and endmember selection is necessary to ensure accurate results.</p>
 <p>Figure-2: Sub-Pixel Analysis</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
@@ -260,41 +274,63 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p>https://www.researchgate.net/figure/Illustrating-the-difference-between-per-pixel-and-sub-pixel-classification-mapping_fig1_357114787</p>
 </section>
-<section id="accuracy" class="level3" data-number="10.1.3">
-<h3 data-number="10.1.3" class="anchored" data-anchor-id="accuracy"><span class="header-section-number">10.1.3</span> Accuracy</h3>
-<p>Accuracy assessment in remote sensing involves assigning accuracy values to classification results, similar to the process in machine learning. Key metrics include Producer Accuracy (PA), User’s Accuracy (UA), and Overall Accuracy (OA). Producer Accuracy (PA) also known as recall or true positive rate, PA measures the vertical accuracy of classification results. It assesses how well the classification results meet the expectations of the data creator. User’s Accuracy (UA), also referred to as precision or positive predictive value, UA evaluates the horizontal accuracy of classification results. It measures the proportion of pixels that are correctly classified as a known class out of all pixels classified as that class. Overall Accuracy (OA) represents the combined fraction of correctly classified pixels across all land cover types. In assessing accuracy, several terms are used to categorize correct and incorrect classifications:</p>
+<section id="accuracy" class="level3" data-number="9.1.3">
+<h3 data-number="9.1.3" class="anchored" data-anchor-id="accuracy"><span class="header-section-number">9.1.3</span> Accuracy</h3>
+<p>Accuracy assessment in remote sensing involves assigning accuracy values to classification results, similar to the process in machine learning. Key metrics include Producer Accuracy (PA), User’s Accuracy (UA), and Overall Accuracy (OA). Producer Accuracy (PA), also known as recall or true positive rate, measures the vertical accuracy of classification results. It assesses how well the classification results meet the expectations of the data creator. User’s Accuracy (UA), also referred to as precision or positive predictive value, evaluates the horizontal accuracy of classification results. It measures the proportion of pixels that are correctly classified as a known class out of all pixels classified as that class. Overall Accuracy (OA) represents the combined fraction of correctly classified pixels across all land cover types.</p>
+<p>In assessing accuracy, several terms are used to categorize correct and incorrect classifications:</p>
 <p>True Positive (TP): The model predicts the positive class correctly. True Negative (TN): The model predicts the negative class correctly. False Positive (FP): The model predicts positive, but it is negative. False Negative (FN): The model predicts negative, but it is positive. Producer’s and User’s Accuracy are defined as follows:</p>
 <p>Producer’s Accuracy: TP / (TP + FN) User’s Accuracy: TP / (TP + FP)</p>
 <p>Errors of omission and commission are also considered. Errors of omission occur when a land cover type is omitted from the correct class. It is calculated as 100 - Producer’s Accuracy. In contrast, errors of commission involve classified sites for incorrect classifications. It is computed as 100 - User’s Accuracy. Additionally, the Kappa coefficient is used to assess the agreement between classification results and ground truth data.</p>
 <p>Beyond traditional remote sensing accuracy assessment, considerations include the balance between recall (Producer Accuracy) and precision (User Accuracy). The Receiver Operating Characteristic (ROC) Curve and the Area Under the ROC Curve (AUC) are employed to evaluate model performance, especially in binary classification tasks. The ROC Curve plots the true positive rate against the false positive rate, while the AUC represents the probability that the model will rank a randomly chosen positive example higher than a randomly chosen negative example. A higher AUC indicates better model performance, with a perfect classifier achieving an AUC of 1.</p>
-<section id="train-and-test-split" class="level4" data-number="10.1.3.1">
-<h4 data-number="10.1.3.1" class="anchored" data-anchor-id="train-and-test-split"><span class="header-section-number">10.1.3.1</span> Train and Test Split</h4>
+<section id="train-and-test-split" class="level4" data-number="9.1.3.1">
+<h4 data-number="9.1.3.1" class="anchored" data-anchor-id="train-and-test-split"><span class="header-section-number">9.1.3.1</span> Train and Test Split</h4>
 <p>A good approach in machine learning is to split the dataset into training and testing sets. This involves reserving a certain percentage of the original data for training the model and keeping the remaining portion for testing the model’s performance. The training set is used to train the model’s parameters, while the testing set evaluates the model’s performance on unseen data.</p>
 </section>
-<section id="leave-one-out-cross-validation-loocv" class="level4" data-number="10.1.3.2">
-<h4 data-number="10.1.3.2" class="anchored" data-anchor-id="leave-one-out-cross-validation-loocv"><span class="header-section-number">10.1.3.2</span> Leave-One-Out Cross-Validation (LOOCV)</h4>
+<section id="leave-one-out-cross-validation-loocv" class="level4" data-number="9.1.3.2">
+<h4 data-number="9.1.3.2" class="anchored" data-anchor-id="leave-one-out-cross-validation-loocv"><span class="header-section-number">9.1.3.2</span> Leave-One-Out Cross-Validation (LOOCV)</h4>
 <p>LOOCV is an extreme form of cross-validation suitable for smaller datasets. In LOOCV, each data point is used as the testing set once, while the rest of the data is used for training. This process is repeated for each data point, resulting in multiple rounds of training and testing.</p>
 </section>
-<section id="spatial-cross-validation" class="level4" data-number="10.1.3.3">
-<h4 data-number="10.1.3.3" class="anchored" data-anchor-id="spatial-cross-validation"><span class="header-section-number">10.1.3.3</span> Spatial Cross-Validation</h4>
-<p>Spatial cross-validation is a variation of traditional cross-validation that considers spatial relationships in the dataset. It involves partitioning the data into folds while ensuring spatial disjointness, typically using techniques like k-means clustering based on the number of points and a distance metric. This ensures that the training and testing data are not spatially correlated, preventing the model from overfitting to local spatial patterns.</p>
+<section id="spatial-cross-validation" class="level4" data-number="9.1.3.3">
+<h4 data-number="9.1.3.3" class="anchored" data-anchor-id="spatial-cross-validation"><span class="header-section-number">9.1.3.3</span> Spatial Cross-Validation</h4>
+<p>Spatial cross-validation is a variation of traditional cross-validation that considers spatial relationships in the dataset. It involves partitioning the data into folds while ensuring spatial disjointness, typically using techniques like k-means clustering based on the number of points and a distance metric. This ensures that the training and testing data are not spatially correlated, preventing the model from overfitting to local spatial patterns. The process is illustrated in figure-3 for Delhi.</p>
+<p>Figure-3: Accuracy, OBIA, Super-pixel Analysis for Delhi, India</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/Classification2.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
 </section>
 </section>
-<section id="literature-review" class="level2" data-number="10.2">
-<h2 data-number="10.2" class="anchored" data-anchor-id="literature-review"><span class="header-section-number">10.2</span> Literature Review</h2>
-<p>Research conducted by Saba, S.B. et al.&nbsp;explains how timely and exact delineation of landslide is imperative to decision makers for for effective and quick response to such disasters. Their team describe the virtues and drawbacks of pixel, sub-pixel, and Object-Based Image Analysis (OBIA)-based approach for local to regional area, having the problem of accuracy to extract the regional level auxilluary datasets. Whereas the investigation by Qu, L.A. et al.&nbsp;shows concern about the extracting accuracy issue of Land Use Land Cover just by using spectral feature of imagery due to heterogeneity in landform for larger area which they attempt to provide better results using open-source datasets in GEE elucidating along with methods of pixel and object based classification. The study area for the first paper is in Muzaffarabad, Pakistan (Lesser Himalayas) that compares the classification methods based on MLC (Maximum Likelihood Classifier), the Co-Registration of Optically Sensed Images and Correlation (COSI-Corr), and the OBIA using SPOT and ASTER imagery. On the other hand the second research does LULC classification using medium resolution imagery from Landsat-8 OLI data for the Yangtze River Delta in China.</p>
-<p>Saba, S.B. et al.&nbsp;carried comparative classification techniques i.e., MLC (Maximum Likelihood Classifier), the Co-Registration of Optically Sensed Images and Correlation (COSI-Corr), and the OBIA using SPOT and ASTER imagery. Qu, L.A. et al.&nbsp;compared the improvement of the accuracy of seven pixels-based and seven object-based random forest classification models. Where Saba, S.B. et al.&nbsp;commented about the overall accuracy improvement of the classification for landslide features using satellite data, Qu, L.A. et al.&nbsp;discovered that the overall accuracy of the classification of Land Use Land Cover using GEE auxiliary datasets can be improved irrespective of types of auxiliary features. Saba, S.B. et al.found that overall accuracy of the OBIA classification depicted the top result with 91.4%, followed by sub-pixel COSI-Corr having 90.9 % and with 80.8 % for pixel-based classification accuracy. Similarly, Qu, L.A. et al.&nbsp;confirmed that the object-based classification achieves higher overall accuracy compared to that obtained by the pixel-based classification.</p>
-<p>Former group of authors also found that the OBIA result is more spatially consistent than the pixel-based outcomes with speckled pixel effects, and depending on visual interpretation. The later said that the topographic features play the most important role in improving the overall accuracy of classification in the pixel- and object-based models comprising all features. Further, a higher accuracy is achieved when the object-based method is used with only spectral data, small objects on the ground cannot be monitored. However, combined with many types of auxiliary features, the object-based method can identify small objects while also achieving greater accuracy.</p>
+<section id="application" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="application"><span class="header-section-number">9.2</span> Application</h2>
+<p>Research conducted by <span class="citation" data-cites="saba2022">(<a href="references.html#ref-saba2022" role="doc-biblioref">Saba et al. 2022</a>)</span> explains how timely and exact delineation of landslides is imperative for decision-makers to respond effectively and swiftly to such disasters. Their team describes the virtues and drawbacks of pixel, sub-pixel, and Object-Based Image Analysis (OBIA)-based approaches for local to regional areas, highlighting the challenge of accuracy in extracting regional-level auxiliary datasets. Meanwhile, the investigation by <span class="citation" data-cites="qu2021">(<a href="references.html#ref-qu2021" role="doc-biblioref">Qu et al. 2021</a>)</span> addresses concerns about the accuracy of extracting Land Use Land Cover (LULC) solely using spectral features of imagery due to heterogeneity in landforms for larger areas. They attempt to provide better results using open-source datasets in GEE, elucidating methods of pixel and object-based classification. The study area for the first paper is in Muzaffarabad, Pakistan (Lesser Himalayas), where they compare classification methods based on MLC (Maximum Likelihood Classifier), the Co-Registration of Optically Sensed Images and Correlation (COSI-Corr), and OBIA using SPOT and ASTER imagery. On the other hand, the second research focuses on LULC classification using medium-resolution imagery from Landsat-8 OLI data for the Yangtze River Delta in China.</p>
+<p>Saba, S.B. et al.&nbsp;employed comparative classification techniques, including MLC, COSI-Corr, and OBIA using SPOT and ASTER imagery. Qu, L.A. et al.&nbsp;compared the improvement in accuracy of seven pixel-based and seven object-based random forest classification models. While Saba, S.B. et al.&nbsp;observed an overall accuracy improvement in landslide feature classification using satellite data, Qu, L.A. et al.&nbsp;discovered that the overall accuracy of LULC classification using GEE auxiliary datasets can be enhanced regardless of the types of auxiliary features.</p>
+<p>Saba, S.B. et al.&nbsp;found that the OBIA classification yielded the highest overall accuracy at 91.4%, followed by sub-pixel COSI-Corr with 90.9%, and pixel-based classification with 80.8% accuracy. Similarly, Qu, L.A. et al.&nbsp;confirmed that object-based classification achieved higher overall accuracy compared to pixel-based classification.</p>
+<p>The former group of authors also noted that the OBIA results are more spatially consistent than the pixel-based outcomes, which exhibit speckled pixel effects and are dependent on visual interpretation. The latter group stated that topographic features play the most crucial role in improving the overall accuracy of classification in both pixel- and object-based models incorporating all features. Furthermore, higher accuracy is achieved when the object-based method is used with only spectral data, although small objects on the ground cannot be adequately monitored. However, when combined with various types of auxiliary features, the object-based method can identify small objects while also achieving greater accuracy.</p>
 </section>
-<section id="reflection" class="level2" data-number="10.3">
-<h2 data-number="10.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">10.3</span> Reflection</h2>
-<p>OBIA is a powerful approach for image analysis that considers raster cells as part of objects on the ground and employs techniques such as superpixel generation, feature transformation, and classification to extract meaningful information from remote sensing data.</p>
-<p>In concluding remarks, it is important to distinguish between object based analysis and pixel based analysis.Pixel-based analysis treats each pixel as a separate entity, while object-based analysis groups pixels into meaningful objects based on spectral and spatial characteristics.</p>
+<section id="reflection" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">9.3</span> Reflection</h2>
+<p>OBIA, or Object-Based Image Analysis, revolutionizes image analysis by treating raster cells as components of larger, coherent objects on the ground. This methodology goes beyond traditional pixel-based analysis by considering not only individual pixel values but also the spatial relationships and spectral characteristics of neighboring pixels.</p>
+<p>In OBIA, the process typically begins with the generation of superpixels, which are clusters of pixels with similar spectral and spatial properties. These superpixels are then subjected to feature transformation, where various attributes such as color, texture, shape, and size are extracted to characterize the objects more comprehensively. Finally, classification techniques are applied to these transformed features to categorize the objects into meaningful classes or categories.</p>
+<p>Unlike pixel-based analysis, which evaluates each pixel independently, OBIA groups pixels into objects based on their contextual information, leading to more accurate and semantically meaningful results. By considering the spatial context and spectral properties of objects, OBIA can capture complex patterns and structures in remote sensing data more effectively.</p>
+<p>In summary, OBIA offers a powerful framework for extracting valuable insights from remote sensing imagery by leveraging spatial and spectral information to delineate and classify objects on the ground. Its ability to analyze imagery at the object level provides a more holistic understanding of the landscape, making it an indispensable tool for a wide range of applications in environmental monitoring, land cover classification, urban planning, and more.</p>
 <p>Reference: Saba, S.B., Ali, M., Turab, S.A., Waseem, M. and Faisal, S., 2023. Comparison of pixel, sub-pixel and object-based image analysis techniques for co-seismic landslides detection in seismically active area in Lesser Himalaya, Pakistan. Natural Hazards, 115(3), pp.2383-2398.</p>
 <p>Qu, L.A., Chen, Z., Li, M., Zhi, J. and Wang, H., 2021. Accuracy improvements to pixel-based and object-based lulc classification with auxiliary datasets from Google Earth engine. Remote Sensing, 13(3), p.453.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-qu2021" class="csl-entry" role="listitem">
+Qu, Le’an, Zhenjie Chen, Manchun Li, Junjun Zhi, and Huiming Wang. 2021. <span>“Accuracy Improvements to Pixel-Based and Object-Based LULC Classification with Auxiliary Datasets from Google Earth Engine.”</span> <em>Remote Sensing</em> 13 (3): 453. <a href="https://doi.org/10.3390/rs13030453">https://doi.org/10.3390/rs13030453</a>.
+</div>
+<div id="ref-saba2022" class="csl-entry" role="listitem">
+Saba, Sumbal, Muhammad Ali, Syed Ali Turab, Muhammad Waseem, and Shah Faisal. 2022. <span>“Comparison of Pixel, Sub-Pixel and Object-Based Image Analysis Techniques for Co-Seismic Landslides Detection in Seismically Active Area in Lesser Himalaya, Pakistan.”</span> <em>Natural Hazards</em> 114 (October). <a href="https://doi.org/10.1007/s11069-022-05642-y">https://doi.org/10.1007/s11069-022-05642-y</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -688,12 +724,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./WeekSix.html" class="pagination-link  aria-label=" &lt;span="" classification&lt;="" span&gt;"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">WeekSix: Classification</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">WeekSix: Classification</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./WeekEight.html" class="pagination-link" aria-label="<span class='chapter-number'>11</span>&nbsp; <span class='chapter-title'>WeekEight: Temperature</span>">
-        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">WeekEight: Temperature</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./WeekEight.html" class="pagination-link" aria-label="<span class='chapter-number'>10</span>&nbsp; <span class='chapter-title'>WeekEight: Temperature</span>">
+        <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">WeekEight: Temperature</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
