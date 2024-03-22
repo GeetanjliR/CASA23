@@ -34,6 +34,8 @@ knitr::include_graphics('img/Package.jpg')
 
 ```
 
+[@tamiminia2020a]
+
 Figure-3: Categorization of articles that utilized GEE.
 
 ```{r echo=FALSE, out.width='100%', fig.align='center'}
@@ -41,6 +43,8 @@ Figure-3: Categorization of articles that utilized GEE.
 knitr::include_graphics('Regression.jpg')
 
 ```
+
+[@tamiminia2020a]
 
 ## Reflection
 

@@ -16,7 +16,7 @@ knitr::include_graphics('img/OBIA.jpg')
 
 ```
 
-https://landinfo.com/image-classification-object-based-image-analysis-obia/
+[@imagecl2020]
 
 ### Sub-Pixel Analysis
 
@@ -30,7 +30,7 @@ knitr::include_graphics('img/Sub.jpg')
 
 ```
 
-https://www.researchgate.net/figure/Illustrating-the-difference-between-per-pixel-and-sub-pixel-classification-mapping_fig1_357114787
+[@perikamana2021]
 
 ### Accuracy
 

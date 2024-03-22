@@ -22,7 +22,7 @@ knitr::include_graphics('img/CART.jpg')
 
 ```
 
-https://nature.com/articles/nmeth.4370
+[@krzywinski2017]
 
 ### Random Forest
 
@@ -36,7 +36,7 @@ knitr::include_graphics('img/RF.jpg')
 
 ```
 
-<https://corporatefinanceinstitute.com/resources/data-science/random-forest/>
+[@randomf]
 
 ### Working with Imagery
 
