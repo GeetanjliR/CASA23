@@ -4,6 +4,8 @@
 
 In the first week, this portfolio has content about the basics of remote sensing cities and environment and the presentation learning in Xaringan tool. This week I learnt about the satellites and presentation tools as Xaringan (as attached below) and Quarto. Additionally, we learned how to create book in quarto.
 
+## Application
+
 ```{r echo = FALSE, out.width='40%'}
 xaringanExtra::embed_xaringan(
   url = "https://geetanjlir.github.io/Presentation/",

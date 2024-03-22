@@ -34,7 +34,7 @@
     "href": "WeekTwo.html",
     "title": "4  Week Two",
     "section": "",
-    "text": "4.1 Summary\nIn the first week, this portfolio has content about the basics of remote sensing cities and environment and the presentation learning in Xaringan tool. This week I learnt about the satellites and presentation tools as Xaringan (as attached below) and Quarto. Additionally, we learned how to create book in quarto.\n(Grolemund, n.d.)",
+    "text": "4.1 Summary\nIn the first week, this portfolio has content about the basics of remote sensing cities and environment and the presentation learning in Xaringan tool. This week I learnt about the satellites and presentation tools as Xaringan (as attached below) and Quarto. Additionally, we learned how to create book in quarto.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week Two</span>"
     ]
@@ -553,8 +553,8 @@
     "objectID": "WeekTwo.html#reflection",
     "href": "WeekTwo.html#reflection",
     "title": "4  Week Two",
-    "section": "4.2 Reflection",
-    "text": "4.2 Reflection\nIt was interesting to learn how use tools for learning dairy: 1. Xaringan (group presentation) and 2. Quarto (for individual).\n\n\n\n\nGrolemund, Yihui Xie, J. J. Allaire, Garrett. n.d. Chapter 7 Xaringan Presentations | r Markdown: The Definitive Guide. https://bookdown.org/yihui/rmarkdown/xaringan.html.",
+    "section": "4.3 Reflection",
+    "text": "4.3 Reflection\nIt was interesting to learn how use tools for learning dairy: 1. Xaringan (group presentation) and 2. Quarto (for individual).\n\n\n\n\nGrolemund, Yihui Xie, J. J. Allaire, Garrett. n.d. Chapter 7 Xaringan Presentations | r Markdown: The Definitive Guide. https://bookdown.org/yihui/rmarkdown/xaringan.html.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week Two</span>"
     ]
@@ -587,6 +587,16 @@
     "text": "9.2 Application\nResearch conducted by (Saba et al. 2022) explains how timely and exact delineation of landslides is imperative for decision-makers to respond effectively and swiftly to such disasters. Their team describes the virtues and drawbacks of pixel, sub-pixel, and Object-Based Image Analysis (OBIA)-based approaches for local to regional areas, highlighting the challenge of accuracy in extracting regional-level auxiliary datasets. Meanwhile, the investigation by (Qu et al. 2021) addresses concerns about the accuracy of extracting Land Use Land Cover (LULC) solely using spectral features of imagery due to heterogeneity in landforms for larger areas. They attempt to provide better results using open-source datasets in GEE, elucidating methods of pixel and object-based classification. The study area for the first paper is in Muzaffarabad, Pakistan (Lesser Himalayas), where they compare classification methods based on MLC (Maximum Likelihood Classifier), the Co-Registration of Optically Sensed Images and Correlation (COSI-Corr), and OBIA using SPOT and ASTER imagery. On the other hand, the second research focuses on LULC classification using medium-resolution imagery from Landsat-8 OLI data for the Yangtze River Delta in China.\nSaba, S.B. et al. employed comparative classification techniques, including MLC, COSI-Corr, and OBIA using SPOT and ASTER imagery. Qu, L.A. et al. compared the improvement in accuracy of seven pixel-based and seven object-based random forest classification models. While Saba, S.B. et al. observed an overall accuracy improvement in landslide feature classification using satellite data, Qu, L.A. et al. discovered that the overall accuracy of LULC classification using GEE auxiliary datasets can be enhanced regardless of the types of auxiliary features.\nSaba, S.B. et al. found that the OBIA classification yielded the highest overall accuracy at 91.4%, followed by sub-pixel COSI-Corr with 90.9%, and pixel-based classification with 80.8% accuracy. Similarly, Qu, L.A. et al. confirmed that object-based classification achieved higher overall accuracy compared to pixel-based classification.\nThe former group of authors also noted that the OBIA results are more spatially consistent than the pixel-based outcomes, which exhibit speckled pixel effects and are dependent on visual interpretation. The latter group stated that topographic features play the most crucial role in improving the overall accuracy of classification in both pixel- and object-based models incorporating all features. Furthermore, higher accuracy is achieved when the object-based method is used with only spectral data, although small objects on the ground cannot be adequately monitored. However, when combined with various types of auxiliary features, the object-based method can identify small objects while also achieving greater accuracy.",
     "crumbs": [
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>WeekSeven: Classification-2 The Big Question</span>"
+    ]
+  },
+  {
+    "objectID": "WeekTwo.html#application",
+    "href": "WeekTwo.html#application",
+    "title": "4  Week Two",
+    "section": "4.2 Application",
+    "text": "4.2 Application\n\n\n\n\n\n\n\n\n(Grolemund, n.d.)",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Week Two</span>"
     ]
   }
 ]
