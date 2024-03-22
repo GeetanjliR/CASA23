@@ -1,6 +1,6 @@
 # About the Learner, the Module and the Porfolio
 
-## The Learner 
+## The Learner
 
 I am **Geetanjli Rani**, **a keen learner** because it liberates me to evolve. With the same zeal, I wish to learn the module of **CASA0023** on the **Remote Sensing Cities and Environment**. Let us see my journey of evolution to grasp the outcome and objectives of the opted module. **All the best to ME!**
 
@@ -8,11 +8,7 @@ I am **Geetanjli Rani**, **a keen learner** because it liberates me to evolve. W
 
 This the module of **CASA0023** about the **Remote Sensing Cities and Environment**. The lecture happens for and hour and the next hour is for drop in session followed by practical scheduled on the other day. Assignment would comprise of two parts. First group submission to present Xaringan power point in week 10 that holds 30 percent of weightage. The second submission of 70 percentage weightage is about the learning dairy in Quarto which includes week wise notes into sections/ 4 paragraphs of summary, application and reflection with references. The learning dairy is an informal notes writing with diagrams and mind-mapping with a word limit of 4000 and 2 pages a week. Few of the best submissions samples are available from last year on the slack channel CASA0023. In the interest of the module, the Remote Sensing of the Environment, An Earth Resource Perspective by Jensen and Google Earth Engine handbook are the two important notebooks. The aims of this module will enable to operationalise remotely sensed Earth observation data for informing decisions on environmental hazards arising from a changing climate, specifically in relation to (a) urban areas and (b) future urban sustainability. Additionally, one could use the remotely sensed (RS) data and analysis to bring policy about managing earth's resources and address climate change.
 
-
 ## The Portfolio
 
-In order to understand my portfolio, one needs to get in my head. Thus, I will take you through a series of cool abbreviations, dictionary/glossary and figures introduced to me by our very intuitive Prof Andrew Maclachlan whom we call Prof Andy. Although, some the glossary/terms looked new for me while most of them were known, I am re-brushing my knowledge and kind of putting the jigsaw-puzzle-pieces together towards self challenge to the quest of learning the **Remote Sensing Cities and Environment**. These method of data collecting by remotely sensed devices are very fascinating to me that I have made an attempt to design this portfolio as personal journal of experience learning **CASA0023**. Thus, one may see the sections of summary, application and reflection. When arrive at the reflection part, one may witness my personnel experience in terms of my thoughts, ideas, struggles etc. **Well! I am having fun designing my portfolio, I hope you feel have the same flipping it over!**
+This porfolio will take you through a series of cool abbreviations, dictionary/glossary and figures introduced to us by our very intuitive Prof Andrew Maclachlan whom we call Prof Andy. Although, most of the glossary/terms looked new for me while some of them were known, I am re-brushing my knowledge and kind of putting the jigsaw-puzzle-pieces together towards self challenge to the quest of learning the **Remote Sensing Cities and Environment**. These method of data collecting by remotely sensed devices are very fascinating to me that I have made an attempt to design this portfolio as personal journal of experience learning **CASA0023**. Thus, one may see the sections of summary, application and reflection. When arrive at the reflection part, one may witness my personnel experience in terms of my thoughts, ideas, struggles etc. **Well! I am having fun designing my portfolio, I hope you feel the same flipping it over!**
 
-## Learning Outcomes
-**Old Terms: **
-**New Terms:** Spectral Signature
