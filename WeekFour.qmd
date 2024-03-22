@@ -10,9 +10,18 @@ There exists a wide variety of EO data available for use. These data come from r
 
 The global policy documents outline the New Urban Agenda, focusing on standards and principles for urban planning, development, and management. Subsections 64, 65, and 67 address concerns specific to coastal areas, delta regions, and small island developing states. Sustainable Development Goals (SDGs), particularly Goal 11, aim to make cities inclusive, safe, resilient, and sustainable, with target 11.5 emphasizing data collection frameworks for disaster studies. RS and EO data are incorporated into targets 11.6 and 11.7, but their complex approach raises questions about target communities, replication, and usefulness of results. Metropolitan policy documents from cities like London, NYC, Cape Town, and Ahmadabad lack data specifications and applicability, while local planning authorities often focus on legislation and monitoring rather than prevention.
 
-Remote sensing offers a systematic, data-driven approach to decision-making. For instance, in the Delhi-National Capital Region (NCR), which hosts over 71 million people, policies aim to manage physical growth and development pressures. Participating states are tasked with preparing sub-plans focusing on transportation, civic infrastructure, land use, and conservation. The NCR is divided into various policy zones, including NCT-Delhi, DMA, Rest of NCR, Highway Corridor Zone (HRZ), and Natural Conservation Zone (NCZ), to achieve these objectives.
+Figure-1: Sustainable Development Goals using Remote Sensing
 
-Figure-1: National Capital Region (NCR) Delhi, Policy Zones
+```{r echo=FALSE, out.width='100%', fig.align='center'}
+
+knitr::include_graphics('img/policy.png')
+```
+
+[@estoque2020]
+
+Remote sensing offers a systematic, data-driven approach to decision-making. For instance, in the figure-2 of Delhi-National Capital Region (NCR), which hosts over 71 million people, policies aim to manage physical growth and development pressures. Participating states are tasked with preparing sub-plans focusing on transportation, civic infrastructure, land use, and conservation. The NCR is divided into various policy zones, including NCT-Delhi, DMA, Rest of NCR, Highway Corridor Zone (HRZ), and Natural Conservation Zone (NCZ), to achieve these objectives.
+
+Figure-2: National Capital Region (NCR) Delhi, Policy Zones
 
 ```{r echo=FALSE, out.width='100%', fig.align='center'}
 
@@ -23,9 +32,7 @@ knitr::include_graphics('img/PZ.jpg')
 
 ## Application
 
-The authors [@doi:10.1080/09715010.2019.1603086] K.S.S. Parthasarathy and Paresh Chandra Deka review the remote sensing and GIS applications in assessing coastal vulnerability and shoreline changes. They examine shoreline changes and the Coastal Vulnerability Index (CVI), offering valuable insights for the literature to identify critical parameters that significantly impact the coast in specific studies. However, the review article overlooks the application of remote sensing assistance to regional bodies in mitigating coastal vulnerability and shoreline changes.
-Interestingly, [@sowmya2015] K. Sowmya et al. conducted a study on urban flood vulnerability zoning in Cochin City, situated on the southwest coast of India, using remote sensing in conjunction with GIS tools. They assessed vulnerability by employing a multi-criteria evaluation approach in a GIS environment, utilizing remotely sensed images, SRTM DEM, census details, city maps, and field studies. The researchers delineated flood vulnerability zones into categories ranging from low to very high vulnerability. They also calculated the proportion of area classified as very high and high vulnerability and examined the nature of vulnerability. However, their study leaves readers questioning how to implement remote sensing and GIS-driven analyses at the spatial level.
-
+The authors [@doi:10.1080/09715010.2019.1603086] K.S.S. Parthasarathy and Paresh Chandra Deka review the remote sensing and GIS applications in assessing coastal vulnerability and shoreline changes. They examine shoreline changes and the Coastal Vulnerability Index (CVI), offering valuable insights for the literature to identify critical parameters that significantly impact the coast in specific studies. However, the review article overlooks the application of remote sensing assistance to regional bodies in mitigating coastal vulnerability and shoreline changes. Interestingly, [@sowmya2015] K. Sowmya et al. conducted a study on urban flood vulnerability zoning in Cochin City, situated on the southwest coast of India, using remote sensing in conjunction with GIS tools. They assessed vulnerability by employing a multi-criteria evaluation approach in a GIS environment, utilizing remotely sensed images, SRTM DEM, census details, city maps, and field studies. The researchers delineated flood vulnerability zones into categories ranging from low to very high vulnerability. They also calculated the proportion of area classified as very high and high vulnerability and examined the nature of vulnerability. However, their study leaves readers questioning how to implement remote sensing and GIS-driven analyses at the spatial level.
 
 ## Reflection
 
