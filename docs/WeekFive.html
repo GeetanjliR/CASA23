@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Learning Dairy - 8&nbsp; WeekFive: Google Earth Engine (GEE)</title>
+<title>Learning Dairy - 7&nbsp; WeekFive: Google Earth Engine (GEE)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -31,7 +51,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./WeekSix.html" rel="next">
-<link href="./WeekFFour.html" rel="prev">
+<link href="./WeekFour.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -81,7 +101,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./WeekFive.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">WeekFive: Google Earth Engine (GEE)</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./WeekFive.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">WeekFive: Google Earth Engine (GEE)</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -150,32 +170,26 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./WeekFFour.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">WeekFour: Policy and Remote Sensing</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./WeekFive.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">WeekFive: Google Earth Engine (GEE)</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">WeekFive: Google Earth Engine (GEE)</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./WeekSix.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">WeekSix: Classification</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">WeekSix: Classification</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./WeekSeven.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">WeekSeven: Classification-2 The Big Question</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">WeekSeven: Classification-2 The Big Question</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./WeekEight.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">WeekEight: Temperature</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">WeekEight: Temperature</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -194,13 +208,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">8.1</span> Summary</a>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">7.1</span> Summary</a>
   <ul class="collapse">
-  <li><a href="#google-earth-engine-setup" id="toc-google-earth-engine-setup" class="nav-link" data-scroll-target="#google-earth-engine-setup"><span class="header-section-number">8.1.1</span> Google Earth Engine: Setup</a></li>
-  <li><a href="#gee-functions-and-tools" id="toc-gee-functions-and-tools" class="nav-link" data-scroll-target="#gee-functions-and-tools"><span class="header-section-number">8.1.2</span> GEE functions and tools</a></li>
+  <li><a href="#google-earth-engine-setup" id="toc-google-earth-engine-setup" class="nav-link" data-scroll-target="#google-earth-engine-setup"><span class="header-section-number">7.1.1</span> Google Earth Engine: Setup</a></li>
+  <li><a href="#gee-functions-and-tools" id="toc-gee-functions-and-tools" class="nav-link" data-scroll-target="#gee-functions-and-tools"><span class="header-section-number">7.1.2</span> GEE functions and tools</a></li>
   </ul></li>
-  <li><a href="#related-literature-findings" id="toc-related-literature-findings" class="nav-link" data-scroll-target="#related-literature-findings"><span class="header-section-number">8.2</span> Related Literature Findings</a></li>
-  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">8.3</span> Reflection</a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="header-section-number">7.2</span> Application</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">7.3</span> Reflection</a></li>
   </ul>
 </nav>
     </div>
@@ -209,7 +223,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">WeekFive: Google Earth Engine (GEE)</span></h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">WeekFive: Google Earth Engine (GEE)</span></h1>
 </div>
 
 
@@ -226,21 +240,33 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="summary" class="level2" data-number="8.1">
-<h2 data-number="8.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">8.1</span> Summary</h2>
-<section id="google-earth-engine-setup" class="level3" data-number="8.1.1">
-<h3 data-number="8.1.1" class="anchored" data-anchor-id="google-earth-engine-setup"><span class="header-section-number">8.1.1</span> Google Earth Engine: Setup</h3>
-<p>We covered the vector data use in EO pre-reading week and learned the SNAP and QGIS tools. A revolutionary understanding of Google Earth Engine tool enhanced my knowledge. The Earth Engine developed over Google tools capable of performing massive scale computation also known as planetary computer. Image object gets inherited from raster data with one or more bands and each band has its own name, data type, scale, mask and projection. Whereas features are vector data having geometry with attributes. Additionally, collection of several images or polygons are image stack and feature collections are feature stack (having multiple polygons). Thus, its potential to compute ginormous processing, EE is supported by javascript that runs multiple parallel computations across CPUs, in fact on Google server also called as cloud computing. Moreover, GEE makes use of the Earth Engine Objects that starts with ‘ee’ in front using code that runs on server side and not client side (i.e.&nbsp;browser). Finally, the advantage of mapping over looping can be reaped in GEE as with loop the process iterates over and again making it a cumbersome process whereas mapping in GEE allocates processing across various machines with map.</p>
+<section id="summary" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">7.1</span> Summary</h2>
+<section id="google-earth-engine-setup" class="level3" data-number="7.1.1">
+<h3 data-number="7.1.1" class="anchored" data-anchor-id="google-earth-engine-setup"><span class="header-section-number">7.1.1</span> Google Earth Engine: Setup</h3>
+<p>We delved into the utilization of vector data in Earth Observation (EO) during the pre-reading week, where we familiarized ourselves with tools such as SNAP and QGIS. My understanding took a revolutionary leap with the introduction of the Google Earth Engine tool. Earth Engine, developed by Google, is capable of performing massive-scale computations and is often referred to as a planetary computer. In Earth Engine, images are inherited from raster data, with each image comprising one or more bands, each characterized by its own name, data type, scale, mask, and projection. On the other hand, features represent vector data, consisting of geometry with associated attributes. Moreover, a collection of several images or polygons is referred to as an image stack, while a collection of features is termed a feature stack, encompassing multiple polygons. The potential for enormous processing in Earth Engine is supported by JavaScript, which enables the execution of multiple parallel computations across CPUs, including those on Google servers, a process commonly known as cloud computing. Furthermore, Earth Engine employs Earth Engine Objects, denoted by names prefixed with ‘ee,’ with code executed on the server side rather than the client side (i.e., the browser). Lastly, Earth Engine offers the advantage of mapping over looping; while looping entails iterative processing that can be cumbersome, mapping in Earth Engine distributes processing across various machines, enhancing efficiency.</p>
 </section>
-<section id="gee-functions-and-tools" class="level3" data-number="8.1.2">
-<h3 data-number="8.1.2" class="anchored" data-anchor-id="gee-functions-and-tools"><span class="header-section-number">8.1.2</span> GEE functions and tools</h3>
-<p>The second part of the lecture covered the functions and tools used in GEE. Objects i.e., vector, raster, feature, string, number are the building blocks of GEE. Where each of these belong to a class to be called by specific functions or methods or constructs of GEE. In turn it is required of GEE’s geometric operations (e.g.&nbsp;spatial operations) of spatial join, filter or zonal statistics. As its part of typical GEE operations, methods of machine learning, supervised and unsupervised classification, deep learning and exploring relationships between variables can be carried to bring applications/outputs in form of online charts, scalable geospatial applications, query data with user interface etc. As such object oriented learning GEE uses reducer object to compute statistics or perform aggregations. Reducers can aggregate data over time, space, bands, lists and other data structures in Earth Engine. Each reducer can take one or more input and generate one of more outputs. Reduce image can be done by by region or regions or neighborhoods (use of kernel). GEE provides advantage to access all imagery for multiple sensors for example to see the change over time in pixel values can deploy linearFit() with reducer function. This can be carried by including multiple dependent variables, the process is termed as multivariate multiple linear regression. Similarly, a join and filter operations can applied too.</p>
+<section id="gee-functions-and-tools" class="level3" data-number="7.1.2">
+<h3 data-number="7.1.2" class="anchored" data-anchor-id="gee-functions-and-tools"><span class="header-section-number">7.1.2</span> GEE functions and tools</h3>
+<p>The second part of the lecture covered the functions and tools utilized in Google Earth Engine (GEE). Objects such as vector, raster, feature, string, and number constitute the foundational elements of GEE. Each of these belongs to a class and is accessed through specific functions, methods, or constructs within GEE. Geometric operations, including spatial join, filtering, and zonal statistics, are integral components of typical GEE operations. Furthermore, GEE supports methods of machine learning, such as supervised and unsupervised classification, deep learning, and exploring relationships between variables, enabling the generation of applications and outputs in the form of online charts, scalable geospatial applications, and query data with user interfaces.</p>
+<p>In GEE, object-oriented learning is facilitated through the use of reducer objects to compute statistics or perform aggregations. Reducers can aggregate data over time, space, bands, lists, and other data structures within Earth Engine. Each reducer can accept one or more inputs and generate one or more outputs. Image reduction can be performed by region, regions, or neighborhoods (utilizing kernels). GEE offers the advantage of accessing imagery from multiple sensors, allowing for the examination of changes over time in pixel values using functions such as linearFit() with the reducer function. This process, which can include multiple dependent variables, is termed multivariate multiple linear regression.</p>
+<p>Similarly, join and filter operations can be applied within GEE. In the practice session, a super quick Principal Component Analysis (PCA) and texture analysis were conducted for Delhi, as illustrated in Figure 1, which significantly reduced the processing time compared to the previous week.</p>
+<p>Figure-1: PCA and Texture analysis in GEE</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/GEE.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
 </section>
-<section id="related-literature-findings" class="level2" data-number="8.2">
-<h2 data-number="8.2" class="anchored" data-anchor-id="related-literature-findings"><span class="header-section-number">8.2</span> Related Literature Findings</h2>
-<p>When reviewed in recent research articles, it is evident both the study by Tamiminia, H. et al.&nbsp;and Amani, M. et al.&nbsp;inferred that the use of GEE is still evolving in the field of remote sensing ever since its launch in 2010. However, Tamiminia, H. et al.&nbsp;have brought a summary of algorithms and capabilities in term of packages that are available, such as machine learning, image processing, image collection, geometry-feature, reducer, charts and specialized algorithms to explore the setup of GEE application in RS (refer figure-1). On the other hand, the team of Amani, M. et al.&nbsp;describes the application of GEE that was used along with version 1 Tropical Rainfall Measuring Mission (TRMM) precipitation products to study the spatial and temporal patterns of precipitation in the Zambezi River basin. They further describe the use of Kendall’s correlation and Sen’s slope reducer that could investigate the precipitation trends and magnitudes by the processing of TRMM data from 1998 to 2017.They could interpret that “dry gets dryer, wet gets wetter” pattern in the study region. Additionally, they interestingly depicted in an info-graphics showing the distribution of use of GEE deploying regression, machine learning etc. methods in the first paper are as below in figure-2.</p>
-<p>Figure-1: A summary of the algorithms and capabilities available in code editor-Google Earth Engine.</p>
+<section id="application" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="application"><span class="header-section-number">7.2</span> Application</h2>
+<p>Recent research articles, such as those by <span class="citation" data-cites="tamiminia2020">(<a href="references.html#ref-tamiminia2020" role="doc-biblioref">Tamiminia et al. 2020</a>)</span>, underscore the evolving role of Google Earth Engine (GEE) in the field of remote sensing since its launch in 2010. Tamiminia, H. et al.&nbsp;provide a comprehensive overview of algorithms and capabilities available in GEE, including machine learning, image processing, image collection, geometry features, reducers, charts, and specialized algorithms, outlining the potential applications of GEE in remote sensing (see Figure 1). Conversely, <span class="citation" data-cites="amani2020">(<a href="references.html#ref-amani2020" role="doc-biblioref">Amani et al. 2020</a>)</span> present a study wherein GEE was utilized in conjunction with version 1 of the Tropical Rainfall Measuring Mission (TRMM) precipitation products to analyze the spatial and temporal patterns of precipitation in the Zambezi River basin. They employed Kendall’s correlation and Sen’s slope reducers to investigate precipitation trends and magnitudes, based on TRMM data spanning from 1998 to 2017, revealing a “dry gets drier, wet gets wetter” pattern in the study region. Furthermore, they visually depicted the distribution of GEE usage, employing regression, machine learning, and other methods, as illustrated in figure 2 and figure-3 of their paper.</p>
+<p>Figure-2: A summary of the algorithms and capabilities available in code editor-Google Earth Engine.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -250,7 +276,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<p>Figure-2: Categorization of articles that utilized GEE.</p>
+<p>Figure-3: Categorization of articles that utilized GEE.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -261,15 +287,21 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </section>
-<section id="reflection" class="level2" data-number="8.3">
-<h2 data-number="8.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">8.3</span> Reflection</h2>
-<p>By now in week six, I am relieved of the tedious prolong application of RS as in week 3. Its parallel run of data storage, processing, application/ output delivery makes it convenient, quick and resourceful. GEE outperforms the earlier method of iteration and time consuming process in earth observation. The aggregation function providing a specific value to each pixel such as a median, linear regression, spatial join etc. manages effective and efficient image processing over planetary massive data, sets its fondness for me. Since I am crazy about data, it fascinates me to learn that EE archives historical imagery and scientific datasets going back to 40 years, including satellite data like Landsat, Sentinel-2, and MODIS, as well as geophysical, weather, climate, and demographic data. I feel more enthusiastic and engaging in remote sensing and geospatial data science studies.</p>
-<p>In contrast, where most of the GIS analysis I have learnt in ‘R’, the use of GEE depends on the knowledge and skills of JavaScript and Python coding. Fortunately, we have been provided with the codes but its deployment to suit various other projects in future needs debugging and troubleshooting. It takes much time to figure out over online communities such as Stack Exchange etc. It make me question if we make use of medium spatial resolution imageries available from European Space Agency free of charge as GEE is a free of charge platform? In addition, what about the utility of high spatial resolution imageries available from commercial satellites that are expensive to purchase? The free Google platform to make use of EE is a good initiative but I wonder for how long. My experience in monetarily charges at the GEE page is so far, so good.</p>
-<p>In conclusion, what else I could have asked, rather than having to skip the multiple imagery runs of pre-processing, processing, classification, accuracy etc in remote sensing that gets eased with bits oF code in GEE. Having an setup and overview understanding of GEE application in RS, we will learn classification in detail in up-coming sessions.</p>
-<p>Reference: Tamiminia, H., Salehi, B., Mahdianpari, M., Quackenbush, L., Adeli, S. and Brisco, B., 2020. Google Earth Engine for geo-big data applications: A meta-analysis and systematic review. ISPRS journal of photogrammetry and remote sensing, 164, pp.152-170.</p>
-<p>Amani, M., Ghorbanian, A., Ahmadi, S.A., Kakooei, M., Moghimi, A., Mirmazloumi, S.M., Moghaddam, S.H.A., Mahdavi, S., Ghahremanloo, M., Parsian, S. and Wu, Q., 2020. Google earth engine cloud computing platform for remote sensing big data applications: A comprehensive review. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 13, pp.5326-5350.</p>
+<section id="reflection" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">7.3</span> Reflection</h2>
+<p>As we enter week five, I find myself relieved of the tedious and prolonged application of remote sensing (RS) techniques, as experienced in week 3. The parallel execution of data storage, processing, and application/output delivery in Google Earth Engine (GEE) makes the process convenient, quick, and resourceful. GEE surpasses the earlier methods of iteration and time-consuming processes in earth observation. Its aggregation functions, which provide specific values to each pixel such as median, linear regression, and spatial join, facilitate effective and efficient image processing over massive planetary datasets, making me particularly fond of its capabilities. As someone deeply interested in data, I am fascinated to learn that GEE archives historical imagery and scientific datasets dating back 40 years, including satellite data from sources such as Landsat, Sentinel-2, and MODIS, as well as geophysical, weather, climate, and demographic data. This knowledge has fueled my enthusiasm and engagement in remote sensing and geospatial data science studies.</p>
+<p>However, unlike most of the GIS analysis I have learned in ‘R’, utilizing GEE requires knowledge and skills in JavaScript and Python coding. Although we have been provided with codes, deploying them to suit various projects in the future may require debugging and troubleshooting, often leading to time-consuming searches for solutions on online communities such as Stack Exchange. This raises questions about the use of medium spatial resolution imagery available from the European Space Agency, which is provided free of charge, compared to high spatial resolution imagery from commercial satellites that are expensive to purchase. While the free availability of Google’s platform for GEE is a commendable initiative, concerns linger about its sustainability. So far, my experience with the monetarily charged aspects of GEE has been positive.</p>
+<p>In conclusion, I couldn’t have asked for more than the relief from the multiple runs of imagery pre-processing, processing, classification, accuracy assessments, etc., in remote sensing, which are streamlined with the use of code in GEE. With a basic setup and overview understanding of GEE’s application in RS, I look forward to delving into classification in greater detail in upcoming sessions.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-amani2020" class="csl-entry" role="listitem">
+Amani, Meisam, Arsalan Ghorbanian, Seyed Ali Ahmadi, Mohammad Kakooei, Armin Moghimi, S. Mohammad Mirmazloumi, Sayyed Hamed Alizadeh Moghaddam, et al. 2020. <span>“Google Earth Engine Cloud Computing Platform for Remote Sensing Big Data Applications: A Comprehensive Review.”</span> <em>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</em> 13: 5326–50. <a href="https://doi.org/10.1109/JSTARS.2020.3021052">https://doi.org/10.1109/JSTARS.2020.3021052</a>.
+</div>
+<div id="ref-tamiminia2020" class="csl-entry" role="listitem">
+Tamiminia, Haifa, Bahram Salehi, Masoud Mahdianpari, Lindi Quackenbush, Sarina Adeli, and B. Brisco. 2020. <span>“Google Earth Engine for Geo-Big Data Applications: A Meta-Analysis and Systematic Review.”</span> <em>ISPRS Journal of Photogrammetry and Remote Sensing</em>, May. <a href="https://doi.org/10.1016/j.isprsjprs.2020.04.001">https://doi.org/10.1016/j.isprsjprs.2020.04.001</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -662,13 +694,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./WeekFFour.html" class="pagination-link  aria-label=" &lt;span="" policy="" and="" remote="" sensing&lt;="" span&gt;"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">WeekFour: Policy and Remote Sensing</span></span>
+      <a href="./WeekFour.html" class="pagination-link  aria-label=" &lt;span="" policy="" and="" remote="" sensing&lt;="" span&gt;"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">WeekFour: Policy and Remote Sensing</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./WeekSix.html" class="pagination-link" aria-label="<span class='chapter-number'>9</span>&nbsp; <span class='chapter-title'>WeekSix: Classification</span>">
-        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">WeekSix: Classification</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./WeekSix.html" class="pagination-link" aria-label="<span class='chapter-number'>8</span>&nbsp; <span class='chapter-title'>WeekSix: Classification</span>">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">WeekSix: Classification</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
