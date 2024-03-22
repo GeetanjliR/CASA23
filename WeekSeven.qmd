@@ -85,7 +85,3 @@ In OBIA, the process typically begins with the generation of superpixels, which 
 Unlike pixel-based analysis, which evaluates each pixel independently, OBIA groups pixels into objects based on their contextual information, leading to more accurate and semantically meaningful results. By considering the spatial context and spectral properties of objects, OBIA can capture complex patterns and structures in remote sensing data more effectively.
 
 In summary, OBIA offers a powerful framework for extracting valuable insights from remote sensing imagery by leveraging spatial and spectral information to delineate and classify objects on the ground. Its ability to analyze imagery at the object level provides a more holistic understanding of the landscape, making it an indispensable tool for a wide range of applications in environmental monitoring, land cover classification, urban planning, and more.
-
-Reference: Saba, S.B., Ali, M., Turab, S.A., Waseem, M. and Faisal, S., 2023. Comparison of pixel, sub-pixel and object-based image analysis techniques for co-seismic landslides detection in seismically active area in Lesser Himalaya, Pakistan. Natural Hazards, 115(3), pp.2383-2398.
-
-Qu, L.A., Chen, Z., Li, M., Zhi, J. and Wang, H., 2021. Accuracy improvements to pixel-based and object-based lulc classification with auxiliary datasets from Google Earth engine. Remote Sensing, 13(3), p.453.
